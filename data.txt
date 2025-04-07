@@ -1,0 +1,2404 @@
+!<arch>
+/               0           0     0     0       1175      `
+   <  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ__asm___8_AN_LCD_c_temp1____REV16 __asm___8_AN_LCD_c_temp1____REVSH temp1 temp2 delay_lcd clear_ports wr_cn lcd_com lcd_init wr_dn lcd_data clr_disp lcd_puts __user_initial_stackheap __Vectors Reset_Handler NMI_Handler HardFault_Handler MemManage_Handler BusFault_Handler UsageFault_Handler SVC_Handler DebugMon_Handler PendSV_Handler SysTick_Handler ADC_IRQHandler BOD_IRQHandler CANActivity_IRQHandler CAN_IRQHandler DMA_IRQHandler EINT0_IRQHandler EINT1_IRQHandler EINT2_IRQHandler EINT3_IRQHandler ENET_IRQHandler I2C0_IRQHandler I2C1_IRQHandler I2C2_IRQHandler I2S_IRQHandler MCPWM_IRQHandler PLL0_IRQHandler PLL1_IRQHandler PWM1_IRQHandler QEI_IRQHandler RIT_IRQHandler RTC_IRQHandler SPI_IRQHandler SSP0_IRQHandler SSP1_IRQHandler TIMER0_IRQHandler TIMER1_IRQHandler TIMER2_IRQHandler TIMER3_IRQHandler UART0_IRQHandler UART1_IRQHandler UART2_IRQHandler UART3_IRQHandler USBActivity_IRQHandler USB_IRQHandler WDT_IRQHandler 
+//              0           0     0     0       19        `
+startup_LPC17xx.o/
+
+an_lcd.o/       1516096936  0     0     100666  55332     `
+÷ORC                      TË     4     ( R O       @ºpGÀºpGOð àñBûÓpGOôppˆIÈeOð ÈeOð  ÈepG µÿ÷þÿƒH hIHeOð ÈeOð  ˆeOð ÿ÷þÿOð  zIÈe ½ µzH h ðð wI`F hOê€ `ÿ÷þÿtH h ð qI`F hOê€`ÿ÷þÿOôzpÿ÷þÿ ½ µkH ikI ê iIaeH l@ôppcIdF l@ð dF l@ð  dÿ÷þÿOôH`ÿ÷þÿOðÀ ZI`ÿ÷þÿGò0Pÿ÷þÿOðÀ UI`ÿ÷þÿGò0Pÿ÷þÿOðÀ PI`ÿ÷þÿGò0Pÿ÷þÿOð€ KI`ÿ÷þÿGò0Pÿ÷þÿOð( GI`ÿ÷þÿGò0Pÿ÷þÿOð BI`ÿ÷þÿOôHpÿ÷þÿOð =I`ÿ÷þÿOôHpÿ÷þÿOð 8I`ÿ÷þÿBòpÿ÷þÿOð€ 3I`ÿ÷þÿOôHpÿ÷þÿ ½ µÿ÷þÿ,H h*IHeOð ˆeOð  ˆeOð ÿ÷þÿOð  #IÈe ½ µ#H h ðð  I`F hOê€ `ÿ÷þÿH h ð I`F hOê€`ÿ÷þÿOôzpÿ÷þÿ ½ µOð I`ÿ÷þÿBòpÿ÷þÿ ½µFOð àà\
+I`ÿ÷þÿñ+ÑOðÀ I`ÿ÷þÿà\ (íÑ½ À	          À@ÿ ðÿ        ¼        AN_LCD.c ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start            __asm___8_AN_LCD_c_temp1____REV16        __asm___8_AN_LCD_c_temp1____REVSH           d    F    
+       C:\\Keil4\\ARM\\CMSIS\\Include\\  core_cmInstr.h         ñ  0   ÿÿÿÿarmcc+ |
+       	
+
+                              0   ÿÿÿÿarmcc+ |
+      	
+
+   0   ÿÿÿÿarmcc+ |
+     	
+
+   0   ÿÿÿÿarmcc+ |
+       	
+
+                    4                &   ,   AŽ          R   @   AŽ          ’   ò   AŽ          „  ,   AŽ          °  @   AŽ          ð     AŽ      h     0   A~„Ž h        
+AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start                    AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start  unsigned long ptemp1 a    ptemp2 a      ¼       AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start     8       unsigned int unsigned char "}?Á| delay_lcd        ÷   ir1 m)  Xr mQ ?âŠ clear_ports    &   ã    ?üU wr_cn &   R   Ã    ?˜H lcd_com R   ’   £    ?µ lcd_init ’   „  ƒ    ?Ïp wr_dn „  °  c    ?ìc lcd_data °  ð  C    ?Šƒ clr_disp ð    #    ?½” lcd_puts   8      ibuf1 Ž 
+  Xi mS    (         
+        AN_LCD.c      Ä        
+        AN_LCD.c          þ  D  "j,&,&!D4,&'! ! ! ! ! ! ! ! ! !+  !j,&,&! !	 	
+ 
+x
+   
+   } –––
+  8   }        ð  ò   } ò     }        °  ²   } ²  ð   }        „  †   } †  °   }        ’   ”    } ”   „   }        R   T    } T   ’    }        &   (    } (   R    }           &    }                 }              P  8   T                P         __DATE__ "Jan 16 2018"  __TIME__ "15:32:16"  __STDC__ 1  __STDC_VERSION__ 199409L  __EDG__ 1  __EDG_VERSION__ 310  __sizeof_int 4  __sizeof_long 4  __sizeof_ptr 4  __ARMCC_VERSION 410713  __TARGET_CPU_CORTEX_M3 1  __TARGET_FPU_SOFTVFP 1  __TARGET_FPU_SOFTVFP 1  __EVAL 1  __CC_ARM 1  __arm 1  __arm__ 1  __TARGET_ARCH_7_M 1  __TARGET_ARCH_ARM 0  __TARGET_ARCH_THUMB 4  __TARGET_PROFILE_M 1  __TARGET_FEATURE_HALFWORD 1  __TARGET_FEATURE_THUMB 1  __TARGET_FEATURE_MULTIPLY 1  __TARGET_FEATURE_DOUBLEWORD 1  __TARGET_FEATURE_DIVIDE 1  __TARGET_FEATURE_UNALIGNED 1  __TARGET_FEATURE_CLZ 1  __TARGET_FEATURE_EXTENSION_REGISTER_COUNT 0  __APCS_INTERWORK 1  __thumb 1  __thumb__ 1  __OPTIMISE_SPACE 1  __OPTIMISE_LEVEL 0  __SOFTFP__ 1     "        ”   r   temp1 ‚   temp2     €        À  ‘   delay_lcd Á   clear_ports â   wr_cn ü   lcd_com   lcd_init 5  wr_dn O  lcd_data l  clr_disp Š  lcd_puts             %  .                    
+__stdint_h  __STDINT_DECLS  __CLIBNS __CLIBNS  [INT8_MIN -128 \INT16_MIN -32768 ]INT32_MIN (~0x7fffffff) ^INT64_MIN __ESCAPE__(~0x7fffffffffffffffll) aINT8_MAX 127 bINT16_MAX 32767 cINT32_MAX 2147483647 dINT64_MAX __ESCAPE__(9223372036854775807ll) gUINT8_MAX 255 hUINT16_MAX 65535 iUINT32_MAX 4294967295u jUINT64_MAX __ESCAPE__(18446744073709551615ull) oINT_LEAST8_MIN -128 pINT_LEAST16_MIN -32768 qINT_LEAST32_MIN (~0x7fffffff) rINT_LEAST64_MIN __ESCAPE__(~0x7fffffffffffffffll) uINT_LEAST8_MAX 127 vINT_LEAST16_MAX 32767 wINT_LEAST32_MAX 2147483647 xINT_LEAST64_MAX __ESCAPE__(9223372036854775807ll) {UINT_LEAST8_MAX 255 |UINT_LEAST16_MAX 65535 }UINT_LEAST32_MAX 4294967295u ~UINT_LEAST64_MAX __ESCAPE__(18446744073709551615ull) ƒINT_FAST8_MIN (~0x7fffffff) „INT_FAST16_MIN (~0x7fffffff) …INT_FAST32_MIN (~0x7fffffff) †INT_FAST64_MIN __ESCAPE__(~0x7fffffffffffffffll) ‰INT_FAST8_MAX 2147483647 ŠINT_FAST16_MAX 2147483647 ‹INT_FAST32_MAX 2147483647 ŒINT_FAST64_MAX __ESCAPE__(9223372036854775807ll) UINT_FAST8_MAX 4294967295u UINT_FAST16_MAX 4294967295u ‘UINT_FAST32_MAX 4294967295u ’UINT_FAST64_MAX __ESCAPE__(18446744073709551615ull) —INTPTR_MIN (~0x7fffffff) šINTPTR_MAX 2147483647 UINTPTR_MAX 4294967295u ¢INTMAX_MIN __ESCAPE__(~0x7fffffffffffffffll) ¥INTMAX_MAX __ESCAPE__(9223372036854775807ll) ¨UINTMAX_MAX __ESCAPE__(18446744073709551615ull) ­PTRDIFF_MIN (~0x7fffffff) ®PTRDIFF_MAX 2147483647 ±SIG_ATOMIC_MIN (~0x7fffffff) ²SIG_ATOMIC_MAX 2147483647 µSIZE_MAX 4294967295u ºWCHAR_MIN »WCHAR_MAX ÁWCHAR_MIN 0 ÂWCHAR_MAX 65535 ÆWINT_MIN (~0x7fffffff) ÇWINT_MAX 2147483647 ÎINT8_C(x) (x) ÏINT16_C(x) (x) ÐINT32_C(x) (x) ÑINT64_C(x) __ESCAPE__(x##ll) ÓUINT8_C(x) (x##u) ÔUINT16_C(x) (x##u) ÕUINT32_C(x) (x##u) ÖUINT64_C(x) __ESCAPE__(x##ull) ÙINTMAX_C(x) __ESCAPE__(x##ll) ÚUINTMAX_C(x) __ESCAPE__(x##ull)  @    6     
+       C:\Keil4\ARM\RV31\INC\  stdint.h     È       C:\Keil4\ARM\RV31\INC\stdint.h ARM C/C++ Compiler, 4.1 [Build 713]          signed char short int long long unsigned char  unsigned short  unsigned int  unsigned long long Pint8_t Y% Pint16_t h& Pint32_t q' Pint64_t x( Puint8_t … + Puint16_t – , Puint32_t ¨ - Puint64_t ¸ . Pint_least8_t Y4 Pint_least16_t h5 Pint_least32_t q6 Pint_least64_t x7 Puint_least8_t … : Puint_least16_t – ; Puint_least32_t ¨ < Puint_least64_t ¸ = Pint_fast8_t qB Pint_fast16_t qC Pint_fast32_t qD Pint_fast64_t xE Puint_fast8_t ¨ H Puint_fast16_t ¨ I Puint_fast32_t ¨ J Puint_fast64_t ¸ K Pintptr_t qN Puintptr_t ¨ O Pintmax_t xR Puintmax_t ¸ S                  __CORE_CMINSTR_H__  )__NOP __nop 1__WFI __wfi 9__WFE __wfe @__SEV __sev I__ISB() __isb(0xF) Q__DSB() __dsb(0xF) Y__DMB() __dmb(0xF) c__REV __rev “__RBIT __rbit __LDREXB(ptr) ((uint8_t ) __ldrex(ptr)) §__LDREXH(ptr) ((uint16_t) __ldrex(ptr)) ±__LDREXW(ptr) ((uint32_t ) __ldrex(ptr)) ½__STREXB(value,ptr) __strex(value, ptr) É__STREXH(value,ptr) __strex(value, ptr) Õ__STREXW(value,ptr) __strex(value, ptr) à__CLREX __clrex ì__SSAT __ssat ÷__USAT __usat __CLZ __clz  L    A     
+       C:\Keil4\ARM\CMSIS\Include\  core_cmInstr.h     d        C:\Keil4\ARM\CMSIS\Include\core_cmInstr.h ARM C/C++ Compiler, 4.1 [Build 713]                           __CORE_CMFUNC_H__  é__enable_fault_irq __enable_fiq ñ__disable_fault_irq __disable_fiq    L    @     
+       C:\Keil4\ARM\CMSIS\Include\  core_cmFunc.h     $       C:\Keil4\ARM\CMSIS\Include\core_cmFunc.h ARM C/C++ Compiler, 4.1 [Build 713]          ;£0__get_CONTROL  $  a__result $  Y__regControl $  P <ÜA__set_CONTROL  $$  control Y__regControl $  P ;–R__get_IPSR  $  a__result $  Y__regIPSR $  P ;Ðc__get_APSR  $  a__result $  Y__regAPSR $  P ;Št__get_xPSR  $  a__result $  Y__regXPSR $  P ;Ó…__get_PSP  $  a__result $  Y__regProcessStackPointer $  P <œ–__set_PSP  $$  topOfProcStack Y__regProcessStackPointer $  P ;â§__get_MSP  $  a__result $  Y__regMainStackPointer $  P <¨¸__set_MSP  $$  topOfMainStack Y__regMainStackPointer $  P ;éÉ__get_PRIMASK  $  a__result $  Y__regPriMask $  P <£Ú__set_PRIMASK  $$  priMask Y__regPriMask $  P ;äý__get_BASEPRI  $  a__result $  Y__regBasePri $  P <ž Ž__set_BASEPRI  $$  basePri Y__regBasePri $  P ;ã Ÿ__get_FAULTMASK  $  a__result $  Y__regFaultMask $  P <£°__set_FAULTMASK  $$  faultMask Y__regFaultMask $  P             !   "   #     __CORE_CM3_H_GENERIC  E__CM3_CMSIS_VERSION_MAIN (0x02) F__CM3_CMSIS_VERSION_SUB (0x00) G__CM3_CMSIS_VERSION ((__CM3_CMSIS_VERSION_MAIN << 16) | __CM3_CMSIS_VERSION_SUB) I__CORTEX_M (0x03) M__ASM __asm N__INLINE __inline ^_`h__CORE_CM3_H_DEPENDANT  n__I volatile const p__O volatile q__IO volatile •SCB_CPUID_IMPLEMENTER_Pos 24 –SCB_CPUID_IMPLEMENTER_Msk (0xFFUL << SCB_CPUID_IMPLEMENTER_Pos) ˜SCB_CPUID_VARIANT_Pos 20 ™SCB_CPUID_VARIANT_Msk (0xFUL << SCB_CPUID_VARIANT_Pos) ›SCB_CPUID_PARTNO_Pos 4 œSCB_CPUID_PARTNO_Msk (0xFFFUL << SCB_CPUID_PARTNO_Pos) žSCB_CPUID_REVISION_Pos 0 ŸSCB_CPUID_REVISION_Msk (0xFUL << SCB_CPUID_REVISION_Pos) ¢SCB_ICSR_NMIPENDSET_Pos 31 £SCB_ICSR_NMIPENDSET_Msk (1UL << SCB_ICSR_NMIPENDSET_Pos) ¥SCB_ICSR_PENDSVSET_Pos 28 ¦SCB_ICSR_PENDSVSET_Msk (1UL << SCB_ICSR_PENDSVSET_Pos) ¨SCB_ICSR_PENDSVCLR_Pos 27 ©SCB_ICSR_PENDSVCLR_Msk (1UL << SCB_ICSR_PENDSVCLR_Pos) «SCB_ICSR_PENDSTSET_Pos 26 ¬SCB_ICSR_PENDSTSET_Msk (1UL << SCB_ICSR_PENDSTSET_Pos) ®SCB_ICSR_PENDSTCLR_Pos 25 ¯SCB_ICSR_PENDSTCLR_Msk (1UL << SCB_ICSR_PENDSTCLR_Pos) ±SCB_ICSR_ISRPREEMPT_Pos 23 ²SCB_ICSR_ISRPREEMPT_Msk (1UL << SCB_ICSR_ISRPREEMPT_Pos) ´SCB_ICSR_ISRPENDING_Pos 22 µSCB_ICSR_ISRPENDING_Msk (1UL << SCB_ICSR_ISRPENDING_Pos) ·SCB_ICSR_VECTPENDING_Pos 12 ¸SCB_ICSR_VECTPENDING_Msk (0x1FFUL << SCB_ICSR_VECTPENDING_Pos) ºSCB_ICSR_RETTOBASE_Pos 11 »SCB_ICSR_RETTOBASE_Msk (1UL << SCB_ICSR_RETTOBASE_Pos) ½SCB_ICSR_VECTACTIVE_Pos 0 ¾SCB_ICSR_VECTACTIVE_Msk (0x1FFUL << SCB_ICSR_VECTACTIVE_Pos) ÁSCB_VTOR_TBLBASE_Pos 29 ÂSCB_VTOR_TBLBASE_Msk (1UL << SCB_VTOR_TBLBASE_Pos) ÄSCB_VTOR_TBLOFF_Pos 7 ÅSCB_VTOR_TBLOFF_Msk (0x3FFFFFUL << SCB_VTOR_TBLOFF_Pos) ÈSCB_AIRCR_VECTKEY_Pos 16 ÉSCB_AIRCR_VECTKEY_Msk (0xFFFFUL << SCB_AIRCR_VECTKEY_Pos) ËSCB_AIRCR_VECTKEYSTAT_Pos 16 ÌSCB_AIRCR_VECTKEYSTAT_Msk (0xFFFFUL << SCB_AIRCR_VECTKEYSTAT_Pos) ÎSCB_AIRCR_ENDIANESS_Pos 15 ÏSCB_AIRCR_ENDIANESS_Msk (1UL << SCB_AIRCR_ENDIANESS_Pos) ÑSCB_AIRCR_PRIGROUP_Pos 8 ÒSCB_AIRCR_PRIGROUP_Msk (7UL << SCB_AIRCR_PRIGROUP_Pos) ÔSCB_AIRCR_SYSRESETREQ_Pos 2 ÕSCB_AIRCR_SYSRESETREQ_Msk (1UL << SCB_AIRCR_SYSRESETREQ_Pos) ×SCB_AIRCR_VECTCLRACTIVE_Pos 1 ØSCB_AIRCR_VECTCLRACTIVE_Msk (1UL << SCB_AIRCR_VECTCLRACTIVE_Pos) ÚSCB_AIRCR_VECTRESET_Pos 0 ÛSCB_AIRCR_VECTRESET_Msk (1UL << SCB_AIRCR_VECTRESET_Pos) ÞSCB_SCR_SEVONPEND_Pos 4 ßSCB_SCR_SEVONPEND_Msk (1UL << SCB_SCR_SEVONPEND_Pos) áSCB_SCR_SLEEPDEEP_Pos 2 âSCB_SCR_SLEEPDEEP_Msk (1UL << SCB_SCR_SLEEPDEEP_Pos) äSCB_SCR_SLEEPONEXIT_Pos 1 åSCB_SCR_SLEEPONEXIT_Msk (1UL << SCB_SCR_SLEEPONEXIT_Pos) èSCB_CCR_STKALIGN_Pos 9 éSCB_CCR_STKALIGN_Msk (1UL << SCB_CCR_STKALIGN_Pos) ëSCB_CCR_BFHFNMIGN_Pos 8 ìSCB_CCR_BFHFNMIGN_Msk (1UL << SCB_CCR_BFHFNMIGN_Pos) îSCB_CCR_DIV_0_TRP_Pos 4 ïSCB_CCR_DIV_0_TRP_Msk (1UL << SCB_CCR_DIV_0_TRP_Pos) ñSCB_CCR_UNALIGN_TRP_Pos 3 òSCB_CCR_UNALIGN_TRP_Msk (1UL << SCB_CCR_UNALIGN_TRP_Pos) ôSCB_CCR_USERSETMPEND_Pos 1 õSCB_CCR_USERSETMPEND_Msk (1UL << SCB_CCR_USERSETMPEND_Pos) ÷SCB_CCR_NONBASETHRDENA_Pos 0 øSCB_CCR_NONBASETHRDENA_Msk (1UL << SCB_CCR_NONBASETHRDENA_Pos) ûSCB_SHCSR_USGFAULTENA_Pos 18 üSCB_SHCSR_USGFAULTENA_Msk (1UL << SCB_SHCSR_USGFAULTENA_Pos) þSCB_SHCSR_BUSFAULTENA_Pos 17 ÿSCB_SHCSR_BUSFAULTENA_Msk (1UL << SCB_SHCSR_BUSFAULTENA_Pos) SCB_SHCSR_MEMFAULTENA_Pos 16 ‚SCB_SHCSR_MEMFAULTENA_Msk (1UL << SCB_SHCSR_MEMFAULTENA_Pos) „SCB_SHCSR_SVCALLPENDED_Pos 15 …SCB_SHCSR_SVCALLPENDED_Msk (1UL << SCB_SHCSR_SVCALLPENDED_Pos) ‡SCB_SHCSR_BUSFAULTPENDED_Pos 14 ˆSCB_SHCSR_BUSFAULTPENDED_Msk (1UL << SCB_SHCSR_BUSFAULTPENDED_Pos) ŠSCB_SHCSR_MEMFAULTPENDED_Pos 13 ‹SCB_SHCSR_MEMFAULTPENDED_Msk (1UL << SCB_SHCSR_MEMFAULTPENDED_Pos) SCB_SHCSR_USGFAULTPENDED_Pos 12 ŽSCB_SHCSR_USGFAULTPENDED_Msk (1UL << SCB_SHCSR_USGFAULTPENDED_Pos) SCB_SHCSR_SYSTICKACT_Pos 11 ‘SCB_SHCSR_SYSTICKACT_Msk (1UL << SCB_SHCSR_SYSTICKACT_Pos) “SCB_SHCSR_PENDSVACT_Pos 10 ”SCB_SHCSR_PENDSVACT_Msk (1UL << SCB_SHCSR_PENDSVACT_Pos) –SCB_SHCSR_MONITORACT_Pos 8 —SCB_SHCSR_MONITORACT_Msk (1UL << SCB_SHCSR_MONITORACT_Pos) ™SCB_SHCSR_SVCALLACT_Pos 7 šSCB_SHCSR_SVCALLACT_Msk (1UL << SCB_SHCSR_SVCALLACT_Pos) œSCB_SHCSR_USGFAULTACT_Pos 3 SCB_SHCSR_USGFAULTACT_Msk (1UL << SCB_SHCSR_USGFAULTACT_Pos) ŸSCB_SHCSR_BUSFAULTACT_Pos 1  SCB_SHCSR_BUSFAULTACT_Msk (1UL << SCB_SHCSR_BUSFAULTACT_Pos) ¢SCB_SHCSR_MEMFAULTACT_Pos 0 £SCB_SHCSR_MEMFAULTACT_Msk (1UL << SCB_SHCSR_MEMFAULTACT_Pos) ¦SCB_CFSR_USGFAULTSR_Pos 16 §SCB_CFSR_USGFAULTSR_Msk (0xFFFFUL << SCB_CFSR_USGFAULTSR_Pos) ©SCB_CFSR_BUSFAULTSR_Pos 8 ªSCB_CFSR_BUSFAULTSR_Msk (0xFFUL << SCB_CFSR_BUSFAULTSR_Pos) ¬SCB_CFSR_MEMFAULTSR_Pos 0 ­SCB_CFSR_MEMFAULTSR_Msk (0xFFUL << SCB_CFSR_MEMFAULTSR_Pos) °SCB_HFSR_DEBUGEVT_Pos 31 ±SCB_HFSR_DEBUGEVT_Msk (1UL << SCB_HFSR_DEBUGEVT_Pos) ³SCB_HFSR_FORCED_Pos 30 ´SCB_HFSR_FORCED_Msk (1UL << SCB_HFSR_FORCED_Pos) ¶SCB_HFSR_VECTTBL_Pos 1 ·SCB_HFSR_VECTTBL_Msk (1UL << SCB_HFSR_VECTTBL_Pos) ºSCB_DFSR_EXTERNAL_Pos 4 »SCB_DFSR_EXTERNAL_Msk (1UL << SCB_DFSR_EXTERNAL_Pos) ½SCB_DFSR_VCATCH_Pos 3 ¾SCB_DFSR_VCATCH_Msk (1UL << SCB_DFSR_VCATCH_Pos) ÀSCB_DFSR_DWTTRAP_Pos 2 ÁSCB_DFSR_DWTTRAP_Msk (1UL << SCB_DFSR_DWTTRAP_Pos) ÃSCB_DFSR_BKPT_Pos 1 ÄSCB_DFSR_BKPT_Msk (1UL << SCB_DFSR_BKPT_Pos) ÆSCB_DFSR_HALTED_Pos 0 ÇSCB_DFSR_HALTED_Msk (1UL << SCB_DFSR_HALTED_Pos) ÝSysTick_CTRL_COUNTFLAG_Pos 16 ÞSysTick_CTRL_COUNTFLAG_Msk (1UL << SysTick_CTRL_COUNTFLAG_Pos) àSysTick_CTRL_CLKSOURCE_Pos 2 áSysTick_CTRL_CLKSOURCE_Msk (1UL << SysTick_CTRL_CLKSOURCE_Pos) ãSysTick_CTRL_TICKINT_Pos 1 äSysTick_CTRL_TICKINT_Msk (1UL << SysTick_CTRL_TICKINT_Pos) æSysTick_CTRL_ENABLE_Pos 0 çSysTick_CTRL_ENABLE_Msk (1UL << SysTick_CTRL_ENABLE_Pos) êSysTick_LOAD_RELOAD_Pos 0 ëSysTick_LOAD_RELOAD_Msk (0xFFFFFFUL << SysTick_LOAD_RELOAD_Pos) îSysTick_VAL_CURRENT_Pos 0 ïSysTick_VAL_CURRENT_Msk (0xFFFFFFUL << SysTick_VAL_CURRENT_Pos) òSysTick_CALIB_NOREF_Pos 31 óSysTick_CALIB_NOREF_Msk (1UL << SysTick_CALIB_NOREF_Pos) õSysTick_CALIB_SKEW_Pos 30 öSysTick_CALIB_SKEW_Msk (1UL << SysTick_CALIB_SKEW_Pos) øSysTick_CALIB_TENMS_Pos 0 ùSysTick_CALIB_TENMS_Msk (0xFFFFFFUL << SysTick_VAL_CURRENT_Pos) «ITM_TPR_PRIVMASK_Pos 0 ¬ITM_TPR_PRIVMASK_Msk (0xFUL << ITM_TPR_PRIVMASK_Pos) ¯ITM_TCR_BUSY_Pos 23 °ITM_TCR_BUSY_Msk (1UL << ITM_TCR_BUSY_Pos) ²ITM_TCR_ATBID_Pos 16 ³ITM_TCR_ATBID_Msk (0x7FUL << ITM_TCR_ATBID_Pos) µITM_TCR_TSPrescale_Pos 8 ¶ITM_TCR_TSPrescale_Msk (3UL << ITM_TCR_TSPrescale_Pos) ¸ITM_TCR_SWOENA_Pos 4 ¹ITM_TCR_SWOENA_Msk (1UL << ITM_TCR_SWOENA_Pos) »ITM_TCR_DWTENA_Pos 3 ¼ITM_TCR_DWTENA_Msk (1UL << ITM_TCR_DWTENA_Pos) ¾ITM_TCR_SYNCENA_Pos 2 ¿ITM_TCR_SYNCENA_Msk (1UL << ITM_TCR_SYNCENA_Pos) ÁITM_TCR_TSENA_Pos 1 ÂITM_TCR_TSENA_Msk (1UL << ITM_TCR_TSENA_Pos) ÄITM_TCR_ITMENA_Pos 0 ÅITM_TCR_ITMENA_Msk (1UL << ITM_TCR_ITMENA_Pos) ÈITM_IWR_ATVALIDM_Pos 0 ÉITM_IWR_ATVALIDM_Msk (1UL << ITM_IWR_ATVALIDM_Pos) ÌITM_IRR_ATREADYM_Pos 0 ÍITM_IRR_ATREADYM_Msk (1UL << ITM_IRR_ATREADYM_Pos) ÐITM_IMCR_INTEGRATION_Pos 0 ÑITM_IMCR_INTEGRATION_Msk (1UL << ITM_IMCR_INTEGRATION_Pos) ÔITM_LSR_ByteAcc_Pos 2 ÕITM_LSR_ByteAcc_Msk (1UL << ITM_LSR_ByteAcc_Pos) ×ITM_LSR_Access_Pos 1 ØITM_LSR_Access_Msk (1UL << ITM_LSR_Access_Pos) ÚITM_LSR_Present_Pos 0 ÛITM_LSR_Present_Msk (1UL << ITM_LSR_Present_Pos) ôIntType_ICTR_INTLINESNUM_Pos 0 õIntType_ICTR_INTLINESNUM_Msk (0x1FUL << IntType_ICTR_INTLINESNUM_Pos) øIntType_ACTLR_DISFOLD_Pos 2 ùIntType_ACTLR_DISFOLD_Msk (1UL << IntType_ACTLR_DISFOLD_Pos) ûIntType_ACTLR_DISDEFWBUF_Pos 1 üIntType_ACTLR_DISDEFWBUF_Msk (1UL << IntType_ACTLR_DISDEFWBUF_Pos) þIntType_ACTLR_DISMCYCINT_Pos 0 ÿIntType_ACTLR_DISMCYCINT_Msk (1UL << IntType_ACTLR_DISMCYCINT_Pos) MPU_TYPE_IREGION_Pos 16 žMPU_TYPE_IREGION_Msk (0xFFUL << MPU_TYPE_IREGION_Pos)  MPU_TYPE_DREGION_Pos 8 ¡MPU_TYPE_DREGION_Msk (0xFFUL << MPU_TYPE_DREGION_Pos) £MPU_TYPE_SEPARATE_Pos 0 ¤MPU_TYPE_SEPARATE_Msk (1UL << MPU_TYPE_SEPARATE_Pos) §MPU_CTRL_PRIVDEFENA_Pos 2 ¨MPU_CTRL_PRIVDEFENA_Msk (1UL << MPU_CTRL_PRIVDEFENA_Pos) ªMPU_CTRL_HFNMIENA_Pos 1 «MPU_CTRL_HFNMIENA_Msk (1UL << MPU_CTRL_HFNMIENA_Pos) ­MPU_CTRL_ENABLE_Pos 0 ®MPU_CTRL_ENABLE_Msk (1UL << MPU_CTRL_ENABLE_Pos) ±MPU_RNR_REGION_Pos 0 ²MPU_RNR_REGION_Msk (0xFFUL << MPU_RNR_REGION_Pos) µMPU_RBAR_ADDR_Pos 5 ¶MPU_RBAR_ADDR_Msk (0x7FFFFFFUL << MPU_RBAR_ADDR_Pos) ¸MPU_RBAR_VALID_Pos 4 ¹MPU_RBAR_VALID_Msk (1UL << MPU_RBAR_VALID_Pos) »MPU_RBAR_REGION_Pos 0 ¼MPU_RBAR_REGION_Msk (0xFUL << MPU_RBAR_REGION_Pos) ¿MPU_RASR_XN_Pos 28 ÀMPU_RASR_XN_Msk (1UL << MPU_RASR_XN_Pos) ÂMPU_RASR_AP_Pos 24 ÃMPU_RASR_AP_Msk (7UL << MPU_RASR_AP_Pos) ÅMPU_RASR_TEX_Pos 19 ÆMPU_RASR_TEX_Msk (7UL << MPU_RASR_TEX_Pos) ÈMPU_RASR_S_Pos 18 ÉMPU_RASR_S_Msk (1UL << MPU_RASR_S_Pos) ËMPU_RASR_C_Pos 17 ÌMPU_RASR_C_Msk (1UL << MPU_RASR_C_Pos) ÎMPU_RASR_B_Pos 16 ÏMPU_RASR_B_Msk (1UL << MPU_RASR_B_Pos) ÑMPU_RASR_SRD_Pos 8 ÒMPU_RASR_SRD_Msk (0xFFUL << MPU_RASR_SRD_Pos) ÔMPU_RASR_SIZE_Pos 1 ÕMPU_RASR_SIZE_Msk (0x1FUL << MPU_RASR_SIZE_Pos) ×MPU_RASR_ENA_Pos 0 ØMPU_RASR_ENA_Msk (0x1UL << MPU_RASR_ENA_Pos) ïCoreDebug_DHCSR_DBGKEY_Pos 16 ðCoreDebug_DHCSR_DBGKEY_Msk (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos) òCoreDebug_DHCSR_S_RESET_ST_Pos 25 óCoreDebug_DHCSR_S_RESET_ST_Msk (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos) õCoreDebug_DHCSR_S_RETIRE_ST_Pos 24 öCoreDebug_DHCSR_S_RETIRE_ST_Msk (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos) øCoreDebug_DHCSR_S_LOCKUP_Pos 19 ùCoreDebug_DHCSR_S_LOCKUP_Msk (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos) ûCoreDebug_DHCSR_S_SLEEP_Pos 18 üCoreDebug_DHCSR_S_SLEEP_Msk (1UL << CoreDebug_DHCSR_S_SLEEP_Pos) þCoreDebug_DHCSR_S_HALT_Pos 17 ÿCoreDebug_DHCSR_S_HALT_Msk (1UL << CoreDebug_DHCSR_S_HALT_Pos) CoreDebug_DHCSR_S_REGRDY_Pos 16 ‚CoreDebug_DHCSR_S_REGRDY_Msk (1UL << CoreDebug_DHCSR_S_REGRDY_Pos) „CoreDebug_DHCSR_C_SNAPSTALL_Pos 5 …CoreDebug_DHCSR_C_SNAPSTALL_Msk (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos) ‡CoreDebug_DHCSR_C_MASKINTS_Pos 3 ˆCoreDebug_DHCSR_C_MASKINTS_Msk (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos) ŠCoreDebug_DHCSR_C_STEP_Pos 2 ‹CoreDebug_DHCSR_C_STEP_Msk (1UL << CoreDebug_DHCSR_C_STEP_Pos) CoreDebug_DHCSR_C_HALT_Pos 1 ŽCoreDebug_DHCSR_C_HALT_Msk (1UL << CoreDebug_DHCSR_C_HALT_Pos) CoreDebug_DHCSR_C_DEBUGEN_Pos 0 ‘CoreDebug_DHCSR_C_DEBUGEN_Msk (1UL << CoreDebug_DHCSR_C_DEBUGEN_Pos) ”CoreDebug_DCRSR_REGWnR_Pos 16 •CoreDebug_DCRSR_REGWnR_Msk (1UL << CoreDebug_DCRSR_REGWnR_Pos) —CoreDebug_DCRSR_REGSEL_Pos 0 ˜CoreDebug_DCRSR_REGSEL_Msk (0x1FUL << CoreDebug_DCRSR_REGSEL_Pos) ›CoreDebug_DEMCR_TRCENA_Pos 24 œCoreDebug_DEMCR_TRCENA_Msk (1UL << CoreDebug_DEMCR_TRCENA_Pos) žCoreDebug_DEMCR_MON_REQ_Pos 19 ŸCoreDebug_DEMCR_MON_REQ_Msk (1UL << CoreDebug_DEMCR_MON_REQ_Pos) ¡CoreDebug_DEMCR_MON_STEP_Pos 18 ¢CoreDebug_DEMCR_MON_STEP_Msk (1UL << CoreDebug_DEMCR_MON_STEP_Pos) ¤CoreDebug_DEMCR_MON_PEND_Pos 17 ¥CoreDebug_DEMCR_MON_PEND_Msk (1UL << CoreDebug_DEMCR_MON_PEND_Pos) §CoreDebug_DEMCR_MON_EN_Pos 16 ¨CoreDebug_DEMCR_MON_EN_Msk (1UL << CoreDebug_DEMCR_MON_EN_Pos) ªCoreDebug_DEMCR_VC_HARDERR_Pos 10 «CoreDebug_DEMCR_VC_HARDERR_Msk (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos) ­CoreDebug_DEMCR_VC_INTERR_Pos 9 ®CoreDebug_DEMCR_VC_INTERR_Msk (1UL << CoreDebug_DEMCR_VC_INTERR_Pos) °CoreDebug_DEMCR_VC_BUSERR_Pos 8 ±CoreDebug_DEMCR_VC_BUSERR_Msk (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos) ³CoreDebug_DEMCR_VC_STATERR_Pos 7 ´CoreDebug_DEMCR_VC_STATERR_Msk (1UL << CoreDebug_DEMCR_VC_STATERR_Pos) ¶CoreDebug_DEMCR_VC_CHKERR_Pos 6 ·CoreDebug_DEMCR_VC_CHKERR_Msk (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos) ¹CoreDebug_DEMCR_VC_NOCPERR_Pos 5 ºCoreDebug_DEMCR_VC_NOCPERR_Msk (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos) ¼CoreDebug_DEMCR_VC_MMERR_Pos 4 ½CoreDebug_DEMCR_VC_MMERR_Msk (1UL << CoreDebug_DEMCR_VC_MMERR_Pos) ¿CoreDebug_DEMCR_VC_CORERESET_Pos 0 ÀCoreDebug_DEMCR_VC_CORERESET_Msk (1UL << CoreDebug_DEMCR_VC_CORERESET_Pos) ÊSCS_BASE (0xE000E000UL) ËITM_BASE (0xE0000000UL) ÌCoreDebug_BASE (0xE000EDF0UL) ÍSysTick_BASE (SCS_BASE + 0x0010UL) ÎNVIC_BASE (SCS_BASE + 0x0100UL) ÏSCB_BASE (SCS_BASE + 0x0D00UL) ÑInterruptType ((InterruptType_Type *) SCS_BASE) ÒSCB ((SCB_Type *) SCB_BASE) ÓSysTick ((SysTick_Type *) SysTick_BASE) ÔNVIC ((NVIC_Type *) NVIC_BASE) ÕITM ((ITM_Type *) ITM_BASE) ÖCoreDebug ((CoreDebug_Type *) CoreDebug_BASE) ÙMPU_BASE (SCS_BASE + 0x0D90UL) ÚMPU ((MPU_Type*) MPU_BASE) ‹	ITM_RXBUFFER_EMPTY 0x5AA55AA5     Œ    ƒ     
+       C:\Keil4\ARM\CMSIS\Include\ C:\Keil4\ARM\RV31\INC\  core_cm3.h   stdint.h   core_cmInstr.h   core_cmFunc.h     ø       C:\Keil4\ARM\CMSIS\Include\core_cm3.h ARM C/C++ Compiler, 4.1 [Build 713]          *Â!_reserved0 $  # !Q $  # !V $  # !C $  # !Z $  # !N $  #   SÔb `w $   PAPSR_Type Â ž*’!ISR $  # 	!_reserved0 $  #   S¥b æ w $   PIPSR_Type «*Æ!ISR $  # 	!_reserved0 $  # !T $  #  !IT $  # !Q $  # !V $  # !C $  # !Z $  # !N $  #   SÙb 7w $   PxPSR_Type ÆÅ*¼!nPRIV $  # !SPSEL $  # !FPCA $  # !_reserved0 $  #   SÏb ëw $   PCONTROL_Type <Ô*¦ „ò¦  ISER i# ‰$   RESERVED0 ~# £¦  ICER š#€»$   RSERVED1 °# Õ¦  ISPR Ì#€í$   RESERVED2 â# ˆ¦  ICPR ÿ#€ $   RESERVED3 # »¦  IABR 2#€Ó$  7 RESERVED4 H# ï¬ï IP e#€† $  ƒ RESERVED5 z#ð STIR ¦#€ t$  t  PNVIC_Type dð*Ï	tCPUID Õ# ICSR ¦#VTOR ¦#AIRCR ¦#SCR ¦#CCR ¦#™¬
+ SHP #SHCSR ¦#$CFSR ¦#(HFSR ¦#,DFSR ¦#0MMFAR ¦#4BFAR ¦#8AFSR ¦#<ƒ	Õ PFR z#@DFR Õ#HADR Õ#L­	Õ MMFR ¤#PÂ	Õ ISAR ¹#` $  tÏPSCB_Type Ä’*Ÿ
+CTRL ¦# LOAD ¦#VAL ¦#CALIB Õ# PSysTick_Type êÚSÐ
+u8 ¬u16 Pu32 ¦ t  *€ ä
+  PORT [# ü
+$  ß RESERVED0 p#€TER ¦#€¥
+$   RESERVED1 š#„TPR ¦#ÀÎ
+$   RESERVED2 Ã#ÄTCR ¦#€÷
+$   RESERVED3 ì#„IWR ¦#øIRR ¦#üIMCR ¦#€¹$  * RESERVED4 .#„LAR ¦#°LSR ¦#´î$   RESERVED5 c#¸PID4 Õ#ÐPID5 Õ#ÔPID6 Õ#ØPID7 Õ#ÜPID0 Õ#àPID1 Õ#äPID2 Õ#èPID3 Õ#ìCID0 Õ#ðCID1 Õ#ôCID2 Õ#øCID3 Õ#ü t4PITM_Type V¨*éRESERVED0 $  # ICTR Õ#RESERVED1 $  # PInterruptType_Type 2 ñ*ž,TYPE Õ# CTRL ¦#RNR ¦#RBAR ¦#RASR ¦#RBAR_A1 ¦#RASR_A1 ¦#RBAR_A2 ¦#RASR_A2 ¦# RBAR_A3 ¦#$RASR_A3 ¦#( PMPU_Type „ š*èDHCSR ¦# DCRSR ¦#DCRDR ¦#DEMCR ¦# PCoreDebug_Type /ìté   qITM_RxBuffer <õþNVIC_SetPriorityGrouping  $$  PriorityGroup \reg_value $  \PriorityGroupTmp $   ;¬“ NVIC_GetPriorityGrouping  $  a__result $   <Ï  NVIC_EnableIRQ  $²  IRQn  <ó­ NVIC_DisableIRQ  $²  IRQn  ;¯¼ NVIC_GetPendingIRQ  $  $²  IRQn a__result $   <ÖÉ NVIC_SetPendingIRQ  $²  IRQn  <ÿÖ NVIC_ClearPendingIRQ  $²  IRQn  ;·ã NVIC_GetActive  $  $²  IRQn a__result $   <ëô NVIC_SetPriority  $²  IRQn $$  priority  ;¥‰NVIC_GetPriority  $  $²  IRQn a__result $   ;Ú¡NVIC_EncodePriority  $  $$  PriorityGroup $$  PreemptPriority $$  SubPriority a__result $  \PriorityGroupTmp $  \PreemptPriorityBits $  \SubPriorityBits $   <‡¿NVIC_DecodePriority  $$  Priority $$  PriorityGroup $ pPreemptPriority $ pSubPriority \PriorityGroupTmp $  \PreemptPriorityBits $  \SubPriorityBits $   "$  <§ÑNVIC_SystemReset   ;àñSysTick_Config  $  $$  ticks a__result $   ;”—	ITM_SendChar  $  $$  ch a__result $   ;Ë­	ITM_ReceiveChar  é   a__result é   \ch é    ;÷Á	ITM_CheckChar  é   a__result é                 ü  …  ITM_RxBuffer         %   &   '   (    __SYSTEM_LPC17xx_H  !  t    h     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\ C:\Keil4\ARM\RV31\INC\  system_LPC17xx.h   stdint.h     €        C:\Keil4\ARM\INC\NXP\LPC17xx\system_LPC17xx.h ARM C/C++ Compiler, 4.1 [Build 713]          qSystemCoreClock $      "        „   h   SystemCoreClock          *   +   ,    __LPC17xx_H__  b__MPU_PRESENT 1 c__NVIC_PRIO_BITS 5 d__Vendor_SysTickConfig 0 gh” LPC_FLASH_BASE (0x00000000UL) • LPC_RAM_BASE (0x10000000UL) š LPC_AHBRAM0_BASE (0x2007C000UL) › LPC_AHBRAM1_BASE (0x20080000UL)  LPC_GPIO_BASE (0x2009C000UL) ž LPC_APB0_BASE (0x40000000UL) Ÿ LPC_APB1_BASE (0x40080000UL)   LPC_AHB_BASE (0x50000000UL) ¡ LPC_CM3_BASE (0xE0000000UL) ¤ LPC_WDT_BASE (LPC_APB0_BASE + 0x00000) ¥ LPC_TIM0_BASE (LPC_APB0_BASE + 0x04000) ¦ LPC_TIM1_BASE (LPC_APB0_BASE + 0x08000) § LPC_UART0_BASE (LPC_APB0_BASE + 0x0C000) ¨ LPC_UART1_BASE (LPC_APB0_BASE + 0x10000) © LPC_PWM1_BASE (LPC_APB0_BASE + 0x18000) ª LPC_I2C0_BASE (LPC_APB0_BASE + 0x1C000) « LPC_SPI_BASE (LPC_APB0_BASE + 0x20000) ¬ LPC_RTC_BASE (LPC_APB0_BASE + 0x24000) ­ LPC_GPIOINT_BASE (LPC_APB0_BASE + 0x28080) ® LPC_PINCON_BASE (LPC_APB0_BASE + 0x2C000) ¯ LPC_SSP1_BASE (LPC_APB0_BASE + 0x30000) ° LPC_ADC_BASE (LPC_APB0_BASE + 0x34000) ± LPC_CANAF_RAM_BASE (LPC_APB0_BASE + 0x38000) ² LPC_CANAF_BASE (LPC_APB0_BASE + 0x3C000) ³ LPC_CANCR_BASE (LPC_APB0_BASE + 0x40000) ´ LPC_CAN1_BASE (LPC_APB0_BASE + 0x44000) µ LPC_CAN2_BASE (LPC_APB0_BASE + 0x48000) ¶ LPC_I2C1_BASE (LPC_APB0_BASE + 0x5C000) ¹ LPC_SSP0_BASE (LPC_APB1_BASE + 0x08000) º LPC_DAC_BASE (LPC_APB1_BASE + 0x0C000) » LPC_TIM2_BASE (LPC_APB1_BASE + 0x10000) ¼ LPC_TIM3_BASE (LPC_APB1_BASE + 0x14000) ½ LPC_UART2_BASE (LPC_APB1_BASE + 0x18000) ¾ LPC_UART3_BASE (LPC_APB1_BASE + 0x1C000) ¿ LPC_I2C2_BASE (LPC_APB1_BASE + 0x20000) À LPC_I2S_BASE (LPC_APB1_BASE + 0x28000) Á LPC_RIT_BASE (LPC_APB1_BASE + 0x30000) Â LPC_MCPWM_BASE (LPC_APB1_BASE + 0x38000) Ã LPC_QEI_BASE (LPC_APB1_BASE + 0x3C000) Ä LPC_SC_BASE (LPC_APB1_BASE + 0x7C000) Ç LPC_EMAC_BASE (LPC_AHB_BASE + 0x00000) È LPC_GPDMA_BASE (LPC_AHB_BASE + 0x04000) É LPC_GPDMACH0_BASE (LPC_AHB_BASE + 0x04100) Ê LPC_GPDMACH1_BASE (LPC_AHB_BASE + 0x04120) Ë LPC_GPDMACH2_BASE (LPC_AHB_BASE + 0x04140) Ì LPC_GPDMACH3_BASE (LPC_AHB_BASE + 0x04160) Í LPC_GPDMACH4_BASE (LPC_AHB_BASE + 0x04180) Î LPC_GPDMACH5_BASE (LPC_AHB_BASE + 0x041A0) Ï LPC_GPDMACH6_BASE (LPC_AHB_BASE + 0x041C0) Ð LPC_GPDMACH7_BASE (LPC_AHB_BASE + 0x041E0) Ñ LPC_USB_BASE (LPC_AHB_BASE + 0x0C000) Ô LPC_GPIO0_BASE (LPC_GPIO_BASE + 0x00000) Õ LPC_GPIO1_BASE (LPC_GPIO_BASE + 0x00020) Ö LPC_GPIO2_BASE (LPC_GPIO_BASE + 0x00040) × LPC_GPIO3_BASE (LPC_GPIO_BASE + 0x00060) Ø LPC_GPIO4_BASE (LPC_GPIO_BASE + 0x00080) Ý LPC_SC ((LPC_SC_TypeDef *) LPC_SC_BASE ) Þ LPC_GPIO0 ((LPC_GPIO_TypeDef *) LPC_GPIO0_BASE ) ß LPC_GPIO1 ((LPC_GPIO_TypeDef *) LPC_GPIO1_BASE ) à LPC_GPIO2 ((LPC_GPIO_TypeDef *) LPC_GPIO2_BASE ) á LPC_GPIO3 ((LPC_GPIO_TypeDef *) LPC_GPIO3_BASE ) â LPC_GPIO4 ((LPC_GPIO_TypeDef *) LPC_GPIO4_BASE ) ã LPC_WDT ((LPC_WDT_TypeDef *) LPC_WDT_BASE ) ä LPC_TIM0 ((LPC_TIM_TypeDef *) LPC_TIM0_BASE ) å LPC_TIM1 ((LPC_TIM_TypeDef *) LPC_TIM1_BASE ) æ LPC_TIM2 ((LPC_TIM_TypeDef *) LPC_TIM2_BASE ) ç LPC_TIM3 ((LPC_TIM_TypeDef *) LPC_TIM3_BASE ) è LPC_RIT ((LPC_RIT_TypeDef *) LPC_RIT_BASE ) é LPC_UART0 ((LPC_UART_TypeDef *) LPC_UART0_BASE ) ê LPC_UART1 ((LPC_UART1_TypeDef *) LPC_UART1_BASE ) ë LPC_UART2 ((LPC_UART_TypeDef *) LPC_UART2_BASE ) ì LPC_UART3 ((LPC_UART_TypeDef *) LPC_UART3_BASE ) í LPC_PWM1 ((LPC_PWM_TypeDef *) LPC_PWM1_BASE ) î LPC_I2C0 ((LPC_I2C_TypeDef *) LPC_I2C0_BASE ) ï LPC_I2C1 ((LPC_I2C_TypeDef *) LPC_I2C1_BASE ) ð LPC_I2C2 ((LPC_I2C_TypeDef *) LPC_I2C2_BASE ) ñ LPC_I2S ((LPC_I2S_TypeDef *) LPC_I2S_BASE ) ò LPC_SPI ((LPC_SPI_TypeDef *) LPC_SPI_BASE ) ó LPC_RTC ((LPC_RTC_TypeDef *) LPC_RTC_BASE ) ô LPC_GPIOINT ((LPC_GPIOINT_TypeDef *) LPC_GPIOINT_BASE ) õ LPC_PINCON ((LPC_PINCON_TypeDef *) LPC_PINCON_BASE ) ö LPC_SSP0 ((LPC_SSP_TypeDef *) LPC_SSP0_BASE ) ÷ LPC_SSP1 ((LPC_SSP_TypeDef *) LPC_SSP1_BASE ) ø LPC_ADC ((LPC_ADC_TypeDef *) LPC_ADC_BASE ) ù LPC_DAC ((LPC_DAC_TypeDef *) LPC_DAC_BASE ) ú LPC_CANAF_RAM ((LPC_CANAF_RAM_TypeDef *) LPC_CANAF_RAM_BASE) û LPC_CANAF ((LPC_CANAF_TypeDef *) LPC_CANAF_BASE ) ü LPC_CANCR ((LPC_CANCR_TypeDef *) LPC_CANCR_BASE ) ý LPC_CAN1 ((LPC_CAN_TypeDef *) LPC_CAN1_BASE ) þ LPC_CAN2 ((LPC_CAN_TypeDef *) LPC_CAN2_BASE ) ÿ LPC_MCPWM ((LPC_MCPWM_TypeDef *) LPC_MCPWM_BASE ) €LPC_QEI ((LPC_QEI_TypeDef *) LPC_QEI_BASE ) LPC_EMAC ((LPC_EMAC_TypeDef *) LPC_EMAC_BASE ) ‚LPC_GPDMA ((LPC_GPDMA_TypeDef *) LPC_GPDMA_BASE ) ƒLPC_GPDMACH0 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH0_BASE ) „LPC_GPDMACH1 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH1_BASE ) …LPC_GPDMACH2 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH2_BASE ) †LPC_GPDMACH3 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH3_BASE ) ‡LPC_GPDMACH4 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH4_BASE ) ˆLPC_GPDMACH5 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH5_BASE ) ‰LPC_GPDMACH6 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH6_BASE ) ŠLPC_GPDMACH7 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH7_BASE ) ‹LPC_USB ((LPC_USB_TypeDef *) LPC_USB_BASE )   ˆ    |     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\ C:\Keil4\ARM\CMSIS\Include\  lpc17xx.h   core_cm3.h   system_LPC17xx.h      -       C:\Keil4\ARM\INC\NXP\LPC17xx\lpc17xx.h ARM C/C++ Compiler, 4.1 [Build 713]          ²IRQn NonMaskableInt_IRQn rMemoryManagement_IRQn tBusFault_IRQn uUsageFault_IRQn vSVCall_IRQn {DebugMonitor_IRQn |PendSV_IRQn ~SysTick_IRQn WDT_IRQn  TIMER0_IRQn TIMER1_IRQn TIMER2_IRQn TIMER3_IRQn UART0_IRQn UART1_IRQn UART2_IRQn  UART3_IRQn PWM1_IRQn 	I2C0_IRQn 
+I2C1_IRQn 
+I2C2_IRQn SPI_IRQn 
+SSP0_IRQn SSP1_IRQn PLL0_IRQn RTC_IRQn EINT0_IRQn EINT1_IRQn EINT2_IRQn EINT3_IRQn ADC_IRQn BOD_IRQn USB_IRQn CAN_IRQn DMA_IRQn I2S_IRQn ENET_IRQn RIT_IRQn MCPWM_IRQn QEI_IRQn PLL1_IRQn  USBActivity_IRQn !CANActivity_IRQn " PIRQn_Type aX*ÿ
+ÌFLASHCFG # â$   RESERVED0 ×#PLL0CON #€PLL0CFG #„PLL0STAT ‹#ˆPLL0FEED #ŒÀ$   RESERVED1 5#PLL1CON # PLL1CFG #¤PLL1STAT ‹#¨PLL1FEED #¬Ÿ $   RESERVED2 ”#°PCON #ÀPCONP #Ä× $   RESERVED3 Ì#ÈCCLKCFG #„USBCLKCFG #ˆCLKSRCSEL #ŒCANSLEEPCLR #CANWAKEFLAGS #”Ñ$  	 RESERVED4 F#˜EXTINT #ÀRESERVED5 $  #ÄEXTMODE #ÈEXTPOLAR #Ì²	$  
+ RESERVED6 §#ÐRSID #€Ü	$   RESERVED7 Ñ#„SCS # IRCTRIM #¤PCLKSEL0 #¨PCLKSEL1 #¬·
+$   RESERVED8 ,#°USBIntSt #ÀDMAREQSEL #ÄCLKOUTCFG #È t$  $  t…PLPC_SC_TypeDef Â›*þ€PINSEL0 # PINSEL1 #PINSEL2 #PINSEL3 #PINSEL4 #PINSEL5 #PINSEL6 #PINSEL7 #PINSEL8 # PINSEL9 #$PINSEL10 #(Ü$   RESERVED0 Q#,PINMODE0 #@PINMODE1 #DPINMODE2 #HPINMODE3 #LPINMODE4 #PPINMODE5 #TPINMODE6 #XPINMODE7 #\PINMODE8 #`PINMODE9 #dPINMODE_OD0 #hPINMODE_OD1 #lPINMODE_OD2 #pPINMODE_OD3 #tPINMODE_OD4 #xI2CPADCFG #| PLPC_PINCON_TypeDef ¦½*¼FIODIRL ¼ # FIODIRH ¼ # t  *ƒFIODIR0 # FIODIR1 #FIODIR2 #FIODIR3 # t  S£FIODIR  ™  Â  *ÈFIOMASKL ¼ # FIOMASKH ¼ # *FIOMASK0 # FIOMASK1 #FIOMASK2 #FIOMASK3 # S¨FIOMASK  # H *ËFIOPINL ¼ # FIOPINH ¼ # *ŒFIOPIN0 # FIOPIN1 #FIOPIN2 #FIOPIN3 # S¦FIOPIN  ¨ Ë *ÉFIOSETL ¼ # FIOSETH ¼ # *ŠFIOSET0 # FIOSET1 #FIOSET2 #FIOSET3 # S¤FIOSET  &	 I	 *ÇFIOCLRL ¼ # FIOCLRH ¼ # *ˆFIOCLR0 # FIOCLR1 #FIOCLR2 #FIOCLR3 # S¢FIOCLR  ¤	 Ç	 *ë  	# ¹$   RESERVED0 .
+# # 	# Š	# 
+# PLPC_GPIO_TypeDef "
+…*è8IntStatus ‹# IO0IntStatR ‹#IO0IntStatF ‹#IO0IntClr #IO0IntEnR #IO0IntEnF #ý$   RESERVED0 ò
+#IO2IntStatR ‹#$IO2IntStatF ‹#(IO2IntClr #,IO2IntEnR #0IO2IntEnF #4 PLPC_GPIOINT_TypeDef „
+–*ãtIR # TCR #TC #PR #PC #MCR #MR0 #MR1 #MR2 # MR3 #$CCR #(CR0 ‹#,CR1 ‹#0ž$   RESERVED0 #4EMR #<Å$  
+ RESERVED1 :#@CTCR #p PLPC_TIM_TypeDef „
+­*“tIR # TCR #TC #PR #PC #MCR #MR0 #MR1 #MR2 # MR3 #$CCR #(CR0 ‹#,CR1 ‹#0CR2 ‹#4CR3 ‹#8RESERVED0 $  #<MR4 #@MR5 #DMR6 #HPCR #LLER #Põ$   RESERVED1 j
+#TCTCR #p PLPC_PWM_TypeDef {ÊSØRBR Þ
+THR DLL RESERVED0 $     tØ
+S÷DLM IER  SŒIIR ‹FCR  *‚4 «
+#  â
+# ÷
+#LCR #¾   RESERVED1 3#
+LSR Þ
+#å   RESERVED2 Z#SCR #Œ   RESERVED3 #ACR # ICR #$¾   RESERVED4 ³#%FDR #(å   RESERVED5 Ú#)TER #0 PLPC_UART_TypeDef êSÈRBR Þ
+THR DLL RESERVED0 $   SÝDLM IER  SòIIR ‹FCR  *Ÿ"X #  H# ]#LCR #¤   RESERVED1 ™#
+MCR #Ë   RESERVED2 À#LSR Þ
+#ò   RESERVED3 ç#MSR Þ
+#™    RESERVED4 #SCR #À    RESERVED5 5#ACR # RESERVED6 $  #$FDR #(RESERVED7 $  #,TER #0£!   RESERVED8 ˜#1RS485CTRL #LÐ!   RESERVED9 Å#MADRMATCH #Pü!   RESERVED10 ñ#QRS485DLY #T PLPC_UART1_TypeDef r’*˜# SPCR # SPSR ‹#SPDR #SPCCR #ù"$   RESERVED0 n#SPINT # PLPC_SPI_TypeDef 9ž*¥$(CR0 # CR1 #DR #SR ‹#CPSR #IMSC #RIS #MIS #ICR # DMACR #$ PLPC_SSP_TypeDef °®*°&@I2CONSET # I2STAT ‹#I2DAT #I2ADR0 #I2SCLH #I2SCLL #I2CONCLR #MMCTRL #I2ADR1 # I2ADR2 #$I2ADR3 #(I2DATA_BUFFER ‹#,I2MASK0 #0I2MASK1 #4I2MASK2 #8I2MASK3 #< PLPC_I2C_TypeDef =Ä*³(8I2SDAO # I2SDAI #I2STXFIFO #I2SRXFIFO ‹#I2SSTATE ‹#I2SDMA1 #I2SDMA2 #I2SIRQ #I2STXRATE # I2SRXRATE #$I2STXBITRATE #(I2SRXBITRATE #,I2STXMODE #0I2SRXMODE #4 PLPC_I2S_TypeDef HØ*ª)RICOMPVAL # RIMASK #RICTRL #‡)   RESERVED0 |#	RICOUNTER # PLPC_RIT_TypeDef Kã*®1€ILR # Ý)   RESERVED0 Ò#CCR #„*   RESERVED1 ù#	CIIR #¬*   RESERVED2 !#
+AMR #Ó*   RESERVED3 H#CTIME0 ‹#CTIME1 ‹#CTIME2 ‹#SEC # ¤+   RESERVED4 ™#!MIN #$Ë+   RESERVED5 À#%HOUR #(ó+   RESERVED6 è#)DOM #,š,   RESERVED7 #-DOW #0Á,   RESERVED8 6#1DOY ¼ #4RESERVED9   #6MONTH #8ˆ-   RESERVED10 }#9YEAR ¼ #<RESERVED11   #>CALIBRATION #@GPREG0 #DGPREG1 #HGPREG2 #LGPREG3 #PGPREG4 #TRTC_AUXEN #X¯.   RESERVED12 $#YRTC_AUX #\Û.   RESERVED13 P#]ALSEC #`…/   RESERVED14 z#aALMIN #d¯/   RESERVED15 ¤#eALHOUR #hÚ/   RESERVED16 Ï#iALDOM #l„0   RESERVED17 ù#mALDOW #p®0   RESERVED18 ##qALDOY ¼ #tRESERVED19   #vALMON #xù0   RESERVED20 n#yALYEAR ¼ #|RESERVED21   #~ PLPC_RTC_TypeDef Âž*Æ2WDMOD # â1   RESERVED0 ×#WDTC #WDFEED #˜2   RESERVED1 
+#	WDTV ‹#WDCLKSEL # PLPC_WDT_TypeDef Æ«*¡48ADCR # ADGDR #RESERVED0 $  #ADINTEN #ADDR0 ‹#ADDR1 ‹#ADDR2 ‹#ADDR3 ‹#ADDR4 ‹# ADDR5 ‹#$ADDR6 ‹#(ADDR7 ‹#,ADSTAT ‹#0ADTRM #4 PLPC_ADC_TypeDef ^¿*ê4DACR # DACCTRL #DACCNTVAL ¼ # PLPC_DAC_TypeDef 9È*è8xMCCON ‹# MCCON_SET #MCCON_CLR #MCCAPCON ‹#MCCAPCON_SET #MCCAPCON_CLR #MCTIM0 #MCTIM1 #MCTIM2 # MCPER0 #$MCPER1 #(MCPER2 #,MCPW0 #0MCPW1 #4MCPW2 #8MCDEADTIME #<MCCCP #@MCCR0 #DMCCR1 #HMCCR2 #LMCINTEN ‹#PMCINTEN_SET #TMCINTEN_CLR #XMCCNTCON ‹#\MCCNTCON_SET #`MCCNTCON_CLR #dMCINTFLAG ‹#hMCINTFLAG_SET #lMCINTFLAG_CLR #pMCCAP_CLR #t PLPC_MCPWM_TypeDef ‚ì*ê;ðQEICON # QEISTAT ‹#QEICONF #QEIPOS ‹#QEIMAXPOS #CMPOS0 #CMPOS1 #CMPOS2 #INXCNT ‹# INXCMP #$QEILOAD #(QEITIME ‹#,QEIVEL ‹#0QEICAP ‹#4VELCOMP #8FILTER #<û:$  å  RESERVED0 o#@QEIIEC #ØQEIIES #ÜQEIINTSTAT ‹#àQEIIE ‹#äQEICLR #èQEISET #ì PLPC_QEI_TypeDef ‚‰*ž<€‘<ÿ mask  #  PLPC_CANAF_RAM_TypeDef *é=,AFMR # SFF_sa #SFF_GRP_sa #EFF_sa #EFF_GRP_sa #ENDofTable #LUTerrAd ‹#LUTerr ‹#FCANIE # FCANIC0 #$FCANIC1 #( PLPC_CANAF_TypeDef < *´>CANTxSR ‹# CANRxSR ‹#CANMSR ‹# PLPC_CANCR_TypeDef ¨*æ@`MOD # CMR #GSR #ICR ‹#IER #BTR #EWL #SR ‹#RFS # RID #$RDA #(RDB #,TFI1 #0TID1 #4TDA1 #8TDB1 #<TFI2 #@TID2 #DTDA2 #HTDB2 #LTFI3 #PTID3 #TTDA3 #XTDB3 #\ PLPC_CAN_TypeDef NÅ*¦C8DMACIntStat ‹# DMACIntTCStat ‹#DMACIntTCClear #DMACIntErrStat ‹#DMACIntErrClr #DMACRawIntTCStat ‹#DMACRawIntErrStat ‹#DMACEnbldChns ‹#DMACSoftBReq # DMACSoftSReq #$DMACSoftLBReq #(DMACSoftLSReq #,DMACConfig #0DMACSync #4 PLPC_GPDMA_TypeDef ~ Ù*¥DDMACCSrcAddr # DMACCDestAddr #DMACCLLI #DMACCControl #DMACCConfig # PLPC_GPDMACH_TypeDef À!ãSÜDI2C_RX ‹I2C_TX  SÿDUSBClkCtrl OTGClkCtrl  SžEUSBClkSt ‹OTGClkSt ‹ *†RüHcRevision ‹# HcControl #HcCommandStatus #HcInterruptStatus #HcInterruptEnable #HcInterruptDisable #HcHCCA #HcPeriodCurrentED ‹#HcControlHeadED # HcControlCurrentED #$HcBulkHeadED #(HcBulkCurrentED #,HcDoneHead ‹#0HcFmInterval #4HcFmRemaining ‹#8HcFmNumber ‹#<HcPeriodicStart #@HcLSTreshold #DHcRhDescriptorA #HHcRhDescriptorB #LHcRhStatus #PHcRhPortStatus1 #THcRhPortStatus2 #XI$  ' RESERVED0 ’$#\Module_ID ‹#üOTGIntSt ‹#€OTGIntEn #„OTGIntSet #ˆOTGIntClr #ŒOTGStCtrl #OTGTmr #”²J$  9 RESERVED1 '%#˜USBDevIntSt ‹#€USBDevIntEn #„USBDevIntClr #ˆUSBDevIntSet #ŒUSBCmdCode #USBCmdData ‹#”USBRxData ‹#˜USBTxData #œUSBRxPLen ‹# USBTxPLen #¤USBCtrl #¨USBDevIntPri #¬USBEpIntSt ‹#°USBEpIntEn #´USBEpIntClr #¸USBEpIntSet #¼USBEpIntPri #ÀUSBReEp #ÄUSBEpInd #ÈUSBMaxPSize #ÌUSBDMARSt ‹#ÐUSBDMARClr #ÔUSBDMARSet #ØƒN$   RESERVED2 ø&#ÜUSBUDCAH #€USBEpDMASt ‹#„USBEpDMAEn #ˆUSBEpDMADis #ŒUSBDMAIntSt ‹#USBDMAIntEn #”“O$   RESERVED3 ˆ'#˜USBEoTIntSt ‹# USBEoTIntClr #¤USBEoTIntSet #¨USBNDDRIntSt ‹#¬USBNDDRIntClr #°USBNDDRIntSet #´USBSysErrIntSt ‹#¸USBSysErrIntClr #¼USBSysErrIntSet #ÀöP$   RESERVED4 k(#Ä A"#€I2C_STS ‹#„I2C_CTL #ˆI2C_CLKHI #ŒI2C_CLKLO #áQ$  · RESERVED5 Õ(#” \"#ô "#ø PLPC_USB_TypeDef ž"Ì*†Z€ MAC1 # MAC2 #IPGT #IPGR #CLRT #MAXF #SUPP #TEST #MCFG # MCMD #$MADR #(MWTD #,MRDD ‹#0MIND ‹#4ÖS$   RESERVED0 Ë)#8SA0 #@SA1 #DSA2 #H“T$  , RESERVED1 *#LCommand #€Status ‹#„RxDescriptor #ˆRxStatus #ŒRxDescriptorNumber #RxProduceIndex ‹#”RxConsumeIndex #˜TxDescriptor #œTxStatus # TxDescriptorNumber #¤TxProduceIndex #¨TxConsumeIndex ‹#¬¬V$  	 RESERVED2 !+#°TSV0 ‹#ØTSV1 ‹#ÜRSV ‹#àïV$   RESERVED3 d+#äFlowControlCounter #ðFlowControlStatus ‹#ôÁW$  ! RESERVED4 ¶+#øRxFilterCtrl #€RxFilterWoLStatus #„RxFilterWoLClear #ˆRESERVED5 $  #ŒHashFilterL #HashFilterH #”ãX$  ñ RESERVED6 W,#˜IntStatus ‹#àIntEnable #äIntClear #èIntSet #ìRESERVED7 $  #ðPowerDown #ôRESERVED8 $  #øModule_ID #ü PLPC_EMAC_TypeDef )ˆ         .   /   0    __LCD_H  
+RS_CTRL 0x00000010 
+EN_CTRL 0x00000020 DT_CTRL 0x000003C0   (         
+        AN_LCD.h      h        
+AN_LCD.h ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start               2   3   4    
+    `    V     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\  AN_LCD.c    lpc17xx.h   AN_LCD.h               
+AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start          unsigned long  unsigned int unsigned char "Š         6   ! /  !   I  $ 
+
+>
+  %  %   %  %  	%C  
+%C  
+%  %  
+%  %  %C  %C  & I  
+
+  
+
+  (   ( 
+  
+  
+   
+  
+   
+1  
+ 1  
+1  
+ 1  
+ I8	  
+ I   
+ I8	4  !
+ I8	
+
+
+
+
+  " I  #7 I  $ I  % I  & I	  ' I  ( I  )
+  *
+  +  ,  -   .   /4
+  04
+  14  24  3 4  4 4  5.:;9?I  6.:;9?  7.:;9G  8.:;9?I   9.:;9?   :.:;9G   ;.:;9?I  <.:;9?  =.:;9G  >.:;9?I@  ?.:;9?@  @.:;9G@  A.:;9?I@
+  B.:;9?@
+  C.:;9G@
+  D1  E1  F1XYW  G1XYW  H.1  I.1@  J.1@
+  K.1  L.<4I?  M.<4?  NI  O  P I:;9  Q I4  R
+  S
+  T  U   V   W 1  X4 I	,  Y4 I	  Z4 I  [4 I,  \4 I  ]4 I	4  ^4 I	,4  _4 I4  `4 I,4  a4 I4  b4 1	,  c4 1  d4 1,  e4 1  f 1  g 1  h I	  i I  j I  k I	4  l I	,4  m I4  n 1	  o 1  p4 I	?  q4 I?<  r4 I,  s4 I  t5 I  u;   v=   w%  x<%          ARM Linker, 4.1 [Build 713]
+ armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=an_lcd.o --vfemode=force
+ Input Comments:  p58c-3  ARM Assembler, 4.1 [Build 713] armasm --debug --diag_suppress=1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide  C:\DOCUME~1\als\LOCALS~1\Temp\p58c-2   an_lcd.o  ARM C/C++ Compiler, 4.1 [Build 713] ArmCC --debug -c  --depend=an_lcd.d --cpu=Cortex-M3 --apcs=interwork -O0 -IC:\Keil4\ARM\CMSIS\Include -IC:\Keil4\ARM\INC\NXP\LPC17xx -D__EVAL --omf_browse=an_lcd.crf                 W
+             W
+             T
+  8         H
+             H
+            7 ?
+           ñÿ5
+                   À             h             T                   ?
+           ñÿ°
+            ª
+             
+            
+            
+             
+             è	            Ð	           	 ·	           
+ Ÿ	           
+ †	            n	           
+ S	            6	            	             	              Þ         ¼                 ¶         °  v      6       :4          0      þ         À  "                         =               ,      Ä             € '      Q     4     "         0 ñ  "             ½                ˆ       X     ,        )     ò        '          3 ¶  z /               !<                û     ¹      +|                @              &   ü        ½ 2    ~.            =                ù      ´          t*                  5     %       î       ¬     #            d (      Z              N     ,   '   H     @  S    @     “ò  7    1  ,      …     @   ( ±ñ         0     	        "         (   
+E  D   
+D  j   
+F  „   
+F  Œ   
+D  Â   
+E  Ê   
+D  Ö   
+F  Þ   
+D  ê   
+F  ò   
+D  þ   
+F    
+D    
+F    
+D  &  
+G  .  
+D  :  
+G  B  
+D  N  
+G  V  
+D  b  
+G  j  
+D  v  
+G  ~  
+D  †  
+E  ¢  
+D  È  
+I  â  
+I  ê  
+D  ú  
+G    
+D    
+J  ,  
+G  <     @         Z      ^      b   	  ‰            ´      ¸      S      8   
+  <      H   
+  L            ¤     °     ´     À     Ä     Ø     Ü     ð     ô                  $    8    <    P    T       !  a     e        !  }              !  a     e     i     ¢     ¦     ª     ´     Õ     Ù     Ý     ï     ó     ÷     
+            (    ,    0    B    F    J    _    c    g    }        …    ›    Ÿ    £    °    ,                  !  Q   @  U   8     !  \   >  `   6     !  [   =  _   5  y   (  ˆ   (  œ   (  º   (  Õ   (  ï   (  þ   (    (  )  (  8  (  I  (  c  (  r  (  ƒ  (    (  ¬  (  Ì  (  ç  (    (  /  (  >  (  [  (  v  (  ¡  (  ¿  (  Î  (  â  (    (    (  :  (  I  (  ]  (  |  (  —  (  ·  (  Æ  (  Ü  (  ý  (    (     !  X   <  \   4  q   (     (     (  ›   (  ©   (  ·   (  Ï   (  ð   (     (     (  A  (  X  (  f  (  u  (  ƒ  (  ‘  (  Ÿ  (  ­  (  »  (  Ô  (  ÷  (  	  (    (  1  (  J  (  ‚  (  ´  (  æ  (    (  L  (  ~  (  ¨  (  ®  (  Ñ  (  R  (  t  (  ž  (  Ç  (  ð  (  2  (  g  (  B   (  a   (    (  »  (  Ù  (  ð  (  	  (  &	  (  E	  '  i	  '  	  (  •	  '  ©	  (  Ì	  '  õ	  '  
+  (  
+  '  1
+  (  R
+  '  ]
+  (  …
+  (  ‹
+  '  Ÿ
+  (  Â
+  (  È
+  (  Ü
+  (  ò
+  (  
+
+  (  %
+  (  ?
+  (  U
+  (  x
+  (  ‡
+  (  Ò
+  (  ì
+  (    (  	  (  ?  (  E  (  Z  (  v  (  |  (  Ž  (  ­  (  ¼  (  Æ  (  â  (  ñ  (     $     !  `   A  d   9  z   (     )     !  Y   ?  ]   7  Û  (  9  (  ˜  (  Ð  (  J  (  ~  (  «  (  Õ  (  0  (    (  ‡  (  U  (  ¾   (    (  2
+  (  ö
+  (    (  >  (  ,
+  (  n
+  (  Ó
+  (  Ú
+  (  7  (  ^  (  …  (  ·  (  Þ  (  C  (    (  Ä  (  ë  (    (  9  (  h  (  †  (  œ  (  É  (  õ  (  r  (  €  (  Ö  (  ý  (  %  (  L  (    (  Ä  (  ì  (    (  :  (  i  (    (  ³  (  (  (  T  (  ~  (  ¨  (  Ó  (  ý  (  '  (  Z  (  r  (  ¦  (  Û  (    (  ‡  (  s  (  –$  (  +%  (  ü&  (  Œ'  (  o(  (  Ù(  (  Ï)  (  *  (  %+  (  h+  (  º+  (  ',  (  [,  (  Å,  (  ë,  (     !  a   ;  e   3     !  a   :  e   2   .ARM.attributes .strtab .shstrtab .rel.debug_pubnames .rel.debug_frame .rel.debug_line .rel.debug_info .rel.text .symtab .comment .arm_vfe_header __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 __ARM_grp.AN_LCD.c.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp.AN_LCD.h.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp.lpc17xx.h.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp.system_LPC17xx.h.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp.core_cm3.h.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp.core_cmFunc.h.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp.core_cmInstr.h.2_sG0000_lhnoEtjcms3_300000 __ARM_grp.stdint.h.2_8w1000_dXYJCiqTH97_300000 .debug_abbrev __ARM_asm.debug_abbrev.1 .debug_macinfo .debug_loc .data .emb_text  Lib$$Request$$armlib lcd_puts clr_disp lcd_data wr_dn lcd_init lcd_com wr_cn clear_ports delay_lcd __ARM_grp..debug_pubnames$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_pubnames$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_macinfo$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_macinfo$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_macinfo$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_macinfo$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_macinfo$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_macinfo$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_macinfo$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_macinfo$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_line$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_line$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_line$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_line$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_line$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_line$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_line$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_line$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp.system_LPC17xx.h.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp.stdint.h.2_8w1000_dXYJCiqTH97_300000 __ARM_grp.lpc17xx.h.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp.core_cmInstr.h.2_sG0000_lhnoEtjcms3_300000 __ARM_grp.core_cmFunc.h.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp.core_cm3.h.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp.AN_LCD.h.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp.AN_LCD.c.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_info$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_info$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_info$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_info$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_info$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_info$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_info$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_info$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 temp2 temp1 __asm___8_AN_LCD_c_temp1____REVSH __asm___8_AN_LCD_c_temp1____REV16 __ARM_asm.debug_abbrev.1 __ARM_grp_.debug_pubnames$17 __ARM_grp_.debug_pubnames$10 __ARM_grp_.debug_macinfo$4 __ARM_grp_.debug_loc$19 __ARM_grp_.debug_line$15 __ARM_grp_.debug_line$1 __ARM_grp_.debug_info$16 __ARM_grp_.debug_info$9 __ARM_grp_.debug_info$2 __ARM_grp_.debug_frame$20 .data BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$REQ8$PRES8$EABIv2 .text BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$PRES8$EABIv2 .emb_text AN_LCD.c $d.realdata $d $t Af   aeabi     @ 1    C2.06 Cortex-M3 
+ M	"$    Cortex-M3 
+ M	"   ARM 
+    
+                                                       ¢                 <        L  D       l                                 œ                          \À                          ˜                    L            h    X                      À         ; T    ;                               d     l         \  x                                      \     ä  ”               x                     \   À     8                        L    ,          È                      dL          ,              
+    ‘         <            h   
+            ‚             l       '           &                             '   ’         „           i                9       [                                     @          90            ,             ˆ    P        ‚         L  D                               Ø          \                     Ì    è÷       9        .                       ‚ø    ø                       P              ð L                   \   h              @         -   Ã   9                      ¨   ¸             ‚       d           L                          P                  (     \     l          ’        ”   !   ,            9           1      !`  ¨        ‚           L            S                       ü         ˜     S         \          ”    '           #    `          9[     `        1             ¸    Ì              `    ‚                           x     L  ì            `     „             \d              a          '   &è                a     /  9               +      b         b                   ‚               Œ     u @                    L                 u   $  \            Ì -      9     ü         +      ð    ¢            ‚        £ P               L               ,             £    P  \    l             £      |               Í  9  £    *  è                   £  ‚               ø                              d         ¤  L          ¤   ¤    l                  \      !9¥                       “            ¤[  ¥                    ª  ƒ                           ¼                  À   `     z        ª           à       ­    r   P             h             	 ²     9                  X             @³ 9	           H     	    `            ³     9   7      h                   ³ 	  9            7  9      ³     	          ˆ        9   X	         ´                  	    9      X ´      	    0     H9  
+´ 	        X                    9                µ    	 P  H                 µ #X 9 	                    	       #9 `         µ                        	      X     9   h   µ   €           µ   X         9  	     9 X    	         µ         P      ˜                X      9 ¶    à"   	è 	   ¹ È  #       # 9                '¹   9       X  Ð          	                  #          (¹       	  9   ð          9     	       ¹     øX,                  	  ˜ 0      9X     ¼      49        	 °     ¼               X      È       ¬     ¼                t         
+       Z               ¿  „               Ê  Î        p       /0              1516096945  0     0     100666  5728      `
+÷ORC                            4     (                                                                                                                                                                                                                                                         ,     0      8   !  <   "  @   E  D   ;  H   <  L   =  P   >  T   ?  X   @  \   A  `   B  d   4  h   -  l   .  p   /  t   8  x   9  |   :  €   2  „   7  ˆ   (  Œ   )     *  ”   +  ˜   #  œ   $      D  ¤   &  ¨   '  ¬   0  °   ,  ´   6  ¸   1  ¼   5  À   3  Ä   C  È   %  ÿÿÿÿHOðU1`
+HOðU1`
+H GþçþçþçþçþçþçþçþçþçþçHIJKpG  ¨Á@¬Á@               <     @     D     H     p        startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start                      c     g     k   
+          
+          €       startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start     4       Reset_Handler        NMI_Handler       HardFault_Handler       MemManage_Handler       BusFault_Handler       UsageFault_Handler       SVC_Handler        DebugMon_Handler     "   PendSV_Handler "   $   SysTick_Handler $   &   Default_Handler &   (            c     g     k   
+  ~     ‚     “     —     ®     ²     É     Í     ã     ç     ÿ                 .    2    F    J    _    c    x    |    \    (    
+        startup_LPC17xx.s          ‚&&Í  5           %  .       0   ÿÿÿÿarmcc+ |
+       	
+
+                                                                                                                    "             $             &      8      <     H      L     X      \     h      l     x      |     ˆ      Œ     ˜      œ     ¨      ¬     ¸      ¼     È      Ì     Ø      Ü                                ñÿ             
+               2          ú                                 ä             t             „   
+              
+         `    
+ ô      L     ï            é      Ì     ã           ^            ñÿU            K           >                 %       )                    û                ã               " Õ       " É ·"          ¥   "     "      ”    "        u "               d ! "      #U "     E  " %        "'   6     ' '"      "     '           "'       ò  '    "      '  " á  Ð "         '       "   ¿'' ®    "            '"  ž  Ž '"            "   ~  '       n "  ' _'    "          ' N"        ' >    "     '     "  .  "  '      '          "    ' "      ñ     ' "       â '    "    "  '   Ò              Â'"    '  °  "             ž  "'   "       Œ '     '  z  "       i'    "    X   "     '     '    G   "      '  "  6      "    '         "'       '         "  WDT_IRQHandler USB_IRQHandler USBActivity_IRQHandler UART3_IRQHandler UART2_IRQHandler UART1_IRQHandler UART0_IRQHandler TIMER3_IRQHandler TIMER2_IRQHandler TIMER1_IRQHandler TIMER0_IRQHandler SSP1_IRQHandler SSP0_IRQHandler SPI_IRQHandler RTC_IRQHandler RIT_IRQHandler QEI_IRQHandler PWM1_IRQHandler PLL1_IRQHandler PLL0_IRQHandler MCPWM_IRQHandler I2S_IRQHandler I2C2_IRQHandler I2C1_IRQHandler I2C0_IRQHandler ENET_IRQHandler EINT3_IRQHandler EINT2_IRQHandler EINT1_IRQHandler EINT0_IRQHandler DMA_IRQHandler CAN_IRQHandler CANActivity_IRQHandler BOD_IRQHandler ADC_IRQHandler SysTick_Handler PendSV_Handler DebugMon_Handler SVC_Handler UsageFault_Handler BusFault_Handler MemManage_Handler HardFault_Handler NMI_Handler Reset_Handler __use_two_region_memory __main __Vectors __user_initial_stackheap __ARM_asm.debug_abbrev.1 __initial_sp Stack_Mem Heap_Mem BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$PRES8$EABIv2 STACK RESET HEAP .text .ARM.__at_0x02FC $t $d startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] ArmAsm --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=startup_LPC17xx.d -ostartup_LPC17xx.o -IC:\Keil4\ARM\CMSIS\Include -IC:\Keil4\ARM\INC\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=startup_LPC17xx.lst startup_LPC17xx.s   A,   aeabi "   Cortex-M3 
+ M	"   ARM 	    .shstrtab .ARM.attributes .comment .strtab .symtab .rel.debug_frame .debug_abbrev __ARM_asm.debug_abbrev.1 .rel.debug_line .rel.debug_info .rel.text .ARM.__at_0x02FC .relRESET HEAP STACK                                                <       ¶                            ±              <                          «        Ì     <                              p	 §                       –           x                                    |L        Œ      È	                                        è     t          €         |      	                 \             |    p                         „                     œ   €     	          
+  |            Ð                 `      p              ð               	         Pl          
+               X              S                                   E   `            ä8                €         	     d °  4                                       `        ,            #      $ t                                —                       
+      p   £                 >            á             ¼            
+
+
+
+Write a C program to copy the contents of source file to destination file
+
+#include <stdio.h>
+#include <stdlib.h> 
+
+int main() {
+    FILE *fptr1, *fptr2;
+    char sourceFile[100], destFile[100], c;
+
+    // Get the name of the source file
+    printf("Enter the filename to open for reading: \n");
+    scanf("%s", sourceFile);
+
+    // Open the source file in read mode
+    fptr1 = fopen(sourceFile, "r");
+    if (fptr1 == NULL) {
+        printf("Cannot open file %s \n", sourceFile);
+        exit(0);
+    }
+
+    // Get the name of the destination file
+    printf("Enter the filename to open for writing: \n");
+    scanf("%s", destFile);
+
+    // Open the destination file in write mode
+    fptr2 = fopen(destFile, "w");
+    if (fptr2 == NULL) {
+        printf("Cannot open file %s \n", destFile);
+        fclose(fptr1); // Close the source file before exiting
+        exit(0);
+    }
+
+    // Copy contents from source to destination
+    while ((c = fgetc(fptr1)) != EOF) {
+        fputc(c, fptr2);
+    }
+
+    printf("\nContents copied to %s successfully.\n", destFile);
+
+    // Close the files
+    fclose(fptr1);
+    fclose(fptr2);
+
+    return 0;
+}
+
+Enter the filename to open for reading: 
+source.txt
+Enter the filename to open for writing: 
+output.txt
+
+
+
+#Write a ‘C’ program To count the number of lines and characters in a file.
+
+#include <stdio.h>
+ 
+int main() {
+    FILE *file;
+    char filename[100];
+    char ch;
+    int lines = 0, characters = 0;
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("Could not open file %s for reading.\n", filename);
+        return 1;    }
+ 
+    while ((ch = fgetc(file)) != EOF) {
+        characters++;
+        if (ch == '\n') {
+            lines++; }}
+ 
+    fclose(file);
+    printf("Number of lines: %d\n", lines);
+    printf("Number of characters: %d\n", characters);
+ 
+    return 0;
+}
+ 
+gcc q1.c -o q1
+
+
+#Write a ‘C’ program To reverse the file contents and store in another file. Also display the size of file using file handling function
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+    FILE *file, *reversedFile;
+    char filename[100];
+    char ch;
+    long size;
+ 
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+ 
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("Could not open file %s for reading.\n", filename);
+        return 1;    }
+ 
+    fseek(file, 0, SEEK_END);
+    size = ftell(file);
+    printf("Size of the file: %ld bytes\n", size);
+    rewind(file);
+
+    char *content = (char *)malloc(size * sizeof(char));
+    if (content == NULL) {
+        printf("Memory allocation failed.\n");
+        fclose(file);
+        return 1;   }
+ 
+    fread(content, sizeof(char), size, file);
+    fclose(file);
+ 
+    reversedFile = fopen("reversed.txt", "w");
+    if (reversedFile == NULL) {
+        printf("Could not open file reversed.txt for writing.\n");
+        free(content);
+        return 1;}
+ 
+    for (long i = size - 1; i >= 0; i--) {
+        fputc(content[i], reversedFile);    }
+ 
+    fclose(reversedFile);
+    free(content);
+ 
+    printf("File contents reversed and stored in reversed.txt\n");
+    return 0;
+    }
+
+
+
+#Write a ‘C’ program To merges lines alternatively from 2 files and stores it in a resultant file.
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+    FILE *file1, *file2, *resultFile;
+    char filename1[100], filename2[100];
+    char line1[256], line2[256];
+    printf("Enter the first filename: ");
+    scanf("%s", filename1);
+    printf("Enter the second filename: ");
+    scanf("%s", filename2);
+
+    file1 = fopen(filename1, "r");
+    if (file1 == NULL) {
+        printf("Could not open file %s for reading.\n", filename1);
+        return 1;    }
+
+    file2 = fopen(filename2, "r");
+    if (file2 == NULL) {
+        printf("Could not open file %s for reading.\n", filename2);
+        fclose(file1);
+        return 1;    }
+ 
+    resultFile = fopen("result.txt", "w");
+    if (resultFile == NULL) {
+        printf("Could not open file result.txt for writing.\n");
+        fclose(file1);
+        fclose(file2);
+        return 1;    }
+ 
+    while (fgets(line1, sizeof(line1), file1) != NULL || fgets(line2, sizeof(line2), file2) != NULL) {
+        if (fgets(line1, sizeof(line1), file1) != NULL) {
+            fputs(line1, resultFile);}
+        if (fgets(line2, sizeof(line2), file2) != NULL) {
+            fputs(line2, resultFile); }}
+ 
+    fclose(file1);
+    fclose(file2);
+    fclose(resultFile);
+    printf("Lines merged alternatively and stored in result.txt\n");
+    return 0;
+}
+ 
+
+
+Write a C program to collect statistics of a source file and display total number of blank lines, total number of lines ending with semicolon, total number of blank spaces.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main() {
+    FILE *file;
+    char filename[100];
+    char ch, prev = '\0';
+    int blankLines = 0, semicolonLines = 0, blankSpaces = 0;
+    bool isBlankLine = true, endsWithSemicolon = false;
+
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    while ((ch = fgetc(file)) != EOF) {
+        if (ch == ' ') {
+            blankSpaces++;
+        }
+
+        // Check if line is blank
+        if (ch != ' ' && ch != '\t' && ch != '\n') {
+            isBlankLine = false;
+        }
+
+        // Detect lines ending with semicolon
+        if (ch == ';') {
+            endsWithSemicolon = true;
+        }
+
+        // When a newline is encountered, update statistics
+        if (ch == '\n') {
+            if (isBlankLine) {
+                blankLines++;
+            }
+            if (endsWithSemicolon) {
+                semicolonLines++;
+            }
+
+            // Reset flags for the next line
+            isBlankLine = true;
+            endsWithSemicolon = false;
+        }
+
+        prev = ch; // Keep track of the last character
+    }
+
+    // Handle the last line if the file does not end with a newline
+    if (prev == ';') {
+        semicolonLines++;
+    }
+    if (isBlankLine) {
+        blankLines++;
+    }
+
+    // Close the file
+    fclose(file);
+
+    // Display the results
+    printf("Total blank lines: %d\n", blankLines);
+    printf("Total lines ending with semicolon: %d\n", semicolonLines);
+    printf("Total blank spaces: %d\n", blankSpaces);
+
+    return 0;
+}
+
+
+#C program To print five lines of file at a time. The program prompts user to enter the suitableoption. When the user presses ‘Q’ the program quits and continues when the user presses ‘C’.
+#include <stdio.h>
+#include <stdlib.h>
+
+#define LINES_PER_PAGE 5
+
+int main() {
+    FILE *file;
+    char filename[100];
+    char buffer[256];
+    char choice;
+    int lineCount = 0;
+
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+        lineCount++;
+
+        // Pause after every 5 lines
+        if (lineCount % LINES_PER_PAGE == 0) {
+            printf("\nPress 'C' to continue or 'Q' to quit: ");
+            scanf(" %c", &choice);
+
+            if (choice == 'Q' || choice == 'q') {
+                printf("Exiting the program.\n");
+                break;
+            } else if (choice != 'C' && choice != 'c') {
+                printf("Invalid option. Exiting.\n");
+                break;
+            }
+        }
+    }
+
+    fclose(file);
+
+    printf("Program finished.\n");
+    return 0;
+}
+
+
+//Program to remove single and multiline comments from a given ‘C’ file.
+#include <stdio.h>
+
+int main() {
+    FILE *in, *out;
+    char inFile[100], ch, next;
+    printf("Enter input filename: ");
+    scanf("%s", inFile);
+    in = fopen(inFile, "r");
+    out = fopen("output.txt", "w");
+    if (!in || !out) return 1;
+
+    while ((ch = fgetc(in)) != EOF) {
+        if (ch == '/') {
+            next = fgetc(in);
+            if (next == '/') {
+                while ((ch = fgetc(in)) != '\n' && ch != EOF);
+                fputc('\n', out);
+            } else if (next == '*') {
+                while ((ch = fgetc(in)) != EOF)
+                    if (ch == '*' && (next = fgetc(in)) == '/') break;
+            } else {
+                fputc(ch, out);
+                ungetc(next, in);
+            }
+        } else {
+            fputc(ch, out);
+        }
+    }
+
+    fclose(in);
+    fclose(out);
+    printf("Comments removed. Output written to output.txt\n");
+    return 0;
+}
+
+
+#Write a ‘C’ program That takes a file as input and replaces blank spaces and tabs by single space and writes the output to a file.
+#include <stdio.h>
+ 
+int main() {
+    FILE *inputFile, *outputFile;
+    char inputFilename[100], outputFilename[100] = "output.txt";
+    char ch, prevCh = 0;
+    printf("Enter the input filename: ");
+    scanf("%s", inputFilename);
+    inputFile = fopen(inputFilename, "r");
+    if (inputFile == NULL) {
+        printf("Could not open file %s for reading.\n", inputFilename);
+        return 1;    }
+
+    outputFile = fopen(outputFilename, "w");
+    if (outputFile == NULL) {
+        printf("Could not open file %s for writing.\n", outputFilename);
+        fclose(inputFile);
+        return 1;    }
+ 
+    while ((ch = fgetc(inputFile)) != EOF) {
+        if (ch == ' ' || ch == '\t') {
+            if (prevCh != ' ') {
+                fputc(' ', outputFile);}} 
+              else {
+            fputc(ch, outputFile);}
+        prevCh = ch;}
+ 
+    fclose(inputFile);
+    fclose(outputFile);
+ 
+    printf("Blank spaces and tabs replaced by single space and written to %s\n", outputFilename);
+    return 0;
+}
+ 
+
+# To discard preprocessor directives from the given input ‘C’ file.
+#include <stdio.h>
+#include <string.h>
+ 
+int main() {
+    FILE *inputFile, *outputFile;
+    char inputFilename[100], outputFilename[100] = "output.c";
+    char line[256];
+ 
+    printf("Enter the input filename: ");
+    scanf("%s", inputFilename);
+ 
+    inputFile = fopen(inputFilename, "r");
+    if (inputFile == NULL) {
+        printf("Could not open file %s for reading.\n", inputFilename);
+        return 1;   }
+ 
+    outputFile = fopen(outputFilename, "w");
+    if (outputFile == NULL) {
+        printf("Could not open file %s for writing.\n", outputFilename);
+        fclose(inputFile);
+        return 1;   }
+ 
+    while (fgets(line, sizeof(line), inputFile)) {
+        if (line[0] != '#') {
+            fputs(line, outputFile);   }}
+ 
+    fclose(inputFile);
+    fclose(outputFile); 
+    printf("Preprocessor directives discarded and written to %s\n", outputFilename); 
+    return 0;
+}
+
+#That takes C program as input, recognizes all the keywords and prints them in upper case.
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+ 
+#define NUM_KEYWORDS 32
+ 
+const char *keywords[NUM_KEYWORDS] = {
+    "auto", "break", "case", "char", "const", "continue", "default", "do", "double",
+    "else", "enum", "extern", "float", "for", "goto", "if", "int", "long",
+    "register", "return", "short", "signed", "sizeof", "static", "struct", "switch",
+    "typedef", "union", "unsigned", "void", "volatile", "while"
+};
+ 
+void to_uppercase(char *str) {
+    while (*str) {
+        *str = toupper((unsigned char) *str);
+        str++;    }}
+ 
+int is_keyword(const char *word) {
+    for (int i = 0; i < NUM_KEYWORDS; i++) {
+        if (strcmp(word, keywords[i]) == 0) {
+            return 1;        }    }
+    return 0;
+}
+ 
+int main() {
+    FILE *inputFile;
+    char filename[100];
+    char word[256];
+ 
+    printf("Enter the input filename: ");
+    scanf("%s", filename);
+
+    inputFile = fopen(filename, "r");
+    if (inputFile == NULL) {
+        printf("Could not open file %s for reading.\n", filename);
+        return 1;   }
+ 
+    while (fscanf(inputFile, "%255s", word) == 1) {
+        if (is_keyword(word)) {
+            to_uppercase(word);       }
+        printf("%s ", word);
+    }
+ 
+    fclose(inputFile); 
+    return 0;
+}
+
+#Write a program to display the function names present in the given input ‘C’ file along with its return type and number of arguments.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX_LINE 1024
+
+int isValidChar(char ch) {
+    return isalnum(ch) || ch == '_';
+}
+
+int countArguments(char *start, char *end) {
+    int count = 0;
+    char *ptr = start;
+    while (ptr < end) {
+        if (*ptr == ',') {
+            count++;
+        }
+        ptr++;
+    }
+    return (start == end) ? 0 : count + 1;
+}
+
+int main() {
+    FILE *file;
+    char filename[100];
+    char line[MAX_LINE];
+
+    printf("Enter the C source filename: ");
+    scanf("%s", filename);
+
+    file = fopen(filename, "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    printf("\n%-20s %-15s %s\n", "Function Name", "Return Type", "Argument Count");
+    printf("---------------------------------------------------------\n");
+
+    while (fgets(line, MAX_LINE, file) != NULL) {
+        char returnType[50] = "";
+        char funcName[50] = "";
+
+        char *openParen = strchr(line, '(');
+        char *closeParen = strchr(line, ')');
+
+        if (openParen && closeParen && openParen < closeParen) {
+            char *ptr = openParen;
+            while (ptr > line && isValidChar(*(ptr - 1))) {
+                ptr--;
+            }
+            strncpy(funcName, ptr, openParen - ptr);
+            funcName[openParen - ptr] = '\0';
+
+            if (strlen(funcName) == 0 || strstr(line, "if") || strstr(line, "for") || strstr(line, "while")) {
+                continue;
+            }
+
+            int argCount = countArguments(openParen + 1, closeParen);
+
+            char *retStart = line;
+            while (isspace(*retStart)) {
+                retStart++;
+            }
+            strncpy(returnType, retStart, ptr - retStart);
+            returnType[ptr - retStart] = '\0';
+
+            printf("%-20s %-15s %d\n", funcName, returnType, argCount);
+        }
+    }
+
+    fclose(file);
+    return 0;
+}
+
+Write a program in ‘C’ to identify the arithmetic and relational operators from the given input ‘C’ file.
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() {
+    char c, buf[3]; // buffer to hold operators
+    FILE *fp = fopen("digit.c", "r");
+
+    if (fp == NULL) {
+        printf("Cannot open file\n");
+        exit(0);
+    }
+
+    while ((c = fgetc(fp)) != EOF) {
+        int i = 0;
+        buf[0] = '\0';
+
+        // Relational and assignment operators
+        if (c == '=' || c == '<' || c == '>' || c == '!') {
+            buf[i++] = c;
+            char next = fgetc(fp);
+            if (next == '=') {
+                buf[i++] = next;
+            } else {
+                ungetc(next, fp); // put back character if not '='
+            }
+            buf[i] = '\0';
+
+            if (strcmp(buf, "=") == 0)
+                printf("\nAssignment operator: %s", buf);
+            else
+                printf("\nRelational operator: %s", buf);
+        }
+
+        // Arithmetic operators
+        else if (c == '+' || c == '-' || c == '*' || c == '/' || c == '%') {
+            buf[i++] = c;
+            buf[i] = '\0';
+            printf("\nArithmetic operator: %s", buf);
+        }
+    }
+
+    fclose(fp);
+    return 0;
+}
+
+
+Write functions to identify the following tokens. Arithmetic, relational and logical operators. Special symbols, keywords, numerical constants, string literals and identifiers.
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+#define MAX_LEN 100
+
+
+const char *keywords[] = {"int", "float", "if", "else", "while", "return", "void", "for", "do", "switch", "case"};
+int num_keywords = sizeof(keywords) / sizeof(keywords[0]);
+
+int isKeyword(char *str) {
+    for (int i = 0; i < num_keywords; i++) {
+        if (strcmp(str, keywords[i]) == 0)
+            return 1;
+    }
+    return 0;
+}
+
+int isOperator(char ch) {
+    return (ch == '+' || ch == '-' || ch == '*' || ch == '/' || 
+            ch == '=' || ch == '<' || ch == '>' || ch == '!');
+}
+
+int isSpecialSymbol(char ch) {
+    return (ch == ';' || ch == ',' || ch == '(' || ch == ')' || 
+            ch == '{' || ch == '}' || ch == '[' || ch == ']');
+}
+
+void lexicalAnalyzer(char *src) {
+    int i = 0;
+    char token[MAX_LEN];
+
+    while (src[i] != '\0') {
+        if (isspace(src[i])) {
+            i++;
+            continue;
+        }
+
+        // Identifiers and Keywords
+        if (isalpha(src[i])) {
+            int j = 0;
+            while (isalnum(src[i]) || src[i] == '_') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+
+            if (isKeyword(token))
+                printf("Keyword: %s\n", token);
+            else
+                printf("Identifier: %s\n", token);
+        }
+        // Numbers
+        else if (isdigit(src[i])) {
+            int j = 0;
+            while (isdigit(src[i]) || src[i] == '.') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+            printf("Number: %s\n", token);
+        }
+        // Operators
+        else if (isOperator(src[i])) {
+            char op[3] = {src[i], '\0', '\0'};
+            if ((src[i] == '!' || src[i] == '=' || src[i] == '<' || src[i] == '>') && src[i+1] == '=') {
+                op[1] = '=';
+                i++;
+            }
+            printf("Operator: %s\n", op);
+            i++;
+        }
+        // Special symbols
+        else if (isSpecialSymbol(src[i])) {
+            printf("Special Symbol: %c\n", src[i]);
+            i++;
+        }
+        // String Literals
+        else if (src[i] == '"') {
+            int j = 0;
+            token[j++] = src[i++];
+            while (src[i] != '"' && src[i] != '\0') {
+                token[j++] = src[i++];
+            }
+            if (src[i] == '"') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+            printf("String Literal: %s\n", token);
+        }
+        // Unknown character
+        else {
+            printf("Unknown Token: %c\n", src[i]);
+            i++;
+        }
+    }
+}
+
+int main() {
+    char source_code[MAX_LEN];
+
+    printf("Enter source code:\n");
+    fgets(source_code, MAX_LEN, stdin);
+
+    source_code[strcspn(source_code, "\n")] = '\0';
+
+    printf("\nLexical Analysis Output:\n");
+    lexicalAnalyzer(source_code);
+
+    return 0;
+}
+
+# int x = 10; float y = 3.14; if (x >= y) { x = x + 1; } printf("Hello, World!");
+
+
+//Design a Lexical Analyzer to generate tokens for a simple arithmetic calculator.
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+#define MAX_TOKEN_LEN 100
+
+typedef enum {
+    INTEGER, FLOAT, OPERATOR, PARENTHESIS, IDENTIFIER, INVALID
+} TokenType;
+
+
+typedef struct {
+    TokenType type;
+    char value[MAX_TOKEN_LEN];
+} Token;
+
+
+void printToken(Token token) {
+    switch (token.type) {
+        case INTEGER: printf("INTEGER: %s\n", token.value); break;
+        case FLOAT: printf("FLOAT: %s\n", token.value); break;
+        case OPERATOR: printf("OPERATOR: %s\n", token.value); break;
+        case PARENTHESIS: printf("PARENTHESIS: %s\n", token.value); break;
+        case IDENTIFIER: printf("IDENTIFIER: %s\n", token.value); break;
+        case INVALID: printf("INVALID: %s\n", token.value); break;
+    }
+}
+
+void generateTokens(char *input) {
+    int i = 0;
+    while (input[i] != '\0') {
+        Token token;
+
+        // Skip whitespace
+        if (isspace(input[i])) {
+            i++;
+            continue;
+        }
+
+        // Check for operators
+        if (strchr("+-*/%", input[i]) != NULL) {
+            token.type = OPERATOR;
+            token.value[0] = input[i];
+            token.value[1] = '\0';
+            printToken(token);
+            i++;
+            continue;
+        }
+
+        // Check for parentheses
+        if (input[i] == '(' || input[i] == ')') {
+            token.type = PARENTHESIS;
+            token.value[0] = input[i];
+            token.value[1] = '\0';
+            printToken(token);
+            i++;
+            continue;
+        }
+
+        // Check for numbers (integer or float)
+        if (isdigit(input[i])) {
+            int j = 0;
+            while (isdigit(input[i])) {
+                token.value[j++] = input[i++];
+            }
+
+            // Check for float (decimal point)
+            if (input[i] == '.') {
+                token.value[j++] = input[i++];
+                while (isdigit(input[i])) {
+                    token.value[j++] = input[i++];
+                }
+                token.type = FLOAT;
+            } else {
+                token.type = INTEGER;
+            }
+
+            token.value[j] = '\0';
+            printToken(token);
+            continue;
+        }
+
+        // Check for identifiers (variables)
+        if (isalpha(input[i]) || input[i] == '_') {
+            int j = 0;
+            while (isalnum(input[i]) || input[i] == '_') {
+                token.value[j++] = input[i++];
+            }
+            token.value[j] = '\0';
+            token.type = IDENTIFIER;
+            printToken(token);
+            continue;
+        }
+
+        // Invalid character
+        token.type = INVALID;
+        token.value[0] = input[i];
+        token.value[1] = '\0';
+        printToken(token);
+        i++;
+    }
+}
+
+int main() {
+    char input[MAX_TOKEN_LEN];
+
+    // Input expression
+    printf("Enter an arithmetic expression: ");
+    fgets(input, MAX_TOKEN_LEN, stdin);
+
+    // Remove trailing newline
+    input[strcspn(input, "\n")] = '\0';
+
+    // Generate and print tokens
+    generateTokens(input);
+
+    return 0;
+}
+
+Design a lexical Analyzer to generate tokens for functions and structures in ‘C’.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX_TOKEN 100
+
+const char* keywords[] = {
+    "int", "float", "char", "double", "void", "struct", "return"
+};
+
+int is_keyword(const char *str) {
+    for (int i = 0; i < sizeof(keywords) / sizeof(keywords[0]); i++) {
+        if (strcmp(str, keywords[i]) == 0)
+            return 1;
+    }
+    return 0;
+}
+
+int is_valid_identifier(const char *str) {
+    if (!isalpha(str[0]) && str[0] != '_') return 0;
+    for (int i = 1; str[i]; i++) {
+        if (!isalnum(str[i]) && str[i] != '_')
+            return 0;
+    }
+    return 1;
+}
+
+void print_token(const char *type, const char *value) {
+    printf("%s: %s\n", type, value);
+}
+
+int main() {
+    FILE *fp = fopen("input.c", "r");
+    char ch, token[MAX_TOKEN];
+    int i;
+
+    if (!fp) {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    while ((ch = fgetc(fp)) != EOF) {
+        // Skip whitespace
+        if (isspace(ch)) continue;
+
+        // Identifier or keyword
+        if (isalpha(ch) || ch == '_') {
+            i = 0;
+            token[i++] = ch;
+            while (isalnum(ch = fgetc(fp)) || ch == '_') {
+                if (i < MAX_TOKEN - 1)
+                    token[i++] = ch;
+            }
+            token[i] = '\0';
+            ungetc(ch, fp);
+
+            if (is_keyword(token)) {
+                print_token("KEYWORD", token);
+            } else {
+                print_token("IDENTIFIER", token);
+            }
+        }
+
+        // Numbers
+        else if (isdigit(ch)) {
+            i = 0;
+            token[i++] = ch;
+            while (isdigit(ch = fgetc(fp))) {
+                if (i < MAX_TOKEN - 1)
+                    token[i++] = ch;
+            }
+            token[i] = '\0';
+            ungetc(ch, fp);
+            print_token("NUMBER", token);
+        }
+
+        // Single-character tokens
+        else {
+            switch (ch) {
+                case '#': print_token("PREPROCESSOR", "#"); break;
+                case '<': print_token("LESS_THAN", "<"); break;
+                case '>': print_token("GREATER_THAN", ">"); break;
+                case '.': print_token("DOT", "."); break;
+                case '+': print_token("PLUS", "+"); break;
+                case '-': print_token("MINUS", "-"); break;
+                case '*': print_token("ASTERISK", "*"); break;
+                case '/': print_token("SLASH", "/"); break;
+                case '=': print_token("ASSIGNMENT", "="); break;
+                case '(': print_token("LEFT_PAREN", "("); break;
+                case ')': print_token("RIGHT_PAREN", ")"); break;
+                case '{': print_token("LEFT_BRACE", "{"); break;
+                case '}': print_token("RIGHT_BRACE", "}"); break;
+                case '[': print_token("LEFT_BRACKET", "["); break;
+                case ']': print_token("RIGHT_BRACKET", "]"); break;
+                case ';': print_token("SEMICOLON", ";"); break;
+                case ',': print_token("COMMA", ","); break;
+                case '"': print_token("QUOTE", "\""); break;
+                default:
+                    printf("UNKNOWN CHARACTER: %c\n", ch);
+            }
+        }
+    }
+
+    fclose(fp);
+    return 0;
+}
+
+
+Using getNextToken( ) implemented in Lab No 3, design a Lexical Analyser to implement the
+following symbol tables.
+a. local symbol table
+b. global symbol table.
+
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+#define MAX_LEN 100
+#define TABLE_SIZE 100
+
+const char *keywords[] = {"auto", "break", "case", "char", "const", "continue", "default", "do", 
+        "double", "else", "enum", "extern", "float", "for", "goto", "if", "inline", 
+        "int", "long", "register", "restrict", "return", "short", "signed", "sizeof", 
+        "static", "struct", "switch", "typedef", "union", "unsigned", "void", "volatile", 
+        "while"};
+int num_keywords = sizeof(keywords) / sizeof(keywords[0]);
+
+typedef struct {
+    char name[MAX_LEN];
+    char type[MAX_LEN];
+} Symbol;
+
+Symbol globalTable[TABLE_SIZE];
+int globalCount = 0;
+
+Symbol localTable[TABLE_SIZE];
+int localCount = 0;
+
+int isKeyword(char *str) {
+    for (int i = 0; i < num_keywords; i++) {
+        if (strcmp(str, keywords[i]) == 0)
+            return 1;
+    }
+    return 0;
+}
+
+int isOperator(char ch) {
+    return (ch == '+' || ch == '-' || ch == '*' || ch == '/' || 
+            ch == '=' || ch == '<' || ch == '>' || ch == '!');
+}
+
+int isSpecialSymbol(char ch) {
+    return (ch == ';' || ch == ',' || ch == '(' || ch == ')' || 
+            ch == '{' || ch == '}' || ch == '[' || ch == ']');
+}
+
+void addSymbol(Symbol *table, int *count, const char *name, const char *type) {
+    if (*count < TABLE_SIZE) {
+        strcpy(table[*count].name, name);
+        strcpy(table[*count].type, type);
+        (*count)++;
+    }
+}
+
+void printSymbolTable(Symbol *table, int count, const char *tableName) {
+    printf("\n%s Symbol Table:\n", tableName);
+    for (int i = 0; i < count; i++) {
+        printf("Name: %s, Type: %s\n", table[i].name, table[i].type);
+    }
+}
+
+void lexicalAnalyzer(char *src) {
+    int i = 0;
+    char token[MAX_LEN];
+    char currentType[MAX_LEN] = ""; 
+
+    while (src[i] != '\0') {
+
+        if (isspace(src[i])) {
+            i++;
+            continue;
+        }
+
+        if (isalpha(src[i])) {
+            int j = 0;
+            while (isalnum(src[i]) || src[i] == '_') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+
+            if (isKeyword(token)) {
+                printf("Keyword: %s\n", token);
+                strcpy(currentType, token); 
+            } else {
+                printf("Identifier: %s\n", token);
+                if (strcmp(currentType, "") != 0) {
+                    if (src[i] == '(') {
+                        // Handle function definition or declaration
+                    } else {
+                        if (localCount > 0) {
+                            addSymbol(localTable, &localCount, token, currentType);
+                        } else {
+                            addSymbol(globalTable, &globalCount, token, currentType);
+                        }
+                    }
+                }
+            }
+        }
+
+        else if (isdigit(src[i])) {
+            int j = 0;
+            while (isdigit(src[i]) || src[i] == '.') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+            printf("Number: %s\n", token);
+        }
+
+        else if (isOperator(src[i])) {
+            char op[3] = {src[i], '\0', '\0'};
+            if ((src[i] == '!' || src[i] == '=' || src[i] == '<' || src[i] == '>') && src[i+1] == '=') {
+                op[1] = '=';
+                i++;
+            }
+            printf("Operator: %s\n", op);
+            i++;
+        }
+
+        else if (isSpecialSymbol(src[i])) {
+            printf("Special Symbol: %c\n", src[i]);
+            if (src[i] == '{') {
+                localCount = 0; // Reset local count when a new function block starts
+            } else if (src[i] == '}') {
+                if (localCount > 0) {
+                    printSymbolTable(localTable, localCount, "Local");
+                    localCount = 0; // Reset local count after printing
+                }
+            }
+            i++;
+        }
+        else if (src[i] == '"') {
+            int j = 0;
+            token[j++] = src[i++];
+            while (src[i] != '"' && src[i] != '\0') {
+                token[j++] = src[i++];
+            }
+            if (src[i] == '"') {
+                token[j++] = src[i++];
+            }
+            token[j] = '\0';
+            printf("String Literal: %s\n", token);
+        }
+        else {
+            printf("Unknown Token: %c\n", src[i]);
+            i++;
+        }
+    }
+}
+
+int main() {
+    char source_code[MAX_LEN];
+
+    printf("Enter source code:\n");
+    fgets(source_code, MAX_LEN, stdin);
+    
+    source_code[strcspn(source_code, "\n")] = '\0';
+
+    printf("\nLexical Analysis Output:\n");
+    lexicalAnalyzer(source_code);
+
+    // Print both symbol tables at the end
+    printSymbolTable(globalTable, globalCount, "Global");
+    if (localCount > 0) {
+        printSymbolTable(localTable, localCount, "Local");
+    }
+
+    return 0;
+}
+
+
+int x = 10; float y = 3.14; if (x >= y) { x = x + 1; } printf("Hello, World!");
+
+
+
+Write a Flex program to recognize identifiers.
+%{
+#include <stdio.h>
+%}
+
+%%
+[a-zA-Z_][a-zA-Z0-9_]*   { printf("Identifier: %s\n", yytext); }
+.                        { /* Ignore other characters */ }
+%%
+
+int main() {
+    printf("Enter text (Ctrl+D to end):\n");
+    yylex();
+    return 0;
+}
+
+input:
+int main() {
+  int count123 = 0;
+  _tempVar = count123 + 5;
+}
+
+
+FLEX counts the number of characters, words, and lines in an input text
+
+%{
+#include <string.h>
+int chars = 0;
+int words = 0;
+int lines = 0;
+%}
+
+%%
+[a-zA-Z]+ { words++; chars += strlen(yytext); }
+\n { chars++; lines++; }
+. { chars++; }
+%%
+
+int main(int argc, char **argv) {
+    yylex();
+    printf("%d lines, %d words, %d characters\n", lines, words, chars);
+    return 0;
+}
+
+int yywrap() {
+    return 1;
+}
+
+
+Write a FLEX program to Count the number of vowels and consonants in the given input.
+
+%{
+#include <stdio.h>
+int vowels = 0;
+int consonants = 0;
+%}
+
+%%
+[aeiouAEIOU] { vowels++; }
+[a-zA-Z] { consonants++; }
+.|\n {}
+%%
+
+int main(int argc, char **argv) {
+    yylex();
+    printf("Vowels: %d\n", vowels);
+    printf("Consonants: %d\n", consonants);
+    return 0;
+}
+
+int yywrap() {
+    return 1;
+}
+
+Count the number of words, characters, blanks and lines in a given text.
+
+%{
+#include <stdio.h>
+
+int word_count = 0;
+int char_count = 0;
+int blank_count = 0;
+int line_count = 0;
+%}
+
+%%
+
+\n              { line_count++; }    // Count lines (new line)
+[ \t]           { blank_count++; }   // Count blanks (spaces and tabs)
+[a-zA-Z0-9]+    { word_count++; char_count += yyleng; }  // Count words (alphanumeric) and characters
+.               { char_count++; }    // Count any other character
+
+%%
+
+int main(int argc, char **argv) {
+    // Call yylex() to process the input
+    yylex();  // Process the entire input (stdin)
+
+    // Output the counts
+    printf("Words: %d\n", word_count);
+    printf("Characters: %d\n", char_count);
+    printf("Blanks: %d\n", blank_count);
+    printf("Lines: %d\n", line_count);
+
+    return 0;
+}
+
+
+Find the number of positive integer, negative integer, positive floating positive number and negative floating point number
+%{
+#include <stdio.h>
+
+int positive_int_count = 0;
+int negative_int_count = 0;
+int positive_float_count = 0;
+int negative_float_count = 0;
+%}
+
+%%
+
+[1-9][0-9]*           { positive_int_count++; }  // Positive integers (e.g., 1, 10, 123)
+-[1-9][0-9]*          { negative_int_count++; }   // Negative integers (e.g., -1, -10, -123)
+[0-9]+\.[0-9]+        { positive_float_count++; }  // Positive floating point (e.g., 1.23, 10.0, 0.01)
+-[0-9]+\.[0-9]+       { negative_float_count++; }  // Negative floating point (e.g., -1.23, -10.0, -0.01)
+
+%%
+
+int main(int argc, char **argv) {
+    // Call yylex() to process the input
+    yylex();  // Process the entire input (stdin)
+
+    // Output the counts
+    printf("Positive integers: %d\n", positive_int_count);
+    printf("Negative integers: %d\n", negative_int_count);
+    printf("Positive floating point numbers: %d\n", positive_float_count);
+    printf("Negative floating point numbers: %d\n", negative_float_count);
+
+    return 0;
+}
+
+
+Given a input C file, replace all scanf with READ and printf with WRITE statements also find the number of scanf and printf in the file.
+%{
+#include <stdio.h>
+
+int scanf_count = 0;
+int printf_count = 0;
+%}
+
+%%
+
+"scanf"    { 
+                printf_count++; 
+                printf("READ");  // Replace scanf with READ
+            }
+
+"printf"   { 
+                scanf_count++; 
+                printf("WRITE");  // Replace printf with WRITE
+            }
+
+.|\n       { printf("%c", yytext[0]); }  // Copy all other characters as is
+
+%%
+
+int main(int argc, char **argv) {
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);
+        return 1;
+    }
+
+    FILE *input_file = fopen(argv[1], "r");
+    if (!input_file) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // Set the input file for lex to process
+    yyin = input_file;
+
+    // Process the file with yylex
+    yylex();
+
+    // Output the counts
+    printf("\nNumber of 'scanf' replaced: %d\n", scanf_count);
+    printf("Number of 'printf' replaced: %d\n", printf_count);
+
+    fclose(input_file);
+
+    return 0;
+}
+
+
+flex q4.l
+gcc lex.yy.c -o q4 -lfl
+./q4 sample.c
+
+
+Write a FLEX program to identify verb, noun and pronoun.
+%{
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int verbs = 0, nouns = 0, pronouns = 0;
+
+const char *verb_list[] = {
+    "run", "runs", "ran", "running",
+    "walk", "walks", "walked", "walking",
+    "eat", "eats", "ate", "eating",
+    "drink", "drinks", "drank", "drinking",
+    "go", "goes", "went", "going",
+    "come", "comes", "came", "coming",
+    "play", "plays", "played", "playing",
+    "read", "reads", "reading",
+    "write", "writes", "wrote", "writing",
+    "sleep", "sleeps", "slept", "sleeping",
+    NULL
+};
+
+const char *noun_list[] = {
+    "dog", "dogs", "cat", "cats", "book", "books",
+    "apple", "apples", "car", "cars", "tree", "trees",
+    "house", "houses", "boy", "boys", "girl", "girls", "city", "cities",
+    NULL
+};
+
+const char *pronoun_list[] = {
+    "he", "she", "it", "they", "we", "you", "i", "me", "him", "her", "us", "them",
+    NULL
+};
+
+int is_in_list(const char *word, const char *list[]) {
+    for (int i = 0; list[i] != NULL; i++) {
+        if (strcasecmp(word, list[i]) == 0)
+            return 1;
+    }
+    return 0;
+}
+%}
+
+%%
+[a-zA-Z]+ {
+    if (is_in_list(yytext, verb_list)) {
+        verbs++;
+        printf("VERB: %s\n", yytext);
+    } else if (is_in_list(yytext, noun_list)) {
+        nouns++;
+        printf("NOUN: %s\n", yytext);
+    } else if (is_in_list(yytext, pronoun_list)) {
+        pronouns++;
+        printf("PRONOUN: %s\n", yytext);
+    }
+}
+\n  ;
+.   ;
+%%
+
+int main(int argc, char **argv) {
+    yylex();
+    printf("\nSummary:\n");
+    printf("Verbs: %d\n", verbs);
+    printf("Nouns: %d\n", nouns);
+    printf("Pronouns: %d\n", pronouns);
+    return 0;
+}
+
+int yywrap() {
+    return 1;
+}
+
+
+
+S→a | > | ( T )
+T→T, S|S
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int curr = 0;
+char str[100];
+
+void S();
+void T();
+void invalid();
+void valid();
+
+void invalid() {
+    printf("-----------------ERROR!----------------\n");
+    exit(0);
+}
+
+void valid() {
+    printf("----------------SUCCESS!---------------\n");
+    exit(0);
+}
+
+void S() {
+    if (str[curr] == 'a') {
+        curr++;
+    } else if (str[curr] == '>') {
+        curr++;
+    } else if (str[curr] == '(') {
+        curr++;
+        T();
+        if (str[curr] == ')') {
+            curr++;
+        } else {
+            invalid();
+        }
+    } else {
+        invalid();
+    }
+}
+
+void T() {
+    S();
+    if (str[curr] == ',') {
+        curr++;
+        T();
+    }
+}
+
+int main() {
+    printf("Enter String: ");
+    scanf("%s", str); 
+    S(); 
+    if (str[curr] == '\0') { 
+        valid(); 
+    } else {
+        invalid(); 
+    }
+    return 0;
+}
+
+//Enter String: (a
+//-----------------ERROR!----------------
+
+//Enter String: a
+//----------------SUCCESS!---------------
+
+
+S→UVW
+U →(S) | aSb | d
+V → aV | 𝜖
+W → cW | 𝜖
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int curr = 0;
+char str[100];
+
+void S();
+void U();
+void V();
+void W();
+
+void invalid() {
+    printf("-----------------ERROR!----------------\n");
+    exit(0);
+}
+
+void valid() {
+    printf("----------------SUCCESS!---------------\n");
+    exit(0);
+}
+
+void S() {
+    U();
+    V();
+    W();
+}
+
+void U() {
+    if (str[curr] == '(') {
+        curr++;
+        S();
+        if (str[curr] == ')') {
+            curr++;
+            return;
+        } else {
+            invalid();
+        }
+    } else if (str[curr] == 'a') {
+        curr++;
+        S();
+        if (str[curr] == 'b') {
+            curr++;
+            return;
+        } else {
+            invalid();
+        }
+    } else if (str[curr] == 'd') {
+        curr++;
+        return;
+    } else {
+        invalid();
+    }
+}
+
+
+void V() {
+    if (str[curr] == 'a') {
+        curr++;
+        V();
+    }
+    return;
+}
+
+
+void W() {
+    if (str[curr] == 'c') {
+        curr++;
+        W();
+    }
+
+    return;
+}
+
+int main() {
+    printf("Enter String: ");
+    scanf("%s", str);
+    
+    if (strchr(str, '$') == NULL) {
+        strcat(str, "$");
+    }
+    
+    S();
+    
+    if (str[curr] == '$') {
+        valid();
+    } else {
+        invalid();
+    }
+    
+    return 0;
+}
+
+// Enter String: (aSb)c
+//-----------------ERROR!----------------
+
+//Enter String: (d)c$    
+//----------------SUCCESS!---------------
+
+
+S→aAcBe
+A→Ab|b
+B→d
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int curr = 0;
+char str[100];
+
+void S();
+void A();
+void B();
+
+void invalid() {
+    printf("-----------------ERROR!----------------\n");
+    exit(0);
+}
+
+void valid() {
+    printf("----------------SUCCESS!---------------\n");
+    exit(0);
+}
+
+void S() {
+    if (str[curr] == 'a') {
+        curr++;
+        A();
+        if (str[curr] == 'c') {
+            curr++;
+            B();
+            if (str[curr] == 'e') {
+                curr++;
+                return;
+            } else {
+                invalid();
+            }
+        } else {
+            invalid();
+        }
+    } else {
+        invalid();
+    }
+}
+
+void A() {
+    if (str[curr] == 'b') {
+        curr++;
+
+        if (str[curr] == 'b') {
+            A();
+        }
+    } else {
+        invalid();
+    }
+}
+
+void B() {
+    if (str[curr] == 'd') {
+        curr++;
+        return;
+    } else {
+        invalid();
+    }
+}
+
+int main() {
+    printf("Enter String: ");
+    scanf("%s", str);
+
+    if (strchr(str, '$') == NULL) {
+        strcat(str, "$");
+    }
+    
+    S();
+    
+    if (str[curr] == '$') {
+        valid();
+    } else {
+        invalid();
+    }
+    
+    return 0;
+}
+
+//Enter String: abcde$
+//----------------SUCCESS!---------------
+
+//Enter String: acde$
+//-----------------ERROR!----------------
+
+
+E --> TEprime
+E' --> +TE' / 𝜖
+T --> FT'
+T' --> *FT' / 𝜖
+F --> (E) / i
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char str[100];
+int curr = 0;
+
+void E();
+void Eprime();
+void T();
+void Tprime();
+void F();
+
+void valid() {
+    printf("----------------SUCCESS!---------------\n");
+    exit(0);
+}
+
+void invalid() {
+    printf("-----------------ERROR!----------------\n");
+    exit(0);
+}
+
+void E() {
+    T();
+    Eprime();
+}
+
+void Eprime() {
+    if (str[curr] == '+') {
+        curr++;
+        T();
+        Eprime();
+    }
+    // epsilon transition
+}
+
+void T() {
+    F();
+    Tprime();
+}
+
+void Tprime() {
+    if (str[curr] == '*') {
+        curr++;
+        F();
+        Tprime();
+    }
+    // epsilon transition
+}
+
+void F() {
+    if (str[curr] == 'i') {
+        curr++;
+    } else if (str[curr] == '(') {
+        curr++;
+        E();
+        if (str[curr] == ')') {
+            curr++;
+        } else {
+            invalid();
+        }
+    } else {
+        invalid();
+    }
+}
+
+int main() {
+    printf("Enter String: ");
+    scanf("%s", str);
+    E();
+    // Accept if the next character is '$' and it's the end
+    if (str[curr] == '$' && str[curr + 1] == '\0') {
+        valid();
+    } else {
+        invalid();
+    }
+    return 0;
+}
+
+Enter string: i+i$
+----------------SUCCESS!---------------
+
+i+*i$ - error
+
+	
+Write a program with functions first(X) and follow(X) to find first and follow for X where X is a non-terminal in a grammar.
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX 10
+
+char productions[MAX][10];
+int numProductions;
+
+void addToSet(char *set, char ch) {
+    if (!strchr(set, ch)) {
+        int len = strlen(set);
+        set[len] = ch;
+        set[len + 1] = '\0';
+    }
+}
+
+void findFirst(char *result, char symbol) {
+    if (!isupper(symbol)) {  // Terminal
+        addToSet(result, symbol);
+        return;
+    }
+
+    for (int i = 0; i < numProductions; i++) {
+        if (productions[i][0] == symbol) {
+            char *rhs = &productions[i][2];
+
+            if (rhs[0] == '#') {
+                addToSet(result, '#'); // Epsilon
+            } else {
+                for (int j = 0; rhs[j] != '\0'; j++) {
+                    char temp[10] = "";
+                    findFirst(temp, rhs[j]);
+
+                    for (int k = 0; temp[k] != '\0'; k++) {
+                        if (temp[k] != '#') {
+                            addToSet(result, temp[k]);
+                        }
+                    }
+
+                    if (!strchr(temp, '#')) break;
+
+                    if (rhs[j + 1] == '\0') {
+                        addToSet(result, '#');
+                    }
+                }
+            }
+        }
+    }
+}
+
+void findFollow(char *result, char symbol) {
+    if (symbol == productions[0][0]) {
+        addToSet(result, '$');  // Start symbol gets $
+    }
+
+    for (int i = 0; i < numProductions; i++) {
+        char *rhs = &productions[i][2];
+        for (int j = 0; rhs[j] != '\0'; j++) {
+            if (rhs[j] == symbol) {
+                if (rhs[j + 1] != '\0') {
+                    char temp[10] = "";
+                    findFirst(temp, rhs[j + 1]);
+
+                    for (int k = 0; temp[k] != '\0'; k++) {
+                        if (temp[k] != '#') {
+                            addToSet(result, temp[k]);
+                        }
+                    }
+
+                    if (strchr(temp, '#')) {
+                        findFollow(result, productions[i][0]);
+                    }
+                } else if (productions[i][0] != symbol) {
+                    findFollow(result, productions[i][0]);
+                }
+            }
+        }
+    }
+}
+
+int main() {
+    char target;
+    char firstSet[10] = "", followSet[10] = "";
+
+    printf("Enter number of productions: ");
+    scanf("%d", &numProductions);
+
+    printf("Enter productions:\n");
+    for (int i = 0; i < numProductions; i++) {
+        scanf("%s", productions[i]);
+    }
+
+    printf("\nEnter non-terminal to find FIRST and FOLLOW: ");
+    scanf(" %c", &target);
+
+    findFirst(firstSet, target);
+    printf("\nFIRST(%c): { ", target);
+    for (int i = 0; firstSet[i] != '\0'; i++)
+        printf("%c ", firstSet[i]);
+    printf("}\n");
+
+    findFollow(followSet, target);
+    printf("FOLLOW(%c): { ", target);
+    for (int i = 0; followSet[i] != '\0'; i++)
+        printf("%c ", followSet[i]);
+    printf("}\n");
+
+    return 0;
+}
+
+
+/*
+Enter number of productions: 3
+Enter productions:
+S=AB
+A=a
+B=b
+
+Enter non-terminal to find FIRST and FOLLOW: 5
+
+FIRST(5): { 5 }
+FOLLOW(5): { }
+*/
+
+
+Write a program to remove left recursion from the grammar.
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+#define MAX 10
+#define SIZE 100
+
+char productions[MAX][SIZE];
+int numProductions;
+
+void removeLeftRecursion(char prod[]) {
+    char alpha[SIZE][SIZE], beta[SIZE][SIZE];
+    int aCount = 0, bCount = 0;
+    char nonTerminal = prod[0];
+    
+    char *rhs = strtok(&prod[3], "|");
+
+    while (rhs != NULL) {
+        if (rhs[0] == nonTerminal) {
+            strcpy(alpha[aCount], &rhs[1]); // remove left recursive part
+            aCount++;
+        } else {
+            strcpy(beta[bCount], rhs);
+            bCount++;
+        }
+        rhs = strtok(NULL, "|");
+    }
+
+    if (aCount == 0) {
+        printf("%c -> %s\n", nonTerminal, &prod[3]);
+        return;
+    }
+
+    char newNonTerminal = nonTerminal + 39; // Example: if A, new is A'
+
+    printf("%c -> ", nonTerminal);
+    for (int i = 0; i < bCount; i++) {
+        printf("%s%c", beta[i], newNonTerminal);
+        if (i != bCount - 1)
+            printf(" | ");
+    }
+    printf("\n");
+
+    printf("%c -> ", newNonTerminal);
+    for (int i = 0; i < aCount; i++) {
+        printf("%s%c", alpha[i], newNonTerminal);
+        if (i != aCount - 1)
+            printf(" | ");
+    }
+    printf(" | #\n"); // epsilon
+}
+
+int main() {
+    printf("Enter number of productions: ");
+    scanf("%d", &numProductions);
+
+    printf("Enter productions (e.g., A->Aa|b):\n");
+    for (int i = 0; i < numProductions; i++) {
+        scanf("%s", productions[i]);
+    }
+
+    printf("\nProductions after removing left recursion:\n");
+    for (int i = 0; i < numProductions; i++) {
+        removeLeftRecursion(productions[i]);
+    }
+
+    return 0;
+}
+
+Enter number of productions: 1
+Enter productions (e.g., A->Aa|b):
+A->Aa|b
+
+Productions after removing left recursion:
+A -> bh
+h -> ah | #
+
+
+!<arch>
+/               0           0     0     0       1175      `
+   <  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ  ÝŒ__asm___8_AN_LCD_c_temp1____REV16 __asm___8_AN_LCD_c_temp1____REVSH temp1 temp2 delay_lcd clear_ports wr_cn lcd_com lcd_init wr_dn lcd_data clr_disp lcd_puts __user_initial_stackheap __Vectors Reset_Handler NMI_Handler HardFault_Handler MemManage_Handler BusFault_Handler UsageFault_Handler SVC_Handler DebugMon_Handler PendSV_Handler SysTick_Handler ADC_IRQHandler BOD_IRQHandler CANActivity_IRQHandler CAN_IRQHandler DMA_IRQHandler EINT0_IRQHandler EINT1_IRQHandler EINT2_IRQHandler EINT3_IRQHandler ENET_IRQHandler I2C0_IRQHandler I2C1_IRQHandler I2C2_IRQHandler I2S_IRQHandler MCPWM_IRQHandler PLL0_IRQHandler PLL1_IRQHandler PWM1_IRQHandler QEI_IRQHandler RIT_IRQHandler RTC_IRQHandler SPI_IRQHandler SSP0_IRQHandler SSP1_IRQHandler TIMER0_IRQHandler TIMER1_IRQHandler TIMER2_IRQHandler TIMER3_IRQHandler UART0_IRQHandler UART1_IRQHandler UART2_IRQHandler UART3_IRQHandler USBActivity_IRQHandler USB_IRQHandler WDT_IRQHandler 
+//              0           0     0     0       19        `
+startup_LPC17xx.o/
+
+an_lcd.o/       1516096936  0     0     100666  55332     `
+÷ORC                      TË     4     ( R O       @ºpGÀºpGOð àñBûÓpGOôppˆIÈeOð ÈeOð  ÈepG µÿ÷þÿƒH hIHeOð ÈeOð  ˆeOð ÿ÷þÿOð  zIÈe ½ µzH h ðð wI`F hOê€ `ÿ÷þÿtH h ð qI`F hOê€`ÿ÷þÿOôzpÿ÷þÿ ½ µkH ikI ê iIaeH l@ôppcIdF l@ð dF l@ð  dÿ÷þÿOôH`ÿ÷þÿOðÀ ZI`ÿ÷þÿGò0Pÿ÷þÿOðÀ UI`ÿ÷þÿGò0Pÿ÷þÿOðÀ PI`ÿ÷þÿGò0Pÿ÷þÿOð€ KI`ÿ÷þÿGò0Pÿ÷þÿOð( GI`ÿ÷þÿGò0Pÿ÷þÿOð BI`ÿ÷þÿOôHpÿ÷þÿOð =I`ÿ÷þÿOôHpÿ÷þÿOð 8I`ÿ÷þÿBòpÿ÷þÿOð€ 3I`ÿ÷þÿOôHpÿ÷þÿ ½ µÿ÷þÿ,H h*IHeOð ˆeOð  ˆeOð ÿ÷þÿOð  #IÈe ½ µ#H h ðð  I`F hOê€ `ÿ÷þÿH h ð I`F hOê€`ÿ÷þÿOôzpÿ÷þÿ ½ µOð I`ÿ÷þÿBòpÿ÷þÿ ½µFOð àà\
+I`ÿ÷þÿñ+ÑOðÀ I`ÿ÷þÿà\ (íÑ½ À	          À@ÿ ðÿ        ¼        AN_LCD.c ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start            __asm___8_AN_LCD_c_temp1____REV16        __asm___8_AN_LCD_c_temp1____REVSH           d    F    
+       C:\\Keil4\\ARM\\CMSIS\\Include\\  core_cmInstr.h         ñ  0   ÿÿÿÿarmcc+ |
+       	
+
+                              0   ÿÿÿÿarmcc+ |
+      	
+
+   0   ÿÿÿÿarmcc+ |
+     	
+
+   0   ÿÿÿÿarmcc+ |
+       	
+
+                    4                &   ,   AŽ          R   @   AŽ          ’   ò   AŽ          „  ,   AŽ          °  @   AŽ          ð     AŽ      h     0   A~„Ž h        
+AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start                    AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start  unsigned long ptemp1 a    ptemp2 a      ¼       AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start     8       unsigned int unsigned char "}?Á| delay_lcd        ÷   ir1 m)  Xr mQ ?âŠ clear_ports    &   ã    ?üU wr_cn &   R   Ã    ?˜H lcd_com R   ’   £    ?µ lcd_init ’   „  ƒ    ?Ïp wr_dn „  °  c    ?ìc lcd_data °  ð  C    ?Šƒ clr_disp ð    #    ?½” lcd_puts   8      ibuf1 Ž 
+  Xi mS    (         
+        AN_LCD.c      Ä        
+        AN_LCD.c          þ  D  "j,&,&!D4,&'! ! ! ! ! ! ! ! ! !+  !j,&,&! !	 	
+ 
+x
+   
+   } –––
+  8   }        ð  ò   } ò     }        °  ²   } ²  ð   }        „  †   } †  °   }        ’   ”    } ”   „   }        R   T    } T   ’    }        &   (    } (   R    }           &    }                 }              P  8   T                P         __DATE__ "Jan 16 2018"  __TIME__ "15:32:16"  __STDC__ 1  __STDC_VERSION__ 199409L  __EDG__ 1  __EDG_VERSION__ 310  __sizeof_int 4  __sizeof_long 4  __sizeof_ptr 4  __ARMCC_VERSION 410713  __TARGET_CPU_CORTEX_M3 1  __TARGET_FPU_SOFTVFP 1  __TARGET_FPU_SOFTVFP 1  __EVAL 1  __CC_ARM 1  __arm 1  __arm__ 1  __TARGET_ARCH_7_M 1  __TARGET_ARCH_ARM 0  __TARGET_ARCH_THUMB 4  __TARGET_PROFILE_M 1  __TARGET_FEATURE_HALFWORD 1  __TARGET_FEATURE_THUMB 1  __TARGET_FEATURE_MULTIPLY 1  __TARGET_FEATURE_DOUBLEWORD 1  __TARGET_FEATURE_DIVIDE 1  __TARGET_FEATURE_UNALIGNED 1  __TARGET_FEATURE_CLZ 1  __TARGET_FEATURE_EXTENSION_REGISTER_COUNT 0  __APCS_INTERWORK 1  __thumb 1  __thumb__ 1  __OPTIMISE_SPACE 1  __OPTIMISE_LEVEL 0  __SOFTFP__ 1     "        ”   r   temp1 ‚   temp2     €        À  ‘   delay_lcd Á   clear_ports â   wr_cn ü   lcd_com   lcd_init 5  wr_dn O  lcd_data l  clr_disp Š  lcd_puts             %  .                    
+__stdint_h  __STDINT_DECLS  __CLIBNS __CLIBNS  [INT8_MIN -128 \INT16_MIN -32768 ]INT32_MIN (~0x7fffffff) ^INT64_MIN __ESCAPE__(~0x7fffffffffffffffll) aINT8_MAX 127 bINT16_MAX 32767 cINT32_MAX 2147483647 dINT64_MAX __ESCAPE__(9223372036854775807ll) gUINT8_MAX 255 hUINT16_MAX 65535 iUINT32_MAX 4294967295u jUINT64_MAX __ESCAPE__(18446744073709551615ull) oINT_LEAST8_MIN -128 pINT_LEAST16_MIN -32768 qINT_LEAST32_MIN (~0x7fffffff) rINT_LEAST64_MIN __ESCAPE__(~0x7fffffffffffffffll) uINT_LEAST8_MAX 127 vINT_LEAST16_MAX 32767 wINT_LEAST32_MAX 2147483647 xINT_LEAST64_MAX __ESCAPE__(9223372036854775807ll) {UINT_LEAST8_MAX 255 |UINT_LEAST16_MAX 65535 }UINT_LEAST32_MAX 4294967295u ~UINT_LEAST64_MAX __ESCAPE__(18446744073709551615ull) ƒINT_FAST8_MIN (~0x7fffffff) „INT_FAST16_MIN (~0x7fffffff) …INT_FAST32_MIN (~0x7fffffff) †INT_FAST64_MIN __ESCAPE__(~0x7fffffffffffffffll) ‰INT_FAST8_MAX 2147483647 ŠINT_FAST16_MAX 2147483647 ‹INT_FAST32_MAX 2147483647 ŒINT_FAST64_MAX __ESCAPE__(9223372036854775807ll) UINT_FAST8_MAX 4294967295u UINT_FAST16_MAX 4294967295u ‘UINT_FAST32_MAX 4294967295u ’UINT_FAST64_MAX __ESCAPE__(18446744073709551615ull) —INTPTR_MIN (~0x7fffffff) šINTPTR_MAX 2147483647 UINTPTR_MAX 4294967295u ¢INTMAX_MIN __ESCAPE__(~0x7fffffffffffffffll) ¥INTMAX_MAX __ESCAPE__(9223372036854775807ll) ¨UINTMAX_MAX __ESCAPE__(18446744073709551615ull) ­PTRDIFF_MIN (~0x7fffffff) ®PTRDIFF_MAX 2147483647 ±SIG_ATOMIC_MIN (~0x7fffffff) ²SIG_ATOMIC_MAX 2147483647 µSIZE_MAX 4294967295u ºWCHAR_MIN »WCHAR_MAX ÁWCHAR_MIN 0 ÂWCHAR_MAX 65535 ÆWINT_MIN (~0x7fffffff) ÇWINT_MAX 2147483647 ÎINT8_C(x) (x) ÏINT16_C(x) (x) ÐINT32_C(x) (x) ÑINT64_C(x) __ESCAPE__(x##ll) ÓUINT8_C(x) (x##u) ÔUINT16_C(x) (x##u) ÕUINT32_C(x) (x##u) ÖUINT64_C(x) __ESCAPE__(x##ull) ÙINTMAX_C(x) __ESCAPE__(x##ll) ÚUINTMAX_C(x) __ESCAPE__(x##ull)  @    6     
+       C:\Keil4\ARM\RV31\INC\  stdint.h     È       C:\Keil4\ARM\RV31\INC\stdint.h ARM C/C++ Compiler, 4.1 [Build 713]          signed char short int long long unsigned char  unsigned short  unsigned int  unsigned long long Pint8_t Y% Pint16_t h& Pint32_t q' Pint64_t x( Puint8_t … + Puint16_t – , Puint32_t ¨ - Puint64_t ¸ . Pint_least8_t Y4 Pint_least16_t h5 Pint_least32_t q6 Pint_least64_t x7 Puint_least8_t … : Puint_least16_t – ; Puint_least32_t ¨ < Puint_least64_t ¸ = Pint_fast8_t qB Pint_fast16_t qC Pint_fast32_t qD Pint_fast64_t xE Puint_fast8_t ¨ H Puint_fast16_t ¨ I Puint_fast32_t ¨ J Puint_fast64_t ¸ K Pintptr_t qN Puintptr_t ¨ O Pintmax_t xR Puintmax_t ¸ S                  __CORE_CMINSTR_H__  )__NOP __nop 1__WFI __wfi 9__WFE __wfe @__SEV __sev I__ISB() __isb(0xF) Q__DSB() __dsb(0xF) Y__DMB() __dmb(0xF) c__REV __rev “__RBIT __rbit __LDREXB(ptr) ((uint8_t ) __ldrex(ptr)) §__LDREXH(ptr) ((uint16_t) __ldrex(ptr)) ±__LDREXW(ptr) ((uint32_t ) __ldrex(ptr)) ½__STREXB(value,ptr) __strex(value, ptr) É__STREXH(value,ptr) __strex(value, ptr) Õ__STREXW(value,ptr) __strex(value, ptr) à__CLREX __clrex ì__SSAT __ssat ÷__USAT __usat __CLZ __clz  L    A     
+       C:\Keil4\ARM\CMSIS\Include\  core_cmInstr.h     d        C:\Keil4\ARM\CMSIS\Include\core_cmInstr.h ARM C/C++ Compiler, 4.1 [Build 713]                           __CORE_CMFUNC_H__  é__enable_fault_irq __enable_fiq ñ__disable_fault_irq __disable_fiq    L    @     
+       C:\Keil4\ARM\CMSIS\Include\  core_cmFunc.h     $       C:\Keil4\ARM\CMSIS\Include\core_cmFunc.h ARM C/C++ Compiler, 4.1 [Build 713]          ;£0__get_CONTROL  $  a__result $  Y__regControl $  P <ÜA__set_CONTROL  $$  control Y__regControl $  P ;–R__get_IPSR  $  a__result $  Y__regIPSR $  P ;Ðc__get_APSR  $  a__result $  Y__regAPSR $  P ;Št__get_xPSR  $  a__result $  Y__regXPSR $  P ;Ó…__get_PSP  $  a__result $  Y__regProcessStackPointer $  P <œ–__set_PSP  $$  topOfProcStack Y__regProcessStackPointer $  P ;â§__get_MSP  $  a__result $  Y__regMainStackPointer $  P <¨¸__set_MSP  $$  topOfMainStack Y__regMainStackPointer $  P ;éÉ__get_PRIMASK  $  a__result $  Y__regPriMask $  P <£Ú__set_PRIMASK  $$  priMask Y__regPriMask $  P ;äý__get_BASEPRI  $  a__result $  Y__regBasePri $  P <ž Ž__set_BASEPRI  $$  basePri Y__regBasePri $  P ;ã Ÿ__get_FAULTMASK  $  a__result $  Y__regFaultMask $  P <£°__set_FAULTMASK  $$  faultMask Y__regFaultMask $  P             !   "   #     __CORE_CM3_H_GENERIC  E__CM3_CMSIS_VERSION_MAIN (0x02) F__CM3_CMSIS_VERSION_SUB (0x00) G__CM3_CMSIS_VERSION ((__CM3_CMSIS_VERSION_MAIN << 16) | __CM3_CMSIS_VERSION_SUB) I__CORTEX_M (0x03) M__ASM __asm N__INLINE __inline ^_`h__CORE_CM3_H_DEPENDANT  n__I volatile const p__O volatile q__IO volatile •SCB_CPUID_IMPLEMENTER_Pos 24 –SCB_CPUID_IMPLEMENTER_Msk (0xFFUL << SCB_CPUID_IMPLEMENTER_Pos) ˜SCB_CPUID_VARIANT_Pos 20 ™SCB_CPUID_VARIANT_Msk (0xFUL << SCB_CPUID_VARIANT_Pos) ›SCB_CPUID_PARTNO_Pos 4 œSCB_CPUID_PARTNO_Msk (0xFFFUL << SCB_CPUID_PARTNO_Pos) žSCB_CPUID_REVISION_Pos 0 ŸSCB_CPUID_REVISION_Msk (0xFUL << SCB_CPUID_REVISION_Pos) ¢SCB_ICSR_NMIPENDSET_Pos 31 £SCB_ICSR_NMIPENDSET_Msk (1UL << SCB_ICSR_NMIPENDSET_Pos) ¥SCB_ICSR_PENDSVSET_Pos 28 ¦SCB_ICSR_PENDSVSET_Msk (1UL << SCB_ICSR_PENDSVSET_Pos) ¨SCB_ICSR_PENDSVCLR_Pos 27 ©SCB_ICSR_PENDSVCLR_Msk (1UL << SCB_ICSR_PENDSVCLR_Pos) «SCB_ICSR_PENDSTSET_Pos 26 ¬SCB_ICSR_PENDSTSET_Msk (1UL << SCB_ICSR_PENDSTSET_Pos) ®SCB_ICSR_PENDSTCLR_Pos 25 ¯SCB_ICSR_PENDSTCLR_Msk (1UL << SCB_ICSR_PENDSTCLR_Pos) ±SCB_ICSR_ISRPREEMPT_Pos 23 ²SCB_ICSR_ISRPREEMPT_Msk (1UL << SCB_ICSR_ISRPREEMPT_Pos) ´SCB_ICSR_ISRPENDING_Pos 22 µSCB_ICSR_ISRPENDING_Msk (1UL << SCB_ICSR_ISRPENDING_Pos) ·SCB_ICSR_VECTPENDING_Pos 12 ¸SCB_ICSR_VECTPENDING_Msk (0x1FFUL << SCB_ICSR_VECTPENDING_Pos) ºSCB_ICSR_RETTOBASE_Pos 11 »SCB_ICSR_RETTOBASE_Msk (1UL << SCB_ICSR_RETTOBASE_Pos) ½SCB_ICSR_VECTACTIVE_Pos 0 ¾SCB_ICSR_VECTACTIVE_Msk (0x1FFUL << SCB_ICSR_VECTACTIVE_Pos) ÁSCB_VTOR_TBLBASE_Pos 29 ÂSCB_VTOR_TBLBASE_Msk (1UL << SCB_VTOR_TBLBASE_Pos) ÄSCB_VTOR_TBLOFF_Pos 7 ÅSCB_VTOR_TBLOFF_Msk (0x3FFFFFUL << SCB_VTOR_TBLOFF_Pos) ÈSCB_AIRCR_VECTKEY_Pos 16 ÉSCB_AIRCR_VECTKEY_Msk (0xFFFFUL << SCB_AIRCR_VECTKEY_Pos) ËSCB_AIRCR_VECTKEYSTAT_Pos 16 ÌSCB_AIRCR_VECTKEYSTAT_Msk (0xFFFFUL << SCB_AIRCR_VECTKEYSTAT_Pos) ÎSCB_AIRCR_ENDIANESS_Pos 15 ÏSCB_AIRCR_ENDIANESS_Msk (1UL << SCB_AIRCR_ENDIANESS_Pos) ÑSCB_AIRCR_PRIGROUP_Pos 8 ÒSCB_AIRCR_PRIGROUP_Msk (7UL << SCB_AIRCR_PRIGROUP_Pos) ÔSCB_AIRCR_SYSRESETREQ_Pos 2 ÕSCB_AIRCR_SYSRESETREQ_Msk (1UL << SCB_AIRCR_SYSRESETREQ_Pos) ×SCB_AIRCR_VECTCLRACTIVE_Pos 1 ØSCB_AIRCR_VECTCLRACTIVE_Msk (1UL << SCB_AIRCR_VECTCLRACTIVE_Pos) ÚSCB_AIRCR_VECTRESET_Pos 0 ÛSCB_AIRCR_VECTRESET_Msk (1UL << SCB_AIRCR_VECTRESET_Pos) ÞSCB_SCR_SEVONPEND_Pos 4 ßSCB_SCR_SEVONPEND_Msk (1UL << SCB_SCR_SEVONPEND_Pos) áSCB_SCR_SLEEPDEEP_Pos 2 âSCB_SCR_SLEEPDEEP_Msk (1UL << SCB_SCR_SLEEPDEEP_Pos) äSCB_SCR_SLEEPONEXIT_Pos 1 åSCB_SCR_SLEEPONEXIT_Msk (1UL << SCB_SCR_SLEEPONEXIT_Pos) èSCB_CCR_STKALIGN_Pos 9 éSCB_CCR_STKALIGN_Msk (1UL << SCB_CCR_STKALIGN_Pos) ëSCB_CCR_BFHFNMIGN_Pos 8 ìSCB_CCR_BFHFNMIGN_Msk (1UL << SCB_CCR_BFHFNMIGN_Pos) îSCB_CCR_DIV_0_TRP_Pos 4 ïSCB_CCR_DIV_0_TRP_Msk (1UL << SCB_CCR_DIV_0_TRP_Pos) ñSCB_CCR_UNALIGN_TRP_Pos 3 òSCB_CCR_UNALIGN_TRP_Msk (1UL << SCB_CCR_UNALIGN_TRP_Pos) ôSCB_CCR_USERSETMPEND_Pos 1 õSCB_CCR_USERSETMPEND_Msk (1UL << SCB_CCR_USERSETMPEND_Pos) ÷SCB_CCR_NONBASETHRDENA_Pos 0 øSCB_CCR_NONBASETHRDENA_Msk (1UL << SCB_CCR_NONBASETHRDENA_Pos) ûSCB_SHCSR_USGFAULTENA_Pos 18 üSCB_SHCSR_USGFAULTENA_Msk (1UL << SCB_SHCSR_USGFAULTENA_Pos) þSCB_SHCSR_BUSFAULTENA_Pos 17 ÿSCB_SHCSR_BUSFAULTENA_Msk (1UL << SCB_SHCSR_BUSFAULTENA_Pos) SCB_SHCSR_MEMFAULTENA_Pos 16 ‚SCB_SHCSR_MEMFAULTENA_Msk (1UL << SCB_SHCSR_MEMFAULTENA_Pos) „SCB_SHCSR_SVCALLPENDED_Pos 15 …SCB_SHCSR_SVCALLPENDED_Msk (1UL << SCB_SHCSR_SVCALLPENDED_Pos) ‡SCB_SHCSR_BUSFAULTPENDED_Pos 14 ˆSCB_SHCSR_BUSFAULTPENDED_Msk (1UL << SCB_SHCSR_BUSFAULTPENDED_Pos) ŠSCB_SHCSR_MEMFAULTPENDED_Pos 13 ‹SCB_SHCSR_MEMFAULTPENDED_Msk (1UL << SCB_SHCSR_MEMFAULTPENDED_Pos) SCB_SHCSR_USGFAULTPENDED_Pos 12 ŽSCB_SHCSR_USGFAULTPENDED_Msk (1UL << SCB_SHCSR_USGFAULTPENDED_Pos) SCB_SHCSR_SYSTICKACT_Pos 11 ‘SCB_SHCSR_SYSTICKACT_Msk (1UL << SCB_SHCSR_SYSTICKACT_Pos) “SCB_SHCSR_PENDSVACT_Pos 10 ”SCB_SHCSR_PENDSVACT_Msk (1UL << SCB_SHCSR_PENDSVACT_Pos) –SCB_SHCSR_MONITORACT_Pos 8 —SCB_SHCSR_MONITORACT_Msk (1UL << SCB_SHCSR_MONITORACT_Pos) ™SCB_SHCSR_SVCALLACT_Pos 7 šSCB_SHCSR_SVCALLACT_Msk (1UL << SCB_SHCSR_SVCALLACT_Pos) œSCB_SHCSR_USGFAULTACT_Pos 3 SCB_SHCSR_USGFAULTACT_Msk (1UL << SCB_SHCSR_USGFAULTACT_Pos) ŸSCB_SHCSR_BUSFAULTACT_Pos 1  SCB_SHCSR_BUSFAULTACT_Msk (1UL << SCB_SHCSR_BUSFAULTACT_Pos) ¢SCB_SHCSR_MEMFAULTACT_Pos 0 £SCB_SHCSR_MEMFAULTACT_Msk (1UL << SCB_SHCSR_MEMFAULTACT_Pos) ¦SCB_CFSR_USGFAULTSR_Pos 16 §SCB_CFSR_USGFAULTSR_Msk (0xFFFFUL << SCB_CFSR_USGFAULTSR_Pos) ©SCB_CFSR_BUSFAULTSR_Pos 8 ªSCB_CFSR_BUSFAULTSR_Msk (0xFFUL << SCB_CFSR_BUSFAULTSR_Pos) ¬SCB_CFSR_MEMFAULTSR_Pos 0 ­SCB_CFSR_MEMFAULTSR_Msk (0xFFUL << SCB_CFSR_MEMFAULTSR_Pos) °SCB_HFSR_DEBUGEVT_Pos 31 ±SCB_HFSR_DEBUGEVT_Msk (1UL << SCB_HFSR_DEBUGEVT_Pos) ³SCB_HFSR_FORCED_Pos 30 ´SCB_HFSR_FORCED_Msk (1UL << SCB_HFSR_FORCED_Pos) ¶SCB_HFSR_VECTTBL_Pos 1 ·SCB_HFSR_VECTTBL_Msk (1UL << SCB_HFSR_VECTTBL_Pos) ºSCB_DFSR_EXTERNAL_Pos 4 »SCB_DFSR_EXTERNAL_Msk (1UL << SCB_DFSR_EXTERNAL_Pos) ½SCB_DFSR_VCATCH_Pos 3 ¾SCB_DFSR_VCATCH_Msk (1UL << SCB_DFSR_VCATCH_Pos) ÀSCB_DFSR_DWTTRAP_Pos 2 ÁSCB_DFSR_DWTTRAP_Msk (1UL << SCB_DFSR_DWTTRAP_Pos) ÃSCB_DFSR_BKPT_Pos 1 ÄSCB_DFSR_BKPT_Msk (1UL << SCB_DFSR_BKPT_Pos) ÆSCB_DFSR_HALTED_Pos 0 ÇSCB_DFSR_HALTED_Msk (1UL << SCB_DFSR_HALTED_Pos) ÝSysTick_CTRL_COUNTFLAG_Pos 16 ÞSysTick_CTRL_COUNTFLAG_Msk (1UL << SysTick_CTRL_COUNTFLAG_Pos) àSysTick_CTRL_CLKSOURCE_Pos 2 áSysTick_CTRL_CLKSOURCE_Msk (1UL << SysTick_CTRL_CLKSOURCE_Pos) ãSysTick_CTRL_TICKINT_Pos 1 äSysTick_CTRL_TICKINT_Msk (1UL << SysTick_CTRL_TICKINT_Pos) æSysTick_CTRL_ENABLE_Pos 0 çSysTick_CTRL_ENABLE_Msk (1UL << SysTick_CTRL_ENABLE_Pos) êSysTick_LOAD_RELOAD_Pos 0 ëSysTick_LOAD_RELOAD_Msk (0xFFFFFFUL << SysTick_LOAD_RELOAD_Pos) îSysTick_VAL_CURRENT_Pos 0 ïSysTick_VAL_CURRENT_Msk (0xFFFFFFUL << SysTick_VAL_CURRENT_Pos) òSysTick_CALIB_NOREF_Pos 31 óSysTick_CALIB_NOREF_Msk (1UL << SysTick_CALIB_NOREF_Pos) õSysTick_CALIB_SKEW_Pos 30 öSysTick_CALIB_SKEW_Msk (1UL << SysTick_CALIB_SKEW_Pos) øSysTick_CALIB_TENMS_Pos 0 ùSysTick_CALIB_TENMS_Msk (0xFFFFFFUL << SysTick_VAL_CURRENT_Pos) «ITM_TPR_PRIVMASK_Pos 0 ¬ITM_TPR_PRIVMASK_Msk (0xFUL << ITM_TPR_PRIVMASK_Pos) ¯ITM_TCR_BUSY_Pos 23 °ITM_TCR_BUSY_Msk (1UL << ITM_TCR_BUSY_Pos) ²ITM_TCR_ATBID_Pos 16 ³ITM_TCR_ATBID_Msk (0x7FUL << ITM_TCR_ATBID_Pos) µITM_TCR_TSPrescale_Pos 8 ¶ITM_TCR_TSPrescale_Msk (3UL << ITM_TCR_TSPrescale_Pos) ¸ITM_TCR_SWOENA_Pos 4 ¹ITM_TCR_SWOENA_Msk (1UL << ITM_TCR_SWOENA_Pos) »ITM_TCR_DWTENA_Pos 3 ¼ITM_TCR_DWTENA_Msk (1UL << ITM_TCR_DWTENA_Pos) ¾ITM_TCR_SYNCENA_Pos 2 ¿ITM_TCR_SYNCENA_Msk (1UL << ITM_TCR_SYNCENA_Pos) ÁITM_TCR_TSENA_Pos 1 ÂITM_TCR_TSENA_Msk (1UL << ITM_TCR_TSENA_Pos) ÄITM_TCR_ITMENA_Pos 0 ÅITM_TCR_ITMENA_Msk (1UL << ITM_TCR_ITMENA_Pos) ÈITM_IWR_ATVALIDM_Pos 0 ÉITM_IWR_ATVALIDM_Msk (1UL << ITM_IWR_ATVALIDM_Pos) ÌITM_IRR_ATREADYM_Pos 0 ÍITM_IRR_ATREADYM_Msk (1UL << ITM_IRR_ATREADYM_Pos) ÐITM_IMCR_INTEGRATION_Pos 0 ÑITM_IMCR_INTEGRATION_Msk (1UL << ITM_IMCR_INTEGRATION_Pos) ÔITM_LSR_ByteAcc_Pos 2 ÕITM_LSR_ByteAcc_Msk (1UL << ITM_LSR_ByteAcc_Pos) ×ITM_LSR_Access_Pos 1 ØITM_LSR_Access_Msk (1UL << ITM_LSR_Access_Pos) ÚITM_LSR_Present_Pos 0 ÛITM_LSR_Present_Msk (1UL << ITM_LSR_Present_Pos) ôIntType_ICTR_INTLINESNUM_Pos 0 õIntType_ICTR_INTLINESNUM_Msk (0x1FUL << IntType_ICTR_INTLINESNUM_Pos) øIntType_ACTLR_DISFOLD_Pos 2 ùIntType_ACTLR_DISFOLD_Msk (1UL << IntType_ACTLR_DISFOLD_Pos) ûIntType_ACTLR_DISDEFWBUF_Pos 1 üIntType_ACTLR_DISDEFWBUF_Msk (1UL << IntType_ACTLR_DISDEFWBUF_Pos) þIntType_ACTLR_DISMCYCINT_Pos 0 ÿIntType_ACTLR_DISMCYCINT_Msk (1UL << IntType_ACTLR_DISMCYCINT_Pos) MPU_TYPE_IREGION_Pos 16 žMPU_TYPE_IREGION_Msk (0xFFUL << MPU_TYPE_IREGION_Pos)  MPU_TYPE_DREGION_Pos 8 ¡MPU_TYPE_DREGION_Msk (0xFFUL << MPU_TYPE_DREGION_Pos) £MPU_TYPE_SEPARATE_Pos 0 ¤MPU_TYPE_SEPARATE_Msk (1UL << MPU_TYPE_SEPARATE_Pos) §MPU_CTRL_PRIVDEFENA_Pos 2 ¨MPU_CTRL_PRIVDEFENA_Msk (1UL << MPU_CTRL_PRIVDEFENA_Pos) ªMPU_CTRL_HFNMIENA_Pos 1 «MPU_CTRL_HFNMIENA_Msk (1UL << MPU_CTRL_HFNMIENA_Pos) ­MPU_CTRL_ENABLE_Pos 0 ®MPU_CTRL_ENABLE_Msk (1UL << MPU_CTRL_ENABLE_Pos) ±MPU_RNR_REGION_Pos 0 ²MPU_RNR_REGION_Msk (0xFFUL << MPU_RNR_REGION_Pos) µMPU_RBAR_ADDR_Pos 5 ¶MPU_RBAR_ADDR_Msk (0x7FFFFFFUL << MPU_RBAR_ADDR_Pos) ¸MPU_RBAR_VALID_Pos 4 ¹MPU_RBAR_VALID_Msk (1UL << MPU_RBAR_VALID_Pos) »MPU_RBAR_REGION_Pos 0 ¼MPU_RBAR_REGION_Msk (0xFUL << MPU_RBAR_REGION_Pos) ¿MPU_RASR_XN_Pos 28 ÀMPU_RASR_XN_Msk (1UL << MPU_RASR_XN_Pos) ÂMPU_RASR_AP_Pos 24 ÃMPU_RASR_AP_Msk (7UL << MPU_RASR_AP_Pos) ÅMPU_RASR_TEX_Pos 19 ÆMPU_RASR_TEX_Msk (7UL << MPU_RASR_TEX_Pos) ÈMPU_RASR_S_Pos 18 ÉMPU_RASR_S_Msk (1UL << MPU_RASR_S_Pos) ËMPU_RASR_C_Pos 17 ÌMPU_RASR_C_Msk (1UL << MPU_RASR_C_Pos) ÎMPU_RASR_B_Pos 16 ÏMPU_RASR_B_Msk (1UL << MPU_RASR_B_Pos) ÑMPU_RASR_SRD_Pos 8 ÒMPU_RASR_SRD_Msk (0xFFUL << MPU_RASR_SRD_Pos) ÔMPU_RASR_SIZE_Pos 1 ÕMPU_RASR_SIZE_Msk (0x1FUL << MPU_RASR_SIZE_Pos) ×MPU_RASR_ENA_Pos 0 ØMPU_RASR_ENA_Msk (0x1UL << MPU_RASR_ENA_Pos) ïCoreDebug_DHCSR_DBGKEY_Pos 16 ðCoreDebug_DHCSR_DBGKEY_Msk (0xFFFFUL << CoreDebug_DHCSR_DBGKEY_Pos) òCoreDebug_DHCSR_S_RESET_ST_Pos 25 óCoreDebug_DHCSR_S_RESET_ST_Msk (1UL << CoreDebug_DHCSR_S_RESET_ST_Pos) õCoreDebug_DHCSR_S_RETIRE_ST_Pos 24 öCoreDebug_DHCSR_S_RETIRE_ST_Msk (1UL << CoreDebug_DHCSR_S_RETIRE_ST_Pos) øCoreDebug_DHCSR_S_LOCKUP_Pos 19 ùCoreDebug_DHCSR_S_LOCKUP_Msk (1UL << CoreDebug_DHCSR_S_LOCKUP_Pos) ûCoreDebug_DHCSR_S_SLEEP_Pos 18 üCoreDebug_DHCSR_S_SLEEP_Msk (1UL << CoreDebug_DHCSR_S_SLEEP_Pos) þCoreDebug_DHCSR_S_HALT_Pos 17 ÿCoreDebug_DHCSR_S_HALT_Msk (1UL << CoreDebug_DHCSR_S_HALT_Pos) CoreDebug_DHCSR_S_REGRDY_Pos 16 ‚CoreDebug_DHCSR_S_REGRDY_Msk (1UL << CoreDebug_DHCSR_S_REGRDY_Pos) „CoreDebug_DHCSR_C_SNAPSTALL_Pos 5 …CoreDebug_DHCSR_C_SNAPSTALL_Msk (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos) ‡CoreDebug_DHCSR_C_MASKINTS_Pos 3 ˆCoreDebug_DHCSR_C_MASKINTS_Msk (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos) ŠCoreDebug_DHCSR_C_STEP_Pos 2 ‹CoreDebug_DHCSR_C_STEP_Msk (1UL << CoreDebug_DHCSR_C_STEP_Pos) CoreDebug_DHCSR_C_HALT_Pos 1 ŽCoreDebug_DHCSR_C_HALT_Msk (1UL << CoreDebug_DHCSR_C_HALT_Pos) CoreDebug_DHCSR_C_DEBUGEN_Pos 0 ‘CoreDebug_DHCSR_C_DEBUGEN_Msk (1UL << CoreDebug_DHCSR_C_DEBUGEN_Pos) ”CoreDebug_DCRSR_REGWnR_Pos 16 •CoreDebug_DCRSR_REGWnR_Msk (1UL << CoreDebug_DCRSR_REGWnR_Pos) —CoreDebug_DCRSR_REGSEL_Pos 0 ˜CoreDebug_DCRSR_REGSEL_Msk (0x1FUL << CoreDebug_DCRSR_REGSEL_Pos) ›CoreDebug_DEMCR_TRCENA_Pos 24 œCoreDebug_DEMCR_TRCENA_Msk (1UL << CoreDebug_DEMCR_TRCENA_Pos) žCoreDebug_DEMCR_MON_REQ_Pos 19 ŸCoreDebug_DEMCR_MON_REQ_Msk (1UL << CoreDebug_DEMCR_MON_REQ_Pos) ¡CoreDebug_DEMCR_MON_STEP_Pos 18 ¢CoreDebug_DEMCR_MON_STEP_Msk (1UL << CoreDebug_DEMCR_MON_STEP_Pos) ¤CoreDebug_DEMCR_MON_PEND_Pos 17 ¥CoreDebug_DEMCR_MON_PEND_Msk (1UL << CoreDebug_DEMCR_MON_PEND_Pos) §CoreDebug_DEMCR_MON_EN_Pos 16 ¨CoreDebug_DEMCR_MON_EN_Msk (1UL << CoreDebug_DEMCR_MON_EN_Pos) ªCoreDebug_DEMCR_VC_HARDERR_Pos 10 «CoreDebug_DEMCR_VC_HARDERR_Msk (1UL << CoreDebug_DEMCR_VC_HARDERR_Pos) ­CoreDebug_DEMCR_VC_INTERR_Pos 9 ®CoreDebug_DEMCR_VC_INTERR_Msk (1UL << CoreDebug_DEMCR_VC_INTERR_Pos) °CoreDebug_DEMCR_VC_BUSERR_Pos 8 ±CoreDebug_DEMCR_VC_BUSERR_Msk (1UL << CoreDebug_DEMCR_VC_BUSERR_Pos) ³CoreDebug_DEMCR_VC_STATERR_Pos 7 ´CoreDebug_DEMCR_VC_STATERR_Msk (1UL << CoreDebug_DEMCR_VC_STATERR_Pos) ¶CoreDebug_DEMCR_VC_CHKERR_Pos 6 ·CoreDebug_DEMCR_VC_CHKERR_Msk (1UL << CoreDebug_DEMCR_VC_CHKERR_Pos) ¹CoreDebug_DEMCR_VC_NOCPERR_Pos 5 ºCoreDebug_DEMCR_VC_NOCPERR_Msk (1UL << CoreDebug_DEMCR_VC_NOCPERR_Pos) ¼CoreDebug_DEMCR_VC_MMERR_Pos 4 ½CoreDebug_DEMCR_VC_MMERR_Msk (1UL << CoreDebug_DEMCR_VC_MMERR_Pos) ¿CoreDebug_DEMCR_VC_CORERESET_Pos 0 ÀCoreDebug_DEMCR_VC_CORERESET_Msk (1UL << CoreDebug_DEMCR_VC_CORERESET_Pos) ÊSCS_BASE (0xE000E000UL) ËITM_BASE (0xE0000000UL) ÌCoreDebug_BASE (0xE000EDF0UL) ÍSysTick_BASE (SCS_BASE + 0x0010UL) ÎNVIC_BASE (SCS_BASE + 0x0100UL) ÏSCB_BASE (SCS_BASE + 0x0D00UL) ÑInterruptType ((InterruptType_Type *) SCS_BASE) ÒSCB ((SCB_Type *) SCB_BASE) ÓSysTick ((SysTick_Type *) SysTick_BASE) ÔNVIC ((NVIC_Type *) NVIC_BASE) ÕITM ((ITM_Type *) ITM_BASE) ÖCoreDebug ((CoreDebug_Type *) CoreDebug_BASE) ÙMPU_BASE (SCS_BASE + 0x0D90UL) ÚMPU ((MPU_Type*) MPU_BASE) ‹	ITM_RXBUFFER_EMPTY 0x5AA55AA5     Œ    ƒ     
+       C:\Keil4\ARM\CMSIS\Include\ C:\Keil4\ARM\RV31\INC\  core_cm3.h   stdint.h   core_cmInstr.h   core_cmFunc.h     ø       C:\Keil4\ARM\CMSIS\Include\core_cm3.h ARM C/C++ Compiler, 4.1 [Build 713]          *Â!_reserved0 $  # !Q $  # !V $  # !C $  # !Z $  # !N $  #   SÔb `w $   PAPSR_Type Â ž*’!ISR $  # 	!_reserved0 $  #   S¥b æ w $   PIPSR_Type «*Æ!ISR $  # 	!_reserved0 $  # !T $  #  !IT $  # !Q $  # !V $  # !C $  # !Z $  # !N $  #   SÙb 7w $   PxPSR_Type ÆÅ*¼!nPRIV $  # !SPSEL $  # !FPCA $  # !_reserved0 $  #   SÏb ëw $   PCONTROL_Type <Ô*¦ „ò¦  ISER i# ‰$   RESERVED0 ~# £¦  ICER š#€»$   RSERVED1 °# Õ¦  ISPR Ì#€í$   RESERVED2 â# ˆ¦  ICPR ÿ#€ $   RESERVED3 # »¦  IABR 2#€Ó$  7 RESERVED4 H# ï¬ï IP e#€† $  ƒ RESERVED5 z#ð STIR ¦#€ t$  t  PNVIC_Type dð*Ï	tCPUID Õ# ICSR ¦#VTOR ¦#AIRCR ¦#SCR ¦#CCR ¦#™¬
+ SHP #SHCSR ¦#$CFSR ¦#(HFSR ¦#,DFSR ¦#0MMFAR ¦#4BFAR ¦#8AFSR ¦#<ƒ	Õ PFR z#@DFR Õ#HADR Õ#L­	Õ MMFR ¤#PÂ	Õ ISAR ¹#` $  tÏPSCB_Type Ä’*Ÿ
+CTRL ¦# LOAD ¦#VAL ¦#CALIB Õ# PSysTick_Type êÚSÐ
+u8 ¬u16 Pu32 ¦ t  *€ ä
+  PORT [# ü
+$  ß RESERVED0 p#€TER ¦#€¥
+$   RESERVED1 š#„TPR ¦#ÀÎ
+$   RESERVED2 Ã#ÄTCR ¦#€÷
+$   RESERVED3 ì#„IWR ¦#øIRR ¦#üIMCR ¦#€¹$  * RESERVED4 .#„LAR ¦#°LSR ¦#´î$   RESERVED5 c#¸PID4 Õ#ÐPID5 Õ#ÔPID6 Õ#ØPID7 Õ#ÜPID0 Õ#àPID1 Õ#äPID2 Õ#èPID3 Õ#ìCID0 Õ#ðCID1 Õ#ôCID2 Õ#øCID3 Õ#ü t4PITM_Type V¨*éRESERVED0 $  # ICTR Õ#RESERVED1 $  # PInterruptType_Type 2 ñ*ž,TYPE Õ# CTRL ¦#RNR ¦#RBAR ¦#RASR ¦#RBAR_A1 ¦#RASR_A1 ¦#RBAR_A2 ¦#RASR_A2 ¦# RBAR_A3 ¦#$RASR_A3 ¦#( PMPU_Type „ š*èDHCSR ¦# DCRSR ¦#DCRDR ¦#DEMCR ¦# PCoreDebug_Type /ìté   qITM_RxBuffer <õþNVIC_SetPriorityGrouping  $$  PriorityGroup \reg_value $  \PriorityGroupTmp $   ;¬“ NVIC_GetPriorityGrouping  $  a__result $   <Ï  NVIC_EnableIRQ  $²  IRQn  <ó­ NVIC_DisableIRQ  $²  IRQn  ;¯¼ NVIC_GetPendingIRQ  $  $²  IRQn a__result $   <ÖÉ NVIC_SetPendingIRQ  $²  IRQn  <ÿÖ NVIC_ClearPendingIRQ  $²  IRQn  ;·ã NVIC_GetActive  $  $²  IRQn a__result $   <ëô NVIC_SetPriority  $²  IRQn $$  priority  ;¥‰NVIC_GetPriority  $  $²  IRQn a__result $   ;Ú¡NVIC_EncodePriority  $  $$  PriorityGroup $$  PreemptPriority $$  SubPriority a__result $  \PriorityGroupTmp $  \PreemptPriorityBits $  \SubPriorityBits $   <‡¿NVIC_DecodePriority  $$  Priority $$  PriorityGroup $ pPreemptPriority $ pSubPriority \PriorityGroupTmp $  \PreemptPriorityBits $  \SubPriorityBits $   "$  <§ÑNVIC_SystemReset   ;àñSysTick_Config  $  $$  ticks a__result $   ;”—	ITM_SendChar  $  $$  ch a__result $   ;Ë­	ITM_ReceiveChar  é   a__result é   \ch é    ;÷Á	ITM_CheckChar  é   a__result é                 ü  …  ITM_RxBuffer         %   &   '   (    __SYSTEM_LPC17xx_H  !  t    h     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\ C:\Keil4\ARM\RV31\INC\  system_LPC17xx.h   stdint.h     €        C:\Keil4\ARM\INC\NXP\LPC17xx\system_LPC17xx.h ARM C/C++ Compiler, 4.1 [Build 713]          qSystemCoreClock $      "        „   h   SystemCoreClock          *   +   ,    __LPC17xx_H__  b__MPU_PRESENT 1 c__NVIC_PRIO_BITS 5 d__Vendor_SysTickConfig 0 gh” LPC_FLASH_BASE (0x00000000UL) • LPC_RAM_BASE (0x10000000UL) š LPC_AHBRAM0_BASE (0x2007C000UL) › LPC_AHBRAM1_BASE (0x20080000UL)  LPC_GPIO_BASE (0x2009C000UL) ž LPC_APB0_BASE (0x40000000UL) Ÿ LPC_APB1_BASE (0x40080000UL)   LPC_AHB_BASE (0x50000000UL) ¡ LPC_CM3_BASE (0xE0000000UL) ¤ LPC_WDT_BASE (LPC_APB0_BASE + 0x00000) ¥ LPC_TIM0_BASE (LPC_APB0_BASE + 0x04000) ¦ LPC_TIM1_BASE (LPC_APB0_BASE + 0x08000) § LPC_UART0_BASE (LPC_APB0_BASE + 0x0C000) ¨ LPC_UART1_BASE (LPC_APB0_BASE + 0x10000) © LPC_PWM1_BASE (LPC_APB0_BASE + 0x18000) ª LPC_I2C0_BASE (LPC_APB0_BASE + 0x1C000) « LPC_SPI_BASE (LPC_APB0_BASE + 0x20000) ¬ LPC_RTC_BASE (LPC_APB0_BASE + 0x24000) ­ LPC_GPIOINT_BASE (LPC_APB0_BASE + 0x28080) ® LPC_PINCON_BASE (LPC_APB0_BASE + 0x2C000) ¯ LPC_SSP1_BASE (LPC_APB0_BASE + 0x30000) ° LPC_ADC_BASE (LPC_APB0_BASE + 0x34000) ± LPC_CANAF_RAM_BASE (LPC_APB0_BASE + 0x38000) ² LPC_CANAF_BASE (LPC_APB0_BASE + 0x3C000) ³ LPC_CANCR_BASE (LPC_APB0_BASE + 0x40000) ´ LPC_CAN1_BASE (LPC_APB0_BASE + 0x44000) µ LPC_CAN2_BASE (LPC_APB0_BASE + 0x48000) ¶ LPC_I2C1_BASE (LPC_APB0_BASE + 0x5C000) ¹ LPC_SSP0_BASE (LPC_APB1_BASE + 0x08000) º LPC_DAC_BASE (LPC_APB1_BASE + 0x0C000) » LPC_TIM2_BASE (LPC_APB1_BASE + 0x10000) ¼ LPC_TIM3_BASE (LPC_APB1_BASE + 0x14000) ½ LPC_UART2_BASE (LPC_APB1_BASE + 0x18000) ¾ LPC_UART3_BASE (LPC_APB1_BASE + 0x1C000) ¿ LPC_I2C2_BASE (LPC_APB1_BASE + 0x20000) À LPC_I2S_BASE (LPC_APB1_BASE + 0x28000) Á LPC_RIT_BASE (LPC_APB1_BASE + 0x30000) Â LPC_MCPWM_BASE (LPC_APB1_BASE + 0x38000) Ã LPC_QEI_BASE (LPC_APB1_BASE + 0x3C000) Ä LPC_SC_BASE (LPC_APB1_BASE + 0x7C000) Ç LPC_EMAC_BASE (LPC_AHB_BASE + 0x00000) È LPC_GPDMA_BASE (LPC_AHB_BASE + 0x04000) É LPC_GPDMACH0_BASE (LPC_AHB_BASE + 0x04100) Ê LPC_GPDMACH1_BASE (LPC_AHB_BASE + 0x04120) Ë LPC_GPDMACH2_BASE (LPC_AHB_BASE + 0x04140) Ì LPC_GPDMACH3_BASE (LPC_AHB_BASE + 0x04160) Í LPC_GPDMACH4_BASE (LPC_AHB_BASE + 0x04180) Î LPC_GPDMACH5_BASE (LPC_AHB_BASE + 0x041A0) Ï LPC_GPDMACH6_BASE (LPC_AHB_BASE + 0x041C0) Ð LPC_GPDMACH7_BASE (LPC_AHB_BASE + 0x041E0) Ñ LPC_USB_BASE (LPC_AHB_BASE + 0x0C000) Ô LPC_GPIO0_BASE (LPC_GPIO_BASE + 0x00000) Õ LPC_GPIO1_BASE (LPC_GPIO_BASE + 0x00020) Ö LPC_GPIO2_BASE (LPC_GPIO_BASE + 0x00040) × LPC_GPIO3_BASE (LPC_GPIO_BASE + 0x00060) Ø LPC_GPIO4_BASE (LPC_GPIO_BASE + 0x00080) Ý LPC_SC ((LPC_SC_TypeDef *) LPC_SC_BASE ) Þ LPC_GPIO0 ((LPC_GPIO_TypeDef *) LPC_GPIO0_BASE ) ß LPC_GPIO1 ((LPC_GPIO_TypeDef *) LPC_GPIO1_BASE ) à LPC_GPIO2 ((LPC_GPIO_TypeDef *) LPC_GPIO2_BASE ) á LPC_GPIO3 ((LPC_GPIO_TypeDef *) LPC_GPIO3_BASE ) â LPC_GPIO4 ((LPC_GPIO_TypeDef *) LPC_GPIO4_BASE ) ã LPC_WDT ((LPC_WDT_TypeDef *) LPC_WDT_BASE ) ä LPC_TIM0 ((LPC_TIM_TypeDef *) LPC_TIM0_BASE ) å LPC_TIM1 ((LPC_TIM_TypeDef *) LPC_TIM1_BASE ) æ LPC_TIM2 ((LPC_TIM_TypeDef *) LPC_TIM2_BASE ) ç LPC_TIM3 ((LPC_TIM_TypeDef *) LPC_TIM3_BASE ) è LPC_RIT ((LPC_RIT_TypeDef *) LPC_RIT_BASE ) é LPC_UART0 ((LPC_UART_TypeDef *) LPC_UART0_BASE ) ê LPC_UART1 ((LPC_UART1_TypeDef *) LPC_UART1_BASE ) ë LPC_UART2 ((LPC_UART_TypeDef *) LPC_UART2_BASE ) ì LPC_UART3 ((LPC_UART_TypeDef *) LPC_UART3_BASE ) í LPC_PWM1 ((LPC_PWM_TypeDef *) LPC_PWM1_BASE ) î LPC_I2C0 ((LPC_I2C_TypeDef *) LPC_I2C0_BASE ) ï LPC_I2C1 ((LPC_I2C_TypeDef *) LPC_I2C1_BASE ) ð LPC_I2C2 ((LPC_I2C_TypeDef *) LPC_I2C2_BASE ) ñ LPC_I2S ((LPC_I2S_TypeDef *) LPC_I2S_BASE ) ò LPC_SPI ((LPC_SPI_TypeDef *) LPC_SPI_BASE ) ó LPC_RTC ((LPC_RTC_TypeDef *) LPC_RTC_BASE ) ô LPC_GPIOINT ((LPC_GPIOINT_TypeDef *) LPC_GPIOINT_BASE ) õ LPC_PINCON ((LPC_PINCON_TypeDef *) LPC_PINCON_BASE ) ö LPC_SSP0 ((LPC_SSP_TypeDef *) LPC_SSP0_BASE ) ÷ LPC_SSP1 ((LPC_SSP_TypeDef *) LPC_SSP1_BASE ) ø LPC_ADC ((LPC_ADC_TypeDef *) LPC_ADC_BASE ) ù LPC_DAC ((LPC_DAC_TypeDef *) LPC_DAC_BASE ) ú LPC_CANAF_RAM ((LPC_CANAF_RAM_TypeDef *) LPC_CANAF_RAM_BASE) û LPC_CANAF ((LPC_CANAF_TypeDef *) LPC_CANAF_BASE ) ü LPC_CANCR ((LPC_CANCR_TypeDef *) LPC_CANCR_BASE ) ý LPC_CAN1 ((LPC_CAN_TypeDef *) LPC_CAN1_BASE ) þ LPC_CAN2 ((LPC_CAN_TypeDef *) LPC_CAN2_BASE ) ÿ LPC_MCPWM ((LPC_MCPWM_TypeDef *) LPC_MCPWM_BASE ) €LPC_QEI ((LPC_QEI_TypeDef *) LPC_QEI_BASE ) LPC_EMAC ((LPC_EMAC_TypeDef *) LPC_EMAC_BASE ) ‚LPC_GPDMA ((LPC_GPDMA_TypeDef *) LPC_GPDMA_BASE ) ƒLPC_GPDMACH0 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH0_BASE ) „LPC_GPDMACH1 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH1_BASE ) …LPC_GPDMACH2 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH2_BASE ) †LPC_GPDMACH3 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH3_BASE ) ‡LPC_GPDMACH4 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH4_BASE ) ˆLPC_GPDMACH5 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH5_BASE ) ‰LPC_GPDMACH6 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH6_BASE ) ŠLPC_GPDMACH7 ((LPC_GPDMACH_TypeDef *) LPC_GPDMACH7_BASE ) ‹LPC_USB ((LPC_USB_TypeDef *) LPC_USB_BASE )   ˆ    |     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\ C:\Keil4\ARM\CMSIS\Include\  lpc17xx.h   core_cm3.h   system_LPC17xx.h      -       C:\Keil4\ARM\INC\NXP\LPC17xx\lpc17xx.h ARM C/C++ Compiler, 4.1 [Build 713]          ²IRQn NonMaskableInt_IRQn rMemoryManagement_IRQn tBusFault_IRQn uUsageFault_IRQn vSVCall_IRQn {DebugMonitor_IRQn |PendSV_IRQn ~SysTick_IRQn WDT_IRQn  TIMER0_IRQn TIMER1_IRQn TIMER2_IRQn TIMER3_IRQn UART0_IRQn UART1_IRQn UART2_IRQn  UART3_IRQn PWM1_IRQn 	I2C0_IRQn 
+I2C1_IRQn 
+I2C2_IRQn SPI_IRQn 
+SSP0_IRQn SSP1_IRQn PLL0_IRQn RTC_IRQn EINT0_IRQn EINT1_IRQn EINT2_IRQn EINT3_IRQn ADC_IRQn BOD_IRQn USB_IRQn CAN_IRQn DMA_IRQn I2S_IRQn ENET_IRQn RIT_IRQn MCPWM_IRQn QEI_IRQn PLL1_IRQn  USBActivity_IRQn !CANActivity_IRQn " PIRQn_Type aX*ÿ
+ÌFLASHCFG # â$   RESERVED0 ×#PLL0CON #€PLL0CFG #„PLL0STAT ‹#ˆPLL0FEED #ŒÀ$   RESERVED1 5#PLL1CON # PLL1CFG #¤PLL1STAT ‹#¨PLL1FEED #¬Ÿ $   RESERVED2 ”#°PCON #ÀPCONP #Ä× $   RESERVED3 Ì#ÈCCLKCFG #„USBCLKCFG #ˆCLKSRCSEL #ŒCANSLEEPCLR #CANWAKEFLAGS #”Ñ$  	 RESERVED4 F#˜EXTINT #ÀRESERVED5 $  #ÄEXTMODE #ÈEXTPOLAR #Ì²	$  
+ RESERVED6 §#ÐRSID #€Ü	$   RESERVED7 Ñ#„SCS # IRCTRIM #¤PCLKSEL0 #¨PCLKSEL1 #¬·
+$   RESERVED8 ,#°USBIntSt #ÀDMAREQSEL #ÄCLKOUTCFG #È t$  $  t…PLPC_SC_TypeDef Â›*þ€PINSEL0 # PINSEL1 #PINSEL2 #PINSEL3 #PINSEL4 #PINSEL5 #PINSEL6 #PINSEL7 #PINSEL8 # PINSEL9 #$PINSEL10 #(Ü$   RESERVED0 Q#,PINMODE0 #@PINMODE1 #DPINMODE2 #HPINMODE3 #LPINMODE4 #PPINMODE5 #TPINMODE6 #XPINMODE7 #\PINMODE8 #`PINMODE9 #dPINMODE_OD0 #hPINMODE_OD1 #lPINMODE_OD2 #pPINMODE_OD3 #tPINMODE_OD4 #xI2CPADCFG #| PLPC_PINCON_TypeDef ¦½*¼FIODIRL ¼ # FIODIRH ¼ # t  *ƒFIODIR0 # FIODIR1 #FIODIR2 #FIODIR3 # t  S£FIODIR  ™  Â  *ÈFIOMASKL ¼ # FIOMASKH ¼ # *FIOMASK0 # FIOMASK1 #FIOMASK2 #FIOMASK3 # S¨FIOMASK  # H *ËFIOPINL ¼ # FIOPINH ¼ # *ŒFIOPIN0 # FIOPIN1 #FIOPIN2 #FIOPIN3 # S¦FIOPIN  ¨ Ë *ÉFIOSETL ¼ # FIOSETH ¼ # *ŠFIOSET0 # FIOSET1 #FIOSET2 #FIOSET3 # S¤FIOSET  &	 I	 *ÇFIOCLRL ¼ # FIOCLRH ¼ # *ˆFIOCLR0 # FIOCLR1 #FIOCLR2 #FIOCLR3 # S¢FIOCLR  ¤	 Ç	 *ë  	# ¹$   RESERVED0 .
+# # 	# Š	# 
+# PLPC_GPIO_TypeDef "
+…*è8IntStatus ‹# IO0IntStatR ‹#IO0IntStatF ‹#IO0IntClr #IO0IntEnR #IO0IntEnF #ý$   RESERVED0 ò
+#IO2IntStatR ‹#$IO2IntStatF ‹#(IO2IntClr #,IO2IntEnR #0IO2IntEnF #4 PLPC_GPIOINT_TypeDef „
+–*ãtIR # TCR #TC #PR #PC #MCR #MR0 #MR1 #MR2 # MR3 #$CCR #(CR0 ‹#,CR1 ‹#0ž$   RESERVED0 #4EMR #<Å$  
+ RESERVED1 :#@CTCR #p PLPC_TIM_TypeDef „
+­*“tIR # TCR #TC #PR #PC #MCR #MR0 #MR1 #MR2 # MR3 #$CCR #(CR0 ‹#,CR1 ‹#0CR2 ‹#4CR3 ‹#8RESERVED0 $  #<MR4 #@MR5 #DMR6 #HPCR #LLER #Põ$   RESERVED1 j
+#TCTCR #p PLPC_PWM_TypeDef {ÊSØRBR Þ
+THR DLL RESERVED0 $     tØ
+S÷DLM IER  SŒIIR ‹FCR  *‚4 «
+#  â
+# ÷
+#LCR #¾   RESERVED1 3#
+LSR Þ
+#å   RESERVED2 Z#SCR #Œ   RESERVED3 #ACR # ICR #$¾   RESERVED4 ³#%FDR #(å   RESERVED5 Ú#)TER #0 PLPC_UART_TypeDef êSÈRBR Þ
+THR DLL RESERVED0 $   SÝDLM IER  SòIIR ‹FCR  *Ÿ"X #  H# ]#LCR #¤   RESERVED1 ™#
+MCR #Ë   RESERVED2 À#LSR Þ
+#ò   RESERVED3 ç#MSR Þ
+#™    RESERVED4 #SCR #À    RESERVED5 5#ACR # RESERVED6 $  #$FDR #(RESERVED7 $  #,TER #0£!   RESERVED8 ˜#1RS485CTRL #LÐ!   RESERVED9 Å#MADRMATCH #Pü!   RESERVED10 ñ#QRS485DLY #T PLPC_UART1_TypeDef r’*˜# SPCR # SPSR ‹#SPDR #SPCCR #ù"$   RESERVED0 n#SPINT # PLPC_SPI_TypeDef 9ž*¥$(CR0 # CR1 #DR #SR ‹#CPSR #IMSC #RIS #MIS #ICR # DMACR #$ PLPC_SSP_TypeDef °®*°&@I2CONSET # I2STAT ‹#I2DAT #I2ADR0 #I2SCLH #I2SCLL #I2CONCLR #MMCTRL #I2ADR1 # I2ADR2 #$I2ADR3 #(I2DATA_BUFFER ‹#,I2MASK0 #0I2MASK1 #4I2MASK2 #8I2MASK3 #< PLPC_I2C_TypeDef =Ä*³(8I2SDAO # I2SDAI #I2STXFIFO #I2SRXFIFO ‹#I2SSTATE ‹#I2SDMA1 #I2SDMA2 #I2SIRQ #I2STXRATE # I2SRXRATE #$I2STXBITRATE #(I2SRXBITRATE #,I2STXMODE #0I2SRXMODE #4 PLPC_I2S_TypeDef HØ*ª)RICOMPVAL # RIMASK #RICTRL #‡)   RESERVED0 |#	RICOUNTER # PLPC_RIT_TypeDef Kã*®1€ILR # Ý)   RESERVED0 Ò#CCR #„*   RESERVED1 ù#	CIIR #¬*   RESERVED2 !#
+AMR #Ó*   RESERVED3 H#CTIME0 ‹#CTIME1 ‹#CTIME2 ‹#SEC # ¤+   RESERVED4 ™#!MIN #$Ë+   RESERVED5 À#%HOUR #(ó+   RESERVED6 è#)DOM #,š,   RESERVED7 #-DOW #0Á,   RESERVED8 6#1DOY ¼ #4RESERVED9   #6MONTH #8ˆ-   RESERVED10 }#9YEAR ¼ #<RESERVED11   #>CALIBRATION #@GPREG0 #DGPREG1 #HGPREG2 #LGPREG3 #PGPREG4 #TRTC_AUXEN #X¯.   RESERVED12 $#YRTC_AUX #\Û.   RESERVED13 P#]ALSEC #`…/   RESERVED14 z#aALMIN #d¯/   RESERVED15 ¤#eALHOUR #hÚ/   RESERVED16 Ï#iALDOM #l„0   RESERVED17 ù#mALDOW #p®0   RESERVED18 ##qALDOY ¼ #tRESERVED19   #vALMON #xù0   RESERVED20 n#yALYEAR ¼ #|RESERVED21   #~ PLPC_RTC_TypeDef Âž*Æ2WDMOD # â1   RESERVED0 ×#WDTC #WDFEED #˜2   RESERVED1 
+#	WDTV ‹#WDCLKSEL # PLPC_WDT_TypeDef Æ«*¡48ADCR # ADGDR #RESERVED0 $  #ADINTEN #ADDR0 ‹#ADDR1 ‹#ADDR2 ‹#ADDR3 ‹#ADDR4 ‹# ADDR5 ‹#$ADDR6 ‹#(ADDR7 ‹#,ADSTAT ‹#0ADTRM #4 PLPC_ADC_TypeDef ^¿*ê4DACR # DACCTRL #DACCNTVAL ¼ # PLPC_DAC_TypeDef 9È*è8xMCCON ‹# MCCON_SET #MCCON_CLR #MCCAPCON ‹#MCCAPCON_SET #MCCAPCON_CLR #MCTIM0 #MCTIM1 #MCTIM2 # MCPER0 #$MCPER1 #(MCPER2 #,MCPW0 #0MCPW1 #4MCPW2 #8MCDEADTIME #<MCCCP #@MCCR0 #DMCCR1 #HMCCR2 #LMCINTEN ‹#PMCINTEN_SET #TMCINTEN_CLR #XMCCNTCON ‹#\MCCNTCON_SET #`MCCNTCON_CLR #dMCINTFLAG ‹#hMCINTFLAG_SET #lMCINTFLAG_CLR #pMCCAP_CLR #t PLPC_MCPWM_TypeDef ‚ì*ê;ðQEICON # QEISTAT ‹#QEICONF #QEIPOS ‹#QEIMAXPOS #CMPOS0 #CMPOS1 #CMPOS2 #INXCNT ‹# INXCMP #$QEILOAD #(QEITIME ‹#,QEIVEL ‹#0QEICAP ‹#4VELCOMP #8FILTER #<û:$  å  RESERVED0 o#@QEIIEC #ØQEIIES #ÜQEIINTSTAT ‹#àQEIIE ‹#äQEICLR #èQEISET #ì PLPC_QEI_TypeDef ‚‰*ž<€‘<ÿ mask  #  PLPC_CANAF_RAM_TypeDef *é=,AFMR # SFF_sa #SFF_GRP_sa #EFF_sa #EFF_GRP_sa #ENDofTable #LUTerrAd ‹#LUTerr ‹#FCANIE # FCANIC0 #$FCANIC1 #( PLPC_CANAF_TypeDef < *´>CANTxSR ‹# CANRxSR ‹#CANMSR ‹# PLPC_CANCR_TypeDef ¨*æ@`MOD # CMR #GSR #ICR ‹#IER #BTR #EWL #SR ‹#RFS # RID #$RDA #(RDB #,TFI1 #0TID1 #4TDA1 #8TDB1 #<TFI2 #@TID2 #DTDA2 #HTDB2 #LTFI3 #PTID3 #TTDA3 #XTDB3 #\ PLPC_CAN_TypeDef NÅ*¦C8DMACIntStat ‹# DMACIntTCStat ‹#DMACIntTCClear #DMACIntErrStat ‹#DMACIntErrClr #DMACRawIntTCStat ‹#DMACRawIntErrStat ‹#DMACEnbldChns ‹#DMACSoftBReq # DMACSoftSReq #$DMACSoftLBReq #(DMACSoftLSReq #,DMACConfig #0DMACSync #4 PLPC_GPDMA_TypeDef ~ Ù*¥DDMACCSrcAddr # DMACCDestAddr #DMACCLLI #DMACCControl #DMACCConfig # PLPC_GPDMACH_TypeDef À!ãSÜDI2C_RX ‹I2C_TX  SÿDUSBClkCtrl OTGClkCtrl  SžEUSBClkSt ‹OTGClkSt ‹ *†RüHcRevision ‹# HcControl #HcCommandStatus #HcInterruptStatus #HcInterruptEnable #HcInterruptDisable #HcHCCA #HcPeriodCurrentED ‹#HcControlHeadED # HcControlCurrentED #$HcBulkHeadED #(HcBulkCurrentED #,HcDoneHead ‹#0HcFmInterval #4HcFmRemaining ‹#8HcFmNumber ‹#<HcPeriodicStart #@HcLSTreshold #DHcRhDescriptorA #HHcRhDescriptorB #LHcRhStatus #PHcRhPortStatus1 #THcRhPortStatus2 #XI$  ' RESERVED0 ’$#\Module_ID ‹#üOTGIntSt ‹#€OTGIntEn #„OTGIntSet #ˆOTGIntClr #ŒOTGStCtrl #OTGTmr #”²J$  9 RESERVED1 '%#˜USBDevIntSt ‹#€USBDevIntEn #„USBDevIntClr #ˆUSBDevIntSet #ŒUSBCmdCode #USBCmdData ‹#”USBRxData ‹#˜USBTxData #œUSBRxPLen ‹# USBTxPLen #¤USBCtrl #¨USBDevIntPri #¬USBEpIntSt ‹#°USBEpIntEn #´USBEpIntClr #¸USBEpIntSet #¼USBEpIntPri #ÀUSBReEp #ÄUSBEpInd #ÈUSBMaxPSize #ÌUSBDMARSt ‹#ÐUSBDMARClr #ÔUSBDMARSet #ØƒN$   RESERVED2 ø&#ÜUSBUDCAH #€USBEpDMASt ‹#„USBEpDMAEn #ˆUSBEpDMADis #ŒUSBDMAIntSt ‹#USBDMAIntEn #”“O$   RESERVED3 ˆ'#˜USBEoTIntSt ‹# USBEoTIntClr #¤USBEoTIntSet #¨USBNDDRIntSt ‹#¬USBNDDRIntClr #°USBNDDRIntSet #´USBSysErrIntSt ‹#¸USBSysErrIntClr #¼USBSysErrIntSet #ÀöP$   RESERVED4 k(#Ä A"#€I2C_STS ‹#„I2C_CTL #ˆI2C_CLKHI #ŒI2C_CLKLO #áQ$  · RESERVED5 Õ(#” \"#ô "#ø PLPC_USB_TypeDef ž"Ì*†Z€ MAC1 # MAC2 #IPGT #IPGR #CLRT #MAXF #SUPP #TEST #MCFG # MCMD #$MADR #(MWTD #,MRDD ‹#0MIND ‹#4ÖS$   RESERVED0 Ë)#8SA0 #@SA1 #DSA2 #H“T$  , RESERVED1 *#LCommand #€Status ‹#„RxDescriptor #ˆRxStatus #ŒRxDescriptorNumber #RxProduceIndex ‹#”RxConsumeIndex #˜TxDescriptor #œTxStatus # TxDescriptorNumber #¤TxProduceIndex #¨TxConsumeIndex ‹#¬¬V$  	 RESERVED2 !+#°TSV0 ‹#ØTSV1 ‹#ÜRSV ‹#àïV$   RESERVED3 d+#äFlowControlCounter #ðFlowControlStatus ‹#ôÁW$  ! RESERVED4 ¶+#øRxFilterCtrl #€RxFilterWoLStatus #„RxFilterWoLClear #ˆRESERVED5 $  #ŒHashFilterL #HashFilterH #”ãX$  ñ RESERVED6 W,#˜IntStatus ‹#àIntEnable #äIntClear #èIntSet #ìRESERVED7 $  #ðPowerDown #ôRESERVED8 $  #øModule_ID #ü PLPC_EMAC_TypeDef )ˆ         .   /   0    __LCD_H  
+RS_CTRL 0x00000010 
+EN_CTRL 0x00000020 DT_CTRL 0x000003C0   (         
+        AN_LCD.h      h        
+AN_LCD.h ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start               2   3   4    
+    `    V     
+       C:\Keil4\ARM\INC\NXP\LPC17xx\  AN_LCD.c    lpc17xx.h   AN_LCD.h               
+AN_LCD.c ARM C/C++ Compiler, 4.1 [Build 713]  E:\ARMCTXM3-06\lcd_lib\lib_edit_start          unsigned long  unsigned int unsigned char "Š         6   ! /  !   I  $ 
+
+>
+  %  %   %  %  	%C  
+%C  
+%  %  
+%  %  %C  %C  & I  
+
+  
+
+  (   ( 
+  
+  
+   
+  
+   
+1  
+ 1  
+1  
+ 1  
+ I8	  
+ I   
+ I8	4  !
+ I8	
+
+
+
+
+  " I  #7 I  $ I  % I  & I	  ' I  ( I  )
+  *
+  +  ,  -   .   /4
+  04
+  14  24  3 4  4 4  5.:;9?I  6.:;9?  7.:;9G  8.:;9?I   9.:;9?   :.:;9G   ;.:;9?I  <.:;9?  =.:;9G  >.:;9?I@  ?.:;9?@  @.:;9G@  A.:;9?I@
+  B.:;9?@
+  C.:;9G@
+  D1  E1  F1XYW  G1XYW  H.1  I.1@  J.1@
+  K.1  L.<4I?  M.<4?  NI  O  P I:;9  Q I4  R
+  S
+  T  U   V   W 1  X4 I	,  Y4 I	  Z4 I  [4 I,  \4 I  ]4 I	4  ^4 I	,4  _4 I4  `4 I,4  a4 I4  b4 1	,  c4 1  d4 1,  e4 1  f 1  g 1  h I	  i I  j I  k I	4  l I	,4  m I4  n 1	  o 1  p4 I	?  q4 I?<  r4 I,  s4 I  t5 I  u;   v=   w%  x<%          ARM Linker, 4.1 [Build 713]
+ armlink --partial --no_add_relocs_to_undefined --no_generate_mapping_symbols --diag_suppress=6642 --cpu=Cortex-M3 --fpu=SoftVFP --output=an_lcd.o --vfemode=force
+ Input Comments:  p58c-3  ARM Assembler, 4.1 [Build 713] armasm --debug --diag_suppress=1602,1073 --cpu=Cortex-M3 --fpu=SoftVFP --apcs=/interwork/interwork --divide  C:\DOCUME~1\als\LOCALS~1\Temp\p58c-2   an_lcd.o  ARM C/C++ Compiler, 4.1 [Build 713] ArmCC --debug -c  --depend=an_lcd.d --cpu=Cortex-M3 --apcs=interwork -O0 -IC:\Keil4\ARM\CMSIS\Include -IC:\Keil4\ARM\INC\NXP\LPC17xx -D__EVAL --omf_browse=an_lcd.crf                 W
+             W
+             T
+  8         H
+             H
+            7 ?
+           ñÿ5
+                   À             h             T                   ?
+           ñÿ°
+            ª
+             
+            
+            
+             
+             è	            Ð	           	 ·	           
+ Ÿ	           
+ †	            n	           
+ S	            6	            	             	              Þ         ¼                 ¶         °  v      6       :4          0      þ         À  "                         =               ,      Ä             € '      Q     4     "         0 ñ  "             ½                ˆ       X     ,        )     ò        '          3 ¶  z /               !<                û     ¹      +|                @              &   ü        ½ 2    ~.            =                ù      ´          t*                  5     %       î       ¬     #            d (      Z              N     ,   '   H     @  S    @     “ò  7    1  ,      …     @   ( ±ñ         0     	        "         (   
+E  D   
+D  j   
+F  „   
+F  Œ   
+D  Â   
+E  Ê   
+D  Ö   
+F  Þ   
+D  ê   
+F  ò   
+D  þ   
+F    
+D    
+F    
+D  &  
+G  .  
+D  :  
+G  B  
+D  N  
+G  V  
+D  b  
+G  j  
+D  v  
+G  ~  
+D  †  
+E  ¢  
+D  È  
+I  â  
+I  ê  
+D  ú  
+G    
+D    
+J  ,  
+G  <     @         Z      ^      b   	  ‰            ´      ¸      S      8   
+  <      H   
+  L            ¤     °     ´     À     Ä     Ø     Ü     ð     ô                  $    8    <    P    T       !  a     e        !  }              !  a     e     i     ¢     ¦     ª     ´     Õ     Ù     Ý     ï     ó     ÷     
+            (    ,    0    B    F    J    _    c    g    }        …    ›    Ÿ    £    °    ,                  !  Q   @  U   8     !  \   >  `   6     !  [   =  _   5  y   (  ˆ   (  œ   (  º   (  Õ   (  ï   (  þ   (    (  )  (  8  (  I  (  c  (  r  (  ƒ  (    (  ¬  (  Ì  (  ç  (    (  /  (  >  (  [  (  v  (  ¡  (  ¿  (  Î  (  â  (    (    (  :  (  I  (  ]  (  |  (  —  (  ·  (  Æ  (  Ü  (  ý  (    (     !  X   <  \   4  q   (     (     (  ›   (  ©   (  ·   (  Ï   (  ð   (     (     (  A  (  X  (  f  (  u  (  ƒ  (  ‘  (  Ÿ  (  ­  (  »  (  Ô  (  ÷  (  	  (    (  1  (  J  (  ‚  (  ´  (  æ  (    (  L  (  ~  (  ¨  (  ®  (  Ñ  (  R  (  t  (  ž  (  Ç  (  ð  (  2  (  g  (  B   (  a   (    (  »  (  Ù  (  ð  (  	  (  &	  (  E	  '  i	  '  	  (  •	  '  ©	  (  Ì	  '  õ	  '  
+  (  
+  '  1
+  (  R
+  '  ]
+  (  …
+  (  ‹
+  '  Ÿ
+  (  Â
+  (  È
+  (  Ü
+  (  ò
+  (  
+
+  (  %
+  (  ?
+  (  U
+  (  x
+  (  ‡
+  (  Ò
+  (  ì
+  (    (  	  (  ?  (  E  (  Z  (  v  (  |  (  Ž  (  ­  (  ¼  (  Æ  (  â  (  ñ  (     $     !  `   A  d   9  z   (     )     !  Y   ?  ]   7  Û  (  9  (  ˜  (  Ð  (  J  (  ~  (  «  (  Õ  (  0  (    (  ‡  (  U  (  ¾   (    (  2
+  (  ö
+  (    (  >  (  ,
+  (  n
+  (  Ó
+  (  Ú
+  (  7  (  ^  (  …  (  ·  (  Þ  (  C  (    (  Ä  (  ë  (    (  9  (  h  (  †  (  œ  (  É  (  õ  (  r  (  €  (  Ö  (  ý  (  %  (  L  (    (  Ä  (  ì  (    (  :  (  i  (    (  ³  (  (  (  T  (  ~  (  ¨  (  Ó  (  ý  (  '  (  Z  (  r  (  ¦  (  Û  (    (  ‡  (  s  (  –$  (  +%  (  ü&  (  Œ'  (  o(  (  Ù(  (  Ï)  (  *  (  %+  (  h+  (  º+  (  ',  (  [,  (  Å,  (  ë,  (     !  a   ;  e   3     !  a   :  e   2   .ARM.attributes .strtab .shstrtab .rel.debug_pubnames .rel.debug_frame .rel.debug_line .rel.debug_info .rel.text .symtab .comment .arm_vfe_header __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 __ARM_grp.AN_LCD.c.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp.AN_LCD.h.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp.lpc17xx.h.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp.system_LPC17xx.h.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp.core_cm3.h.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp.core_cmFunc.h.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp.core_cmInstr.h.2_sG0000_lhnoEtjcms3_300000 __ARM_grp.stdint.h.2_8w1000_dXYJCiqTH97_300000 .debug_abbrev __ARM_asm.debug_abbrev.1 .debug_macinfo .debug_loc .data .emb_text  Lib$$Request$$armlib lcd_puts clr_disp lcd_data wr_dn lcd_init lcd_com wr_cn clear_ports delay_lcd __ARM_grp..debug_pubnames$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_pubnames$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_macinfo$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_macinfo$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_macinfo$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_macinfo$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_macinfo$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_macinfo$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_macinfo$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_macinfo$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_line$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_line$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_line$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_line$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_line$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_line$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_line$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_line$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp.system_LPC17xx.h.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp.stdint.h.2_8w1000_dXYJCiqTH97_300000 __ARM_grp.lpc17xx.h.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp.core_cmInstr.h.2_sG0000_lhnoEtjcms3_300000 __ARM_grp.core_cmFunc.h.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp.core_cm3.h.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp.AN_LCD.h.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp.AN_LCD.c.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_info$system_LPC17xx.h$.2_Kd2000_e4KxEhZpTG9_f00000 __ARM_grp..debug_info$stdint.h$.2_8w1000_dXYJCiqTH97_300000 __ARM_grp..debug_info$lpc17xx.h$.2_Ui6000_FVYq10FHuZc_n10000 __ARM_grp..debug_info$core_cmInstr.h$.2_sG0000_lhnoEtjcms3_300000 __ARM_grp..debug_info$core_cmFunc.h$.2_cn1000_0gUGUm9iaKf_J00000 __ARM_grp..debug_info$core_cm3.h$.2_38l000_fDi1_pJh7Vb_D50000 __ARM_grp..debug_info$AN_LCD.h$.2_8s0000_Xd0iLWDBwu2_300000 __ARM_grp..debug_info$AN_LCD.c$.2_Ms0000_LS3dkWKjaG7_300000 __ARM_grp..debug_abbrev.group.2_Am0000_lbphKItke$2_000000 temp2 temp1 __asm___8_AN_LCD_c_temp1____REVSH __asm___8_AN_LCD_c_temp1____REV16 __ARM_asm.debug_abbrev.1 __ARM_grp_.debug_pubnames$17 __ARM_grp_.debug_pubnames$10 __ARM_grp_.debug_macinfo$4 __ARM_grp_.debug_loc$19 __ARM_grp_.debug_line$15 __ARM_grp_.debug_line$1 __ARM_grp_.debug_info$16 __ARM_grp_.debug_info$9 __ARM_grp_.debug_info$2 __ARM_grp_.debug_frame$20 .data BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$REQ8$PRES8$EABIv2 .text BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$PRES8$EABIv2 .emb_text AN_LCD.c $d.realdata $d $t Af   aeabi     @ 1    C2.06 Cortex-M3 
+ M	"$    Cortex-M3 
+ M	"   ARM 
+    
+                                                       ¢                 <        L  D       l                                 œ                          \À                          ˜                    L            h    X                      À         ; T    ;                               d     l         \  x                                      \     ä  ”               x                     \   À     8                        L    ,          È                      dL          ,              
+    ‘         <            h   
+            ‚             l       '           &                             '   ’         „           i                9       [                                     @          90            ,             ˆ    P        ‚         L  D                               Ø          \                     Ì    è÷       9        .                       ‚ø    ø                       P              ð L                   \   h              @         -   Ã   9                      ¨   ¸             ‚       d           L                          P                  (     \     l          ’        ”   !   ,            9           1      !`  ¨        ‚           L            S                       ü         ˜     S         \          ”    '           #    `          9[     `        1             ¸    Ì              `    ‚                           x     L  ì            `     „             \d              a          '   &è                a     /  9               +      b         b                   ‚               Œ     u @                    L                 u   $  \            Ì -      9     ü         +      ð    ¢            ‚        £ P               L               ,             £    P  \    l             £      |               Í  9  £    *  è                   £  ‚               ø                              d         ¤  L          ¤   ¤    l                  \      !9¥                       “            ¤[  ¥                    ª  ƒ                           ¼                  À   `     z        ª           à       ­    r   P             h             	 ²     9                  X             @³ 9	           H     	    `            ³     9   7      h                   ³ 	  9            7  9      ³     	          ˆ        9   X	         ´                  	    9      X ´      	    0     H9  
+´ 	        X                    9                µ    	 P  H                 µ #X 9 	                    	       #9 `         µ                        	      X     9   h   µ   €           µ   X         9  	     9 X    	         µ         P      ˜                X      9 ¶    à"   	è 	   ¹ È  #       # 9                '¹   9       X  Ð          	                  #          (¹       	  9   ð          9     	       ¹     øX,                  	  ˜ 0      9X     ¼      49        	 °     ¼               X      È       ¬     ¼                t         
+       Z               ¿  „               Ê  Î        p       /0              1516096945  0     0     100666  5728      `
+÷ORC                            4     (                                                                                                                                                                                                                                                         ,     0      8   !  <   "  @   E  D   ;  H   <  L   =  P   >  T   ?  X   @  \   A  `   B  d   4  h   -  l   .  p   /  t   8  x   9  |   :  €   2  „   7  ˆ   (  Œ   )     *  ”   +  ˜   #  œ   $      D  ¤   &  ¨   '  ¬   0  °   ,  ´   6  ¸   1  ¼   5  À   3  Ä   C  È   %  ÿÿÿÿHOðU1`
+HOðU1`
+H GþçþçþçþçþçþçþçþçþçþçHIJKpG  ¨Á@¬Á@               <     @     D     H     p        startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start                      c     g     k   
+          
+          €       startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] E:\ARMCTXM3-06\lcd_lib\lib_edit_start     4       Reset_Handler        NMI_Handler       HardFault_Handler       MemManage_Handler       BusFault_Handler       UsageFault_Handler       SVC_Handler        DebugMon_Handler     "   PendSV_Handler "   $   SysTick_Handler $   &   Default_Handler &   (            c     g     k   
+  ~     ‚     “     —     ®     ²     É     Í     ã     ç     ÿ                 .    2    F    J    _    c    x    |    \    (    
+        startup_LPC17xx.s          ‚&&Í  5           %  .       0   ÿÿÿÿarmcc+ |
+       	
+
+                                                                                                                    "             $             &      8      <     H      L     X      \     h      l     x      |     ˆ      Œ     ˜      œ     ¨      ¬     ¸      ¼     È      Ì     Ø      Ü                                ñÿ             
+               2          ú                                 ä             t             „   
+              
+         `    
+ ô      L     ï            é      Ì     ã           ^            ñÿU            K           >                 %       )                    û                ã               " Õ       " É ·"          ¥   "     "      ”    "        u "               d ! "      #U "     E  " %        "'   6     ' '"      "     '           "'       ò  '    "      '  " á  Ð "         '       "   ¿'' ®    "            '"  ž  Ž '"            "   ~  '       n "  ' _'    "          ' N"        ' >    "     '     "  .  "  '      '          "    ' "      ñ     ' "       â '    "    "  '   Ò              Â'"    '  °  "             ž  "'   "       Œ '     '  z  "       i'    "    X   "     '     '    G   "      '  "  6      "    '         "'       '         "  WDT_IRQHandler USB_IRQHandler USBActivity_IRQHandler UART3_IRQHandler UART2_IRQHandler UART1_IRQHandler UART0_IRQHandler TIMER3_IRQHandler TIMER2_IRQHandler TIMER1_IRQHandler TIMER0_IRQHandler SSP1_IRQHandler SSP0_IRQHandler SPI_IRQHandler RTC_IRQHandler RIT_IRQHandler QEI_IRQHandler PWM1_IRQHandler PLL1_IRQHandler PLL0_IRQHandler MCPWM_IRQHandler I2S_IRQHandler I2C2_IRQHandler I2C1_IRQHandler I2C0_IRQHandler ENET_IRQHandler EINT3_IRQHandler EINT2_IRQHandler EINT1_IRQHandler EINT0_IRQHandler DMA_IRQHandler CAN_IRQHandler CANActivity_IRQHandler BOD_IRQHandler ADC_IRQHandler SysTick_Handler PendSV_Handler DebugMon_Handler SVC_Handler UsageFault_Handler BusFault_Handler MemManage_Handler HardFault_Handler NMI_Handler Reset_Handler __use_two_region_memory __main __Vectors __user_initial_stackheap __ARM_asm.debug_abbrev.1 __initial_sp Stack_Mem Heap_Mem BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$PRES8$EABIv2 STACK RESET HEAP .text .ARM.__at_0x02FC $t $d startup_LPC17xx.s ARM Assembler, 4.1 [Build 713] ArmAsm --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=startup_LPC17xx.d -ostartup_LPC17xx.o -IC:\Keil4\ARM\CMSIS\Include -IC:\Keil4\ARM\INC\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=startup_LPC17xx.lst startup_LPC17xx.s   A,   aeabi "   Cortex-M3 
+ M	"   ARM 	    .shstrtab .ARM.attributes .comment .strtab .symtab .rel.debug_frame .debug_abbrev __ARM_asm.debug_abbrev.1 .rel.debug_line .rel.debug_info .rel.text .ARM.__at_0x02FC .relRESET HEAP STACK                                                <       ¶                            ±              <                          «        Ì     <                              p	 §                       –           x                                    |L        Œ      È	                                        è     t          €         |      	                 \             |    p                         „                     œ   €     	          
+  |            Ð                 `      p              ð               	         Pl          
+               X              S                                   E   `            ä8                €         	     d °  4                                       `        ,            #      $ t                                —                       
+      p   £                 >            á             ¼            
+
